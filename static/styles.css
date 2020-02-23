@@ -1,0 +1,265 @@
+:root {
+    --gap: 1em;
+}
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, figure {
+  /*margin: 0;
+  padding: 0;*/
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #333;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga", "kern";
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    text-decoration-color: lightgray; 
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /*padding: var(--gap);*/
+/*    orphans: initial; */
+    display: flex;
+    flex-flow: row wrap;
+/*    align-content: space-between; */
+    /*width: calc(100% + var(--gap) * 2);*/
+    position: relative;
+    padding: var(--gap);
+/*    padding-left: 33%; */
+/*    padding-right: 0; */
+/*    background: whitesmoke; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.card,
+figure {
+    order: 3;
+}
+
+nav {
+    font-size: 1.5em;
+    font-weight: bold;
+    argin-bottom: var(--gap);
+    order: 2;
+
+}
+
+header,
+.card[data-tags="about"] {
+    order: 1;
+/*    position: absolute; */
+/*    padding: var(--gap); */
+/*    width: calc(33% - var(--gap) * 2); */
+/*    left: var(--gap); */
+/*    top: 0; */
+/*    left: 0; */
+/*    height: 100vh; */
+/*    overflow-y: auto; */
+}
+.card[data-tags="about"] {
+    margin-top: 4em;
+}
+.card[data-tags="about"] h1 {
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    font-family: PT Sans Caption;
+}
+.card[data-tags="about"] p:first-of-type {
+    font-weight: bold;
+    display: none;
+}
+
+h1, h2, nav {
+    letter-spacing: -1px;
+}
+
+nav label {
+    margin-right: 1rem;
+    color: red;
+}
+nav input:checked + label {
+    color: black;
+}
+
+input[name="tag"] {
+    display: none;
+}
+
+.title h2 {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 0;
+}
+.card.title + .card,
+.card.title + .card + .card,
+.card.title + .card + .card + .card {
+}
+.card.title + .card + .card + .card {
+}
+
+figure {
+  display: block;
+  max-width: 100%;
+  position: relative;
+}
+figure:not(:hover) {
+}
+
+a:hover {
+  color: #C00;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+p {
+}
+
+h1 a {
+  text-decoration: none;
+  color: #282B30;
+}
+
+footer {
+}
+
+
+@media (min-width: 992px) {
+    :root {
+        --gap: 3em;
+        --cards: 3;
+    }
+    .card[data-tags*=" logotype"] {
+        --cards: 3;
+    }
+}
+
+.card {
+    border: 0;
+    background: none;
+    /*box-shadow: 0 0em 1em rgba(0,0,0,0.05), 0 2em 1em rgba(0,0,0,0.05);*/
+    overflow: hidden;
+/*    width: calc(100% / var(--cards)  - var(--gap) * 1); */
+/*    margin: 0 calc(var(--gap) * 1) calc(var(--gap) * 1) 0; */
+}
+
+hr {
+    flex-basis: 100%;
+    margin: var(--gap) 0;
+}
+
+.card {
+    position: relative;
+}
+
+figure img.placeholder {
+  border: none;
+}
+img.placeholder + *,
+img.placeholder + img {
+    position: absolute;
+  border: none;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+figure, a, div {
+   /*padding: 3rem;*/
+    /*cursor: pointer;*/
+}
+section {
+}
+
+
+[data-tags] {
+    display: none !important;
+}
+[data-filter=all] [data-tags],
+[data-filter=lp] [data-tags~=lp],
+[data-filter=ecommerce] [data-tags~=ecommerce],
+[data-filter=mobile] [data-tags~=mobile],
+[data-filter=ui] [data-tags~=ui],
+[data-filter=news] [data-tags~=news],
+[data-filter=other] [data-tags~=other],
+[data-filter=reference] [data-tags~=reference],
+[data-filter=shopping] [data-tags~=shopping],
+[data-filter=social] [data-tags~=social],
+[data-filter=logotype] [data-tags~=logotype],
+[data-filter=new] [data-tags*="2019 "],
+[data-filter=new] [data-tags*="2018 "],
+[data-filter=new] [data-tags*="2017 "],
+[data-filter=new] [data-tags*="about"],
+[data-filter=tool] [data-tags~=tool] {
+    display: block !important;
+    }
+
+
+/* Tags */
+
+nav > label {
+    line-height: 1;
+    cursor: pointer;
+}
+
+nav,
+h1 {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+/* Hidden */
+.hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}      
+
+section {
+    flex-basis: 100%;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+.card li {
+/*    display: inline; */
+}
+
+ul > li > ul {
+    display: inline;
+    padding-left: 0;
+}
+ul ul li {
+    display: inline;
+    opacity: 0.5;
+}
+
+section.title + .card {
+    --cards: 1;
+}
