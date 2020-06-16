@@ -1,0 +1,8 @@
+mixin header-presentation(data)
+	.header-presentation&attributes(attributes)
+		h1.header-presentation__name= data.name
+		h2.header-presentation__description= data.description
+		.header-presentation__version= 'v. ' + data.version
+		.header-presentation__sub-description= data.subDescription
+		.header-presentation__download
+			a(href="https://github.com/Zoxon/gulp-front/archive/master.zip", title="Download source from Github").button.button_style_ghost.button_color_white.button_size_large.button_block.button_style_rounded Download

@@ -1,0 +1,30 @@
+include ../copyright/copyright
+
+mixin footer(data)
+	br
+	br
+	footer&attributes(attributes).navbar.navbar-expand-lg.navbar-dark.bg-dark: .container-fluid
+		ul.navbar-nav.mr-auto
+			li.nav-item
+				span.navbar-text.text-muted &copy; 2017
+			li.nav-item
+				a.nav-link(href='#') About Blocktimes
+			li.nav-item
+				a.nav-link(href='#') Advertisments
+			li.nav-item
+				a.nav-link(href='#') FAQ
+			li.nav-item
+				a.nav-link(href='#') Privaсy Policy
+		ul.navbar-nav
+			li.nav-item
+				a.nav-link(href='#') Twitter
+			li.nav-item
+				a.nav-link(href='#') Facebook
+						
+	script.
+		//- faker.setLocale("en");
+		//- var slides = document.getElementsByClassName("h6");
+		//- for(var i = 0; i < slides.length; i++)
+		//- {
+		//- 	slides[i].text = faker.lorem.sentence() + faker.lorem.sentence();
+		//- }

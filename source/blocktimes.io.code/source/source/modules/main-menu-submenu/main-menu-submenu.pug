@@ -1,0 +1,6 @@
+mixin main-menu-submenu(data)
+	.main-menu-submenu&attributes(attributes)
+		ul.main-menu-submenu__list
+			each item in data
+				li.main-menu-submenu__item
+					a(href='#' + item.url)= item.title

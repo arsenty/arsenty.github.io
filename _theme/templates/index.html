@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+  {% set numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"] %}
+  {% set column_size = settings.colorbox_column_size %}
+  {% set nb_columns = (9 / column_size)|int %}
+  {% set column_size_t = numbers[column_size] %}
+
+  {% macro img_description(media) -%}
+    {% if media.big %} data-big="{{ media.big_url }}"{% endif %}
+    {% if media.exif %}
+      {% if media.exif.datetime %}
+        data-date=", {{ media.exif.datetime }}"
+      {% endif %}
+    {% endif %}
+  {%- endmacro %}
+
+{% for album in album.albums %}
+    {% if album.title != 'about' %}
+    {% set tags = album.medias[0]|string|replace(".", " ") %} 
+        <h2 data-tags="{{ tags }}" >
+            <a href="{{ album.url }}">
+                {{ album.title }}
+            </a>
+        </h2>
+        <section>
+            {% include "_album.html" %}
+        </section>
+  {% endif %}
+{% endfor %}
+
+{% if album.title != 'about' %}
+    <h2 data-tags="{{ tags }}" >
+        {{ album.title }}
+    </h2>
+    <section>
+        {% include "_album.html" %}
+    </section>
+{% endif %}
+
+{% endblock %}

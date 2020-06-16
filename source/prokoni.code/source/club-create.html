@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ПРОКОНИ.РУ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.js"></script> <!-- 16 KB -->
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-default navbar-inverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><span class="sr-only">Меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/prokoni-logo.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div id="menu" class="collapse navbar-collapse">
+              <div class="col-md-9">
+                <ul class="linklist nav navbar-nav">
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Статьи</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="article-list.html">Новичкам</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Совет профи</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Лошадь</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Информация</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Репортаж</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Обзор СМИ</a></li>
+                      <li class="divider"></li>
+                      <li><a tabindex="-1" href="article-list.html">Спец. страницы</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Истории</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Разное</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Каталоги</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="club-list.html">Клубы</a></li>
+                      <li><a tabindex="-1" href="shop-list.html">Магазины</a></li>
+                      <li><a tabindex="-1" href="site-list.html">Сайты</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Объявления</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="classified-list.html">Работа и услуги</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа покупка</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа лошадей</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Форумы</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Я и лошадка</a></li>
+                      <li><a tabindex="-1" href="#">Трибуна</a></li>
+                      <li><a tabindex="-1" href="#">События</a></li>
+                      <li><a tabindex="-1" href="#">Ветеринария</a></li>
+                      <li><a tabindex="-1" href="#">Творчество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="linklist nav navbar-nav pull-right">
+                  <li><a href="user-login.html" class="text-uppercase"><span class="icon -left fa fa-sign-in"></span><b>Вход</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<section class="header-section -club-create">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="page breadcrumb pull-left">
+          <li><a href="index.html"><span class="fa fa-home"></span></a></li>
+          <li><a href="">Каталоги</a></li>
+          <li><a href="">Клубы</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline pull-right">
+          <li><a href="">Мои клубы</a></li>
+          <li><a href="club_list.html" class="btn btn-default"><span class="hidden-xs">Сохранить в черновиках</span><span class="hidden-sm hidden-md hidden-lg icon fa fa-plus"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1><span class="header-icon icons8-museum"></span>Добавить клуб
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="h4">Обязательная информация</h2>
+            </div>
+          </div>
+          <div class="form-group form-group-lg">
+            <label for="Clubs_name" class="col-sm-3 control-label">Название клуба</label>
+            <div class="col-sm-6">
+              <input maxlength="100" name="Clubs[name]" type="text" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_descr" class="col-sm-3 required control-label">Описание</label>
+            <div class="col-sm-6">
+              <textarea rows="6" cols="50" name="Clubs[descr]" class="form-control"></textarea>
+            </div>
+            <div class="col-sm-2">
+              <div class="help-block">Enter your paragraph text here.</div>
+            </div>
+          </div>
+          <div class="form-group form-group-lg">
+            <label for="Clubs_contact" class="col-sm-3 control-label">Телефон</label>
+            <div class="col-sm-4">
+              <input maxlength="255" name="Clubs[contact]" type="text" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_website" class="col-sm-3 control-label">Cайт</label>
+            <div class="col-sm-3">
+              <input maxlength="50" name="Clubs[website]" type="text" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_email" class="col-sm-3 control-label">Эл. почта</label>
+            <div class="col-sm-3">
+              <input maxlength="50" name="Clubs[email]" type="text" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_region" class="col-sm-3 control-label">Город</label>
+            <div class="col-sm-4">
+              <select name="Clubs[region]" class="form-control">
+                <option value="1">Москва</option>
+                <option value="2">Санкт-Петербург</option>
+                <option value="3">Московская область</option>
+                <option value="4">Брянск</option>
+                <option value="5">Архангельская область</option>
+                <option value="6">Башкортостан</option>
+                <option value="7">Белорусь</option>
+                <option value="8">Белгород</option>
+                <option value="9">Великобритания</option>
+                <option value="10">Владивосток</option>
+                <option value="11">Владикавказ</option>
+                <option value="12">Владимирская область</option>
+                <option value="13">Волгоградская область</option>
+                <option value="14">Вологодская область</option>
+                <option value="15">Воронеж</option>
+                <option value="16">Германия</option>
+                <option value="17">Горно-Алтайск</option>
+                <option value="18">Екатеринбург</option>
+                <option value="19">Елабуга</option>
+                <option value="20">Завидово</option>
+                <option value="21">Ирландия</option>
+                <option value="22">Испания</option>
+                <option value="23">Италия</option>
+                <option value="24">Кабардино-балкарская республика</option>
+                <option value="25">Казань</option>
+                <option value="26">Казахстан</option>
+                <option value="27">Калининград</option>
+                <option value="28">Калужская область</option>
+                <option value="29">Карачаево-Черкесская республика</option>
+                <option value="30">Кировская область</option>
+                <option value="31">Кострома</option>
+                <option value="32">Костромская область</option>
+                <option value="33">Краснодарский край</option>
+                <option value="34">Красноярск</option>
+                <option value="35">Курская область</option>
+                <option value="36">Латвия</option>
+                <option value="37">Липецкая область</option>
+                <option value="38">Литва</option>
+                <option value="39">Марий-Эл</option>
+                <option value="40">Мальта</option>
+                <option value="41">Минеральные Воды</option>
+                <option value="42">Мурманская область</option>
+                <option value="43">Нижний Новгород</option>
+                <option value="44">Новгород</option>
+                <option value="45">Новороссийск</option>
+                <option value="46">Новосибирск</option>
+                <option value="47">Омская область</option>
+                <option value="48">Орел</option>
+                <option value="49">Пермь</option>
+                <option value="50">Польша</option>
+                <option value="51">Псковская область</option>
+                <option value="52">Пятигорск</option>
+                <option value="53">Республика Коми</option>
+                <option value="54">Ростовская область</option>
+                <option value="55">Рязанская область</option>
+                <option value="56">Самара</option>
+                <option value="57">Саранск</option>
+                <option value="58">Смоленск</option>
+                <option value="59">Ставропольский край</option>
+                <option value="60">Тамбов</option>
+                <option value="61">Тверская область</option>
+                <option value="62">Тульская область</option>
+                <option value="63">Тюмень</option>
+                <option value="64">Удмуртия</option>
+                <option value="65">Украина</option>
+                <option value="66">Финляндия</option>
+                <option value="67">Франция</option>
+                <option value="68">Хабаровск</option>
+                <option value="69">Хабаровск</option>
+                <option value="70">Челябинск</option>
+                <option value="71">Эстония</option>
+                <option value="72">Ярославская область</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_region" class="col-sm-3 control-label">Адрес</label>
+            <div class="col-sm-6">
+              <textarea rows="2" cols="50" name="Clubs[address]" type="text" value="" class="form-control"> </textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_email" class="col-sm-3 control-label">На карте</label>
+            <div class="col-sm-6">
+              <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NgH6O-fTpEsSz4DzbSB3YeRHlsUxm5Sn&amp;width=100%&amp;height=450"></script>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_proezd" class="col-sm-3 required control-label">Как добраться</label>
+            <div class="col-sm-6">
+              <textarea rows="4" name="Clubs[proezd]" class="form-control"></textarea>
+            </div>
+            <div class="col-sm-2">
+              <div class="help-block">Удалённость от общественного транспорта, номера маршрутов</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_horses" class="col-sm-3 control-label">Количество лошадей</label>
+            <div class="col-sm-2">
+              <input maxlength="10" name="Clubs[horses]" type="number" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_horses" class="col-sm-3 control-label">Количество инструкторов</label>
+            <div class="col-sm-2">
+              <input maxlength="10" name="Clubs[horses]" type="number" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_horses" class="col-sm-3 control-label">Количество инструкторов</label>
+            <div class="col-sm-2">
+              <input maxlength="10" name="Clubs[horses]" type="number" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Услуги</label>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Waymap
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Обучение ВЕ
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Занятия выездкой
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Занятия конкуром
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Прогулки в лес/поле
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Троеборные препятствия
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Крытый манеж
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Туалет
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Раздевалка
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Буфет
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Комната для амуниции
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Соревнования
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Выдача спортивной одежды
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Аренда денников
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Левады
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Выпас
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Берейтор
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Ветеринарный врач
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Коваль
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Clubs_image" class="col-sm-3 control-label">Фотографии</label>
+            <div class="col-sm-6"> </div>
+            <div class="col-sm-6">
+              <div class="jumbotron text-center"><span><a role="button">Выберите файлы</a>&nbsp; или перетяните их сюда</span></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-3">
+              <button type="submit" class="btn btn-primary btn-lg">Добавить клуб</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Sitemap Links -->
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Статьи</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Каталоги</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Объявления</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Форумы</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <!-- User Links -->
+        <ul class="list-unstyled">
+          <li><b href="#">Username</b></li>
+          <li><a href="#">Мой дневник</a></li>
+          <li><a href="#">Мои объявления</a></li>
+          <li><a href="#">Настройки</a></li>
+          <li><a href="#">Выйти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+        <div class="row">
+          <div class="col-md-9">
+            <!-- Languages Links -->
+            <ul class="list-unstyled list-inline">
+              <li><img src="images/prokoni-logo--footer.png" alt=""></li>
+              <li>
+                <p><b>Россия</b></p>
+              </li>
+              <li>
+                <p><a href="#">France</a></p>
+              </li>
+              <li>
+                <p><a href="#">España</a></p>
+              </li>
+              <li>
+                <p><a href="#">Italia</a></p>
+              </li>
+            </ul>
+            <!-- About Links -->
+            <ul class="list-unstyled list-inline">
+              <li>&copy; 2005—2014</li>
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Реклама на сайте</a></li>
+              <li><a href="#">Контактная информация</a></li>
+            </ul>
+            <!-- Developers Links -->
+            <ul class="list-unstyled">
+              <li>
+                <p>Разработка сайта — <a href="#">Arsenty </a>и <a href="#">Sdemch</a>, icons by <a href="#">Icons8</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <!-- Social Links-->
+            <ul class="list-unstyled">
+              <li><b>Мы в социальных сетях</b></li>
+              <li><a href="#">Твиттер</a></li>
+              <li><a href="#">Фейсбук</a></li>
+              <li><a href="#">Вконтакте</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

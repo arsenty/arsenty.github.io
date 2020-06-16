@@ -1,0 +1,9 @@
+include ../icon/icon
+
+mixin alert(data)
+	.alert&attributes(attributes)
+		.alert__title= data.title
+		.alert__body= data.text
+
+		button(type="button").alert__close
+			+icon("close")

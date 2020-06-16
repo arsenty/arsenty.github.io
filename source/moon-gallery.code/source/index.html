@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<title>Moon Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts/jquery/jquery-2.2.4.js"></script>
+	<script src="scripts/handlebars.min-latest.js"></script>
+</head>
+
+<body class="page">
+	<header class="header">
+		<a href="#" class="logotype"></a>
+		<ul class="menu">
+			<li id="news"><a href="news.html">News</a></li>
+			<li id="contact"><a href="contact.html">Contact</a></li>
+			</div>
+	</header>
+	<nav id="nav">
+		<div class="artists">
+			<div class="artists--nav">
+				<a href="#" id="artist-prev" class="nav-up"></a>
+				<a href="#" id="artist-next" class="nav-down"></a>
+			</div>
+			<div class="artists-list">
+				<ul id="artists-list">
+					<p class="welcome">Moon is an online gallery designed by Marie Berg and Sophie Herr. The gallery’s launch highlights the photographic works of talents represented by the <a href="#" class="link">cosmic agency</a>.</p>
+					<script id="artist-list--template" type="text/x-handlebars-template">
+						{{#each names}}
+						<li class="artist-list--i" data-menuanchor=section-{{addTwo @index}} id=artist-list--{{addTwo @index}}>
+							<a>{{name}}</a>
+						</li>
+						{{/each}}
+					</script>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main id="artists--app">
+		<section data-anchor="section-1" id="section-1" class="active"></section>
+	</main>
+	<div class="artist--nav hidden">
+		<a href="#" id="photo-prev" class="nav-left"></a>
+		<a href="#" id="photo-next" class="nav-right"></a>
+	</div>
+	<script id="artist-page--template" type="text/x-handlebars-template">
+		{{#each names}}
+		<section data-anchor=section-{{addTwo @index}} id=artist-page-{{addTwo @index}} class="artist-page">
+			<div class="artist--details hidden">
+				<div class="artist--name">{{name}}
+					<a href="#" class="control ico-close"></a>
+				</div>
+				<div class="artist--desc">
+					<p>
+						Riego van Wersch<br/> <b>is a French photographer Living in Los Angeles. He became a photOgraphe director at 24 and have signed major worldwide advertisement campain.</b>
+						<br/><br/>
+						<small>Discover his profesional work on <br/>
+										<a href="#">www.cosmic.com</a>
+									</small>
+					</p>
+				</div>
+			</div>
+
+			{{#repeat 9}}
+			<div class="slide">
+				
+				<div class="artist--photo">
+					<div class="photo--container">
+						<div class="photo--source">
+							<div class="photo-source--img">
+								<img  data-original="content/Unknown-{{addOne @index}}.jpeg" class="lazy" id="" />
+								<div class="photo--details">
+									<div class="details-left">
+										Riego Van Wersch,<br/> Children playing at Waterpark,<br/> Santa Monica, USA, 2007. ©
+										<br/>
+										<br/> Limited edition <br/> Number: 62 / 100 <br/> 80 X 120 cm
+									</div>
+									<div class="details-right">
+										<a href="#" class="control btn">Order this print</a><br/>
+										<a href="#" class="control btn">Specific order</a>
+									</div>
+								</div>
+							</div>
+							<div class="photo--controls">
+								<a href="#" class="control ico ico-fullscreen">&nbsp;</a>
+								<a href="#" class="control btn btn-order">Order this print</a>
+								<a href="#" class="control ico ico-grid">&nbsp;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{/repeat}}
+
+			<div class="slide">
+				<div class="grid-container">
+					<div class="grid">
+						<div class="grid-sizer"></div>
+						{{#each ../names}}
+							<div class="grid-item" id="grid-item-0">
+								<a href="#" class="grid-cover">
+									<p>
+										<b>Riego Van Wersch</b>,<br/> Charen playing at Waterpark, Santa Monica, USA, 2007. ©
+									</p>
+								</a>
+								<img src="content/Unknown-{{addOne @index}}.jpeg" />
+							</div>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</section>
+		{{/each}}
+	</script>
+	<script src="scripts/jquery.lazyload.js"></script>
+	<script src="scripts/imagesloaded.pkgd.js"></script>
+	<script src="scripts/masonry.pkgd.js"></script>
+	<script src="scripts/masonry.pkgd.conf.js"></script>
+	<script src="scripts/fullpage.js/scrolloverflow.js"></script>
+	<script src="scripts/fullpage.js/jquery.fullpage.js"></script>
+	<script src="scripts/fullpage.js/jquery.fullpage.conf.js"></script>
+	<script src="scripts.js"></script>
+	<script src="scripts/handlebars.conf.js"></script>
+	</footer>
+</body>
+
+</html>

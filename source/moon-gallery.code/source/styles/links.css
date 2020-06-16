@@ -1,0 +1,50 @@
+a {
+	color: rgba(255,255,255,0.75);
+	transition: color 0.2s ease;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+.control {
+	display: inline-block;
+	margin-bottom: 20px;
+	line-height: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+}
+
+.control:hover {
+	opacity: 1;
+}
+
+.btn {
+	/*display: block;*/
+	min-width: 160px;
+	max-width: 260px;
+	/*padding: 0 20px;*/
+	border: 1px solid #ffffff;
+	/*line-height: 38px;*/
+	font-size: 13px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.ico-fullscreen {
+	background-image: url('../images/fullscreen.png');
+	background-size: 100%;
+	width: 53px;
+	height: 43px;
+	float: left;
+}
+
+.ico-grid {
+	background-image: url('../images/grid.png');
+	background-size: 100%;
+	width: 53px;
+	height: 43px;
+	float: right;
+}

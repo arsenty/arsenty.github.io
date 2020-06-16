@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "",
+  "description": "",
+  "icons": {
+    "60": "dest/assets/favicons/firefox_app_60x60.png",
+    "128": "dest/assets/favicons/firefox_app_128x128.png",
+    "512": "dest/assets/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Arsenty Khanov",
+    "url": "http://arsenty.ru/"
+  }
+}

@@ -1,0 +1,8 @@
+#!/bin/sh -x
+
+WORKTREE=$(realpath ${GIT_DIR:-.})
+# assumes non-bare repository, or that there is a checkout next to the
+# repo
+WORKTREE="${WORKTREE%%.git}"
+echo "rebuilding gallery in $WORKTREE"
+( cd $WORKTREE && sigal build ./source  ./public_html )

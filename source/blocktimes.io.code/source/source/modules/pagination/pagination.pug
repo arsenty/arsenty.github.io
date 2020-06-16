@@ -1,0 +1,16 @@
+include ../icon/icon
+
+mixin pagination(data)
+	.pagination&attributes(attributes)
+		.pagination__controls.pagination__controls_backward
+			a(href="#").pagination__control «
+			a(href="#").pagination__control ‹
+		.pagination__controls
+			span.pagination__ellipsis …
+			a(href="#").pagination__page 4
+			span.pagination__page.pagination__page_current 5
+			a(href="#").pagination__page 6
+			span.pagination__ellipsis …
+		.pagination__controls.pagination__controls_forward
+			a(href="#").pagination__control ›
+			a(href="#").pagination__control »

@@ -1,0 +1,34 @@
+include ../logo/logo
+include ../main-menu/main-menu
+include ../github-button/github-button
+include ../header-presentation/header-presentation
+include ../mobile-menu-trigger/mobile-menu-trigger
+
+mixin header(data)
+	header.header&attributes(attributes)
+		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark: .container-fluid
+			a.navbar-brand(href='#')
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14"><path fill="#FFF" fill-rule="evenodd" d="M5.2 10.84h2.84c.227 0 .463-.013.71-.04.247-.027.463-.113.65-.26a1.78 1.78 0 0 0 .31-.37c.1-.153.15-.357.15-.61 0-.187-.037-.363-.11-.53-.073-.167-.21-.317-.41-.45a2.62 2.62 0 0 0-.44-.18c-.2-.067-.507-.1-.92-.1H5.2v2.54zm0-5.44h2.58c.187 0 .39-.02.61-.06.22-.04.397-.107.53-.2a.92.92 0 0 0 .3-.35c.08-.153.12-.33.12-.53 0-.213-.04-.393-.12-.54a.838.838 0 0 0-.28-.32c-.12-.08-.287-.14-.5-.18a2.95 2.95 0 0 0-.52-.06H5.2V5.4zM9.26 0c1.04 0 1.85.057 2.43.17.58.113 1.043.277 1.39.49.08.053.2.14.36.26.16.12.317.287.47.5.153.213.29.477.41.79.12.313.18.683.18 1.11 0 .533-.097.977-.29 1.33-.193.353-.39.63-.59.83a3.459 3.459 0 0 1-.55.45c-.193.127-.377.23-.55.31a3.57 3.57 0 0 1-.46.18l-.26.08v.08c.347.067.737.183 1.17.35.433.167.803.377 1.11.63.307.253.58.59.82 1.01.24.42.36.95.36 1.59 0 .627-.127 1.187-.38 1.68-.253.493-.58.893-.98 1.2-.08.067-.213.153-.4.26-.187.107-.457.21-.81.31-.353.1-.797.19-1.33.27-.533.08-1.18.12-1.94.12H0V0h9.26zm5.96 3.88V0h14.2v3.88h-4.5V14h-5.2V3.88h-4.5z"/></svg>
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarSupportedContent.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto.mr-auto
+					li.nav-item.active
+						a.nav-link(href='#')
+							//- img.mb-1.mr-1(src="https://png.icons8.com/present/64/color/" width="20" alt="")
+							span Recent
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href='#')
+							img.mb-1(src="https://png.icons8.com/flash/64/color/" width="20" alt="")
+							span Top
+					li.nav-item
+						a.nav-link(href='#')
+							//- img.mb-1.mr-1(src="https://png.icons8.com/news/64/color/" width="20" alt="")
+							span Stories
+				a.navbar-text(href='#')
+					img.ml-1.mr-1.mb-1(src="https://png.icons8.com/key/64/windows10/ffffff" width="22" alt="" style="opacity: 0.5")
+					|Sign In
+				//- form.form-inline.my-2.my-lg-0
+				//- 	input.form-control.mr-sm-2(type='text', placeholder='Search', aria-label='Search')
+				//- 	button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search

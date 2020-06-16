@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ПРОКОНИ.РУ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.js"></script> <!-- 16 KB -->
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-default navbar-inverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><span class="sr-only">Меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/prokoni-logo.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div id="menu" class="collapse navbar-collapse">
+              <div class="col-md-9">
+                <ul class="linklist nav navbar-nav">
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Статьи</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="article-list.html">Новичкам</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Совет профи</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Лошадь</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Информация</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Репортаж</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Обзор СМИ</a></li>
+                      <li class="divider"></li>
+                      <li><a tabindex="-1" href="article-list.html">Спец. страницы</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Истории</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Разное</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Каталоги</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="club-list.html">Клубы</a></li>
+                      <li><a tabindex="-1" href="shop-list.html">Магазины</a></li>
+                      <li><a tabindex="-1" href="site-list.html">Сайты</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Объявления</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="classified-list.html">Работа и услуги</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа покупка</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа лошадей</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Форумы</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Я и лошадка</a></li>
+                      <li><a tabindex="-1" href="#">Трибуна</a></li>
+                      <li><a tabindex="-1" href="#">События</a></li>
+                      <li><a tabindex="-1" href="#">Ветеринария</a></li>
+                      <li><a tabindex="-1" href="#">Творчество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="linklist nav navbar-nav pull-right">
+                  <li><a href="user-login.html" class="text-uppercase"><span class="icon -left fa fa-sign-in"></span><b>Вход</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<section class="header-section -site-create">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="page breadcrumb pull-left">
+          <li><a href="index.html"><span class="fa fa-home"></span></a></li>
+          <li><a href="">Каталоги</a></li>
+          <li><a href="">Сайты</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline pull-right">
+          <li><a href="">Мои сайты</a></li>
+          <li><a href="site-list.html" class="btn btn-default"><span class="hidden-xs">Сохранить в черновиках</span><span class="hidden-sm hidden-md hidden-lg icon fa fa-plus"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1><span class="header-icon fa fa-globe"></span>Добавить сайт
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-sm-offset-1">
+        <form class="form-horizontal">
+          <div class="form-group form-group-lg">
+            <label for="TSite_title" class="col-md-2 control-label">Название
+              <div class="col-md-8">
+                <input maxlength="50" name="TSite[title]" type="text" value="" class="form-control">
+                <div class="help-block">Enter your paragraph text here.</div>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="TSite_link" class="col-md-2 control-label">Адрес сайта</label>
+            <div class="col-md-4">
+              <input maxlength="100" name="TSite[link]" type="text" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="TSite_description" class="col-md-2 control-label">Описание</label>
+            <div class="col-md-8">
+              <textarea maxlength="255" name="TSite[description]" type="text" value="" class="form-control"></textarea>
+              <div class="help-block">Enter your paragraph text here.</div><span style="display: none;" class="error help-block"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="TSite_icon" class="col-md-2 control-label">Логотип или скриншот</label>
+            <div class="col-md-8">
+              <div class="jumbotron text-center"><a role="button">Выберите файлы</a>&nbsp; или перетяните их сюда</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+              <button type="submit" class="btn btn-primary btn-lg">Добавить сайт</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="i-ua_js_no i-ua_css_standard" lang="en">
+  <head>
+    <style>
+      .container-fluid {max-width: 1200px !important;}
+      .badge {font-weight: normal !important; border-radius:2px !important;}
+      .navbar.bg-dark {background: black !important;}
+      .nav-item.active span {
+      	padding-bottom: 3px;
+      	border-bottom: 1px solid white;
+      }
+      main a:not(.badge) {
+      	color: black;
+      	border-bottom: 1px solid rgba(0,0,0,0.15);
+      }
+      main a:hover {
+      	text-decoration: none !important;
+      	color: black !important;
+      	//- border-color: tomato;
+      }
+    </style>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <!-- The above 3 meta tags *must* come first in the head;-->
+    <!-- any other head content must come *after* these tags-->
+    <!-- Title-->
+    <title>News :: BlockTimes</title>
+    <!-- Meta tags-->
+    <meta name="description" content="The template for quick start of development with Gulp, Jade and Stylus"/>
+    <meta name="keywords" content="demo, gulp, bem, modules, sprites, svg, jade, stylus, boilerplate, frontend, project, template"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="robots" content="noodp, noydir"/>
+    <!-- iOS: Add to Home Screen-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-title" content="BlockTimes"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="NaN/reset.css"/>
+    <link rel="stylesheet" href="NaN/main.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Facebook / Open Graph-->
+    <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup-->
+    <!-- Open Graph: http://ogp.me/-->
+    <meta property="fb:app_id" content="387979211564142"/>
+    <meta property="og:url" content="http://zoxon.github.io/gulp-front/index.html"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="News"/>
+    <meta property="og:image" content="http://zoxon.github.io/gulp-front/assets/images/content/preview.png"/>
+    <meta property="og:description" content="The template for quick start of development with Gulp, Jade and Stylus"/>
+    <meta property="og:site_name" content="BlockTimes"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Velichko Konstantin"/>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/>
+    <link rel="manifest" href="/assets/favicons/manifest.json"/>
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#e74c3c"/>
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <!-- A list of everything that could go in the head of your document-->
+    <!-- https://github.com/joshbuchea/HEAD--><script>;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);</script>
+  </head>
+  <body class="bg-dark">
+    <div class="bg-white">
+      <div class="page__content">
+        <header class="header">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14"><path fill="#FFF" fill-rule="evenodd" d="M5.2 10.84h2.84c.227 0 .463-.013.71-.04.247-.027.463-.113.65-.26a1.78 1.78 0 0 0 .31-.37c.1-.153.15-.357.15-.61 0-.187-.037-.363-.11-.53-.073-.167-.21-.317-.41-.45a2.62 2.62 0 0 0-.44-.18c-.2-.067-.507-.1-.92-.1H5.2v2.54zm0-5.44h2.58c.187 0 .39-.02.61-.06.22-.04.397-.107.53-.2a.92.92 0 0 0 .3-.35c.08-.153.12-.33.12-.53 0-.213-.04-.393-.12-.54a.838.838 0 0 0-.28-.32c-.12-.08-.287-.14-.5-.18a2.95 2.95 0 0 0-.52-.06H5.2V5.4zM9.26 0c1.04 0 1.85.057 2.43.17.58.113 1.043.277 1.39.49.08.053.2.14.36.26.16.12.317.287.47.5.153.213.29.477.41.79.12.313.18.683.18 1.11 0 .533-.097.977-.29 1.33-.193.353-.39.63-.59.83a3.459 3.459 0 0 1-.55.45c-.193.127-.377.23-.55.31a3.57 3.57 0 0 1-.46.18l-.26.08v.08c.347.067.737.183 1.17.35.433.167.803.377 1.11.63.307.253.58.59.82 1.01.24.42.36.95.36 1.59 0 .627-.127 1.187-.38 1.68-.253.493-.58.893-.98 1.2-.08.067-.213.153-.4.26-.187.107-.457.21-.81.31-.353.1-.797.19-1.33.27-.533.08-1.18.12-1.94.12H0V0h9.26zm5.96 3.88V0h14.2v3.88h-4.5V14h-5.2V3.88h-4.5z"/></svg></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-auto">
+                  <li class="nav-item active"><a class="nav-link" href="#"><span>Recent</span><span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><img class="mb-1" src="https://png.icons8.com/flash/64/color/" width="20" alt=""/><span>Top</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"><span>Stories</span></a></li>
+                </ul>
+                <ul class="navbar-nav">
+                  <li class="nav-item active"><a class="nav-link" href="#"><img class="ml-1 mr-1 mb-1" src="https://png.icons8.com/key/64/windows10/ffffff" width="22" alt=""/>Sign In</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section class="alert-secondary mb-4">
+          <div class="container-fluid">
+            <div class="d-flex flex-row justify-content-center">
+              <ul class="list-inline pt-3 pb-3 m-0">
+                <li class="list-inline-item pr-3"><small>BTC</small>&nbsp;<small class="text-success">+433.21</small>&nbsp;&nbsp;<small class="text-muted">$9,922.66</small></li>
+                <li class="list-inline-item pr-3"><small>XRP</small>&nbsp;<small class="text-success">+433.21</small>&nbsp;&nbsp;<small class="text-muted">$9,922.66</small></li>
+                <li class="list-inline-item pr-3"><small>ETH</small>&nbsp;<small class="text-success">+433.21</small>&nbsp;&nbsp;<small class="text-muted">$9,922.66</small></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <main>
+          <section>
+            <div class="container-fluid">
+              <div class="row pt-5 pb-5">
+                <div class="col-md-1 pb-3 text-center"><a class="text-muted" href="#"><img src="https://png.icons8.com/news/color/128" alt="" width="50">Stories</a></div>
+                <div class="col-md-11">
+                  <h1 class="pb-3">
+                    <big>EU Officials Reveal €5 Million 'Blockchains for Social Good' Contest</big>
+                  </h1>
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a class="badge badge-danger" href="#">XRP</a></li>
+                    <li class="list-inline-item"><a class="badge badge-light" href="#">Inc.</a></li>
+                    <li class="list-inline-item"><span class="badge badge-light">26K views</span></li>
+                    <li class="list-inline-item"><a class="badge badge-light" href="#">1405 comments</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row d-flex flex-md-row-reverse">
+                <div class="col-md-5 pl-md-5 mb-5"><img src="http://place-hold.it/240x240" alt="" width="100%"><small class="text-muted">&copy; @username</small></div>
+                <div class="col-md-6">
+                  <p class="lead">Cupertino, California —November 2, 2017 — Apple today announced financial results for its fiscal 2017 fourth quarter ended September 30, 2017. The Company posted quarterly revenue of $52.6 billion, an increase of 12 percent from the year-ago quarter, and quarterly earnings per diluted share of $2.07, up 24 percent. International sales accounted for 62 percent of the quarter’s revenue.</p>
+                  <p class="lead">“We’re happy to report a very strong finish to a great fiscal 2017, with record fourth quarter revenue, year-over-year growth for all our product categories, and our best quarter ever for Services,” said Tim Cook, Apple’s CEO. “With fantastic new products including iPhone 8 and iPhone 8 Plus, Apple Watch Series 3, and Apple TV 4K joining our product lineup, we’re looking forward to a great holiday season, and with the launch of iPhone X getting underway right now, we couldn’t be more excited as we begin to deliver our vision for the future with this stunning device.”</p>
+                  <p class="lead">“Apple’s year-over-year revenue growth rate accelerated for the fourth consecutive quarter and drove EPS growth of 24 percent in the September quarter,” said Luca Maestri, Apple’s CFO. “We also generated strong operating cash flow of $15.7 billion and returned $11 billion to investors through our capital return program.”</p><br>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr class="mb-0 pb-0">
+          <section class="bg-light pt-md-3 pb-5">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                  <form class="mt-5 mb-5">
+                    <div class="form-group" style="position: relative;">
+                      <textarea class="p-3 form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Your comment..." style="position: relative; padding-bottom: 6rem !important;"></textarea>
+                      <ul class="nav nav-pills nav- nav-fill m-3 d-flex" style="position: absolute; bottom: 0;">
+                        <li class="nav-item">
+                          <button class="btn btn-warning pl-5 pr-5" type="button">Reply</button>
+                        </li>
+                        <li class="nav-item pl-3">
+                          <button class="btn text-muted" type="button">Cancel</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                  <div class="h3 mb-5">2 comments</div>
+                  <div class="media"><img class="rounded d-flex mr-3" src="http://place-hold.it/30x30" alt="">
+                    <div class="media-body">
+                      <div class="h6 mt-1">Username</div>
+                      <div>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                      <button class="btn btn-link pl-0" type="button">Reply</button>
+                      <hr>
+                      <div class="media mt-3"><img class="rounded d-flex mr-3" src="http://place-hold.it/30x30" alt="">
+                        <div class="media-body">
+                          <div class="h6 mt-1">Username</div>
+                          <div>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          <button class="btn btn-link pl-0" type="button">Reply</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><span class="navbar-text text-muted">&copy; 2017</span></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Blocktimes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Advertisments</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Privaсy Policy</a></li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Twitter</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </footer>
+        <script>
+          //- faker.setLocale("en");
+          //- var slides = document.getElementsByClassName("h6");
+          //- for(var i = 0; i < slides.length; i++)
+          //- {
+          //- 	slides[i].text = faker.lorem.sentence() + faker.lorem.sentence();
+          //- }
+        </script>
+      </div>
+    </div>
+    <script src="NaN/vendor.js"></script>
+    <script src="NaN/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ПРОКОНИ.РУ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.js"></script> <!-- 16 KB -->
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-default navbar-inverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><span class="sr-only">Меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/prokoni-logo.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div id="menu" class="collapse navbar-collapse">
+              <div class="col-md-9">
+                <ul class="linklist nav navbar-nav">
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Статьи</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="article-list.html">Новичкам</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Совет профи</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Лошадь</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Информация</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Репортаж</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Обзор СМИ</a></li>
+                      <li class="divider"></li>
+                      <li><a tabindex="-1" href="article-list.html">Спец. страницы</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Истории</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Разное</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Каталоги</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="club-list.html">Клубы</a></li>
+                      <li><a tabindex="-1" href="shop-list.html">Магазины</a></li>
+                      <li><a tabindex="-1" href="site-list.html">Сайты</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Объявления</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="classified-list.html">Работа и услуги</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа покупка</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа лошадей</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Форумы</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Я и лошадка</a></li>
+                      <li><a tabindex="-1" href="#">Трибуна</a></li>
+                      <li><a tabindex="-1" href="#">События</a></li>
+                      <li><a tabindex="-1" href="#">Ветеринария</a></li>
+                      <li><a tabindex="-1" href="#">Творчество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="linklist nav navbar-nav pull-right">
+                  <li><a href="user-login.html" class="text-uppercase"><span class="icon -left fa fa-sign-in"></span><b>Вход</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<section class="header-section -classified-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="page breadcrumb pull-left">
+          <li><a href="index.html"><span class="fa fa-home"></span></a></li>
+          <li><a href="">Объявления</a></li>
+          <li><a href="">Продажа лошадей</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline pull-right">
+          <li><a href="">Мои объявления</a></li>
+          <li><a href="classified-create.html" class="btn btn-default"><span class="hidden-xs">Подать объявление</span><span class="hidden-sm hidden-md hidden-lg icon fa fa-plus"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1><span class="header-icon icons8-year-of-horse"></span>Продажа лошадей
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <div class="h4"><a href=""><b class="link">2376</b><small class="link -no"> жеребцов / </small></a><a href=""> <b class="link">1459</b><small class="link -no"> меринов / </small></a><a href=""> <b class="link">2056</b><small class="link -no"> кобыл</small></a></div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Поиск</div>
+          </div>
+          <div class="panel-body">
+            <form class="form">
+              <div class="form-group">
+                <select class="form-control input-sm">
+                  <option>Порода</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">Жеребец
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">Мерин
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">Кобыла
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Возраст, лет</label>
+                <div class="input-group">
+                  <input type="text" placeholder="от" class="form-control input-sm"><span class="input-group-btn"></span>
+                  <input type="text" placeholder="до" class="form-control input-sm">
+                </div>
+              </div>
+              <div class="form-group">
+                <select class="form-control input-sm">
+                  <option>Специализация</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control input-sm">
+                  <option>Регион</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">Только с фото
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary"><span class="icon -left fa fa-search"></span><span>Найти</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div class="col-sm-4 col-xs-6">
+          <div class="panel panel-default"><a href="classified-item.html">
+              <div class="thumbnail -card"><img src="http://www.prokoni.ru/structure/modules/announcements/photosmall.php?filename=/images/announcements/12/d2e7d2855926989797875fa3a04aedb2.jpg&amp;width=484&amp;height=406" width="100%" alt=""></div>
+              <div class="panel-body">
+                <div class="h4"><span class="link">Франт</span><br><small>Мерин, 2002
+                    <hr>Буденновская<br>165&nbsp;см в холке<br><span>Беларусь</span><br><span>40 000 Р.</span></small></div>
+              </div></a></div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+          <div class="panel panel-default"><a href="classified-item.html">
+              <div class="thumbnail -card"><img src="http://www.prokoni.ru/structure/modules/announcements/photosmall.php?filename=/images/announcements/12/488d170ab3ad9457a2b1985e4bad0092.JPG&amp;width=484&amp;height=406" width="100%" alt=""></div>
+              <div class="panel-body">
+                <div class="h4"><span class="link">Гжелка</span><br><small>Мерин, 2002
+                    <hr>Буденновская<br>165&nbsp;см в холке<br><span>Беларусь</span><br><span>40 000 Р.</span></small></div>
+              </div></a></div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+          <div class="panel panel-default"><a href="classified-item.html">
+              <div class="thumbnail -card"><img src="http://www.prokoni.ru/structure/modules/announcements/photosmall.php?filename=/images/announcements/12/fffb3cc281205e2e1dc0b6cad95af1ae.jpg&amp;width=484&amp;height=406" width="100%" alt=""></div>
+              <div class="panel-body">
+                <div class="h4"><span class="link">Элигерр</span><br><small>Мерин, 2002
+                    <hr>Буденновская<br>165&nbsp;см в холке<br><span>Беларусь</span><br><span>Договорная цена</span></small></div>
+              </div></a></div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+          <div class="panel panel-default"><a href="classified-item.html">
+              <div class="thumbnail -card"><img src="http://www.prokoni.ru/structure/modules/announcements/photosmall.php?filename=/images/announcements/12/9be15d0f11d52686431bc2075e5196d3.jpg&amp;width=484&amp;height=406" width="100%" alt=""></div>
+              <div class="panel-body">
+                <div class="h4"><span class="link">Капитал</span><br><small>Мерин, 2002
+                    <hr>Буденновская<br>165&nbsp;см в холке<br><span>Беларусь</span><br><span>200 000 Р.</span></small></div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

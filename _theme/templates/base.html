@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="{{ settings.html_language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ album.title }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="{{ album.author }}">
+    <!--<link rel="stylesheet" href="{{ theme.url }}/css/skeleton.css">-->
+    <link rel="stylesheet" href="{{ theme.url }}/css/colorbox.css">
+    <link rel="stylesheet" href="{{ theme.url }}/css/normalize.css">
+    <link rel="stylesheet" href="{{ theme.url }}/css/styles.css">
+    <link rel="stylesheet" href="{{ theme.url }}/css/media.xs.css">
+    <link rel="stylesheet" href="{{ theme.url }}/css/media.sm.css">
+    <link rel="stylesheet" href="{{ theme.url }}/css/media.md.css">
+    <!--<link rel="stylesheet" href="{{ theme.url }}/css/style.css">-->
+    {% block extra_head %}{% endblock extra_head %}
+    {% include 'analytics.html' %}
+  </head>
+  <body>
+    {% include 'gtm.html' %}
+    <div class="container">
+        <div class="sidebar">
+              <h1><a href="{{ album.index_url }}">
+              {% if settings.site_logo %}
+              <img src="{{ theme.url }}/{{ settings.site_logo }}" alt="{{ index_title }}">
+              {% else %}
+              {{ index_title }}
+              {% endif %}
+              </a></h1>
+          {% if album.breadcrumb == [] %}
+              {% for album in album.albums %}
+                {% if album.title == 'about' %}
+                    {{ album.description }}
+                {% endif %}
+              {% endfor %}
+          {% else %}
+
+            <header>
+              <!--{% include 'breadcrumb.html' %}
+              {% if album.breadcrumb %}
+                <hr>
+                {% endif %}-->
+
+                {% if album.description %}
+                  <div id="description" class="row">
+                    {{ album.description }}
+                  </div>
+                {% endif %}
+            </header>
+
+          {% endif %}
+
+          {% include 'links.html' %}
+          <!--{% include 'footer.html' %}-->
+
+        </div>
+      <div id="main" role="main" class="nine columns offset-by-three">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    {% block footer %}{% endblock %}
+      <script src="{{ theme.url }}/js/jquery-2.2.1.min.js"></script>
+      <script src="{{ theme.url }}/js/jquery.colorbox-min.js"></script>
+      <script src="{{ theme.url }}/js/jquery.touchSwipe.min.js"></script>
+      <script src="{{ theme.url }}/js/echo/echo.min.js"></script>
+
+      {% if 'sigal.plugins.media_page' in settings.plugins %}
+      <script src="{{ theme.url }}/js/app-with-media-page.js"></script>
+      {% else %}
+      <script src="{{ theme.url }}/js/app.js"></script>
+      {% endif %}
+    {% include 'piwik.html' %}
+  </body>
+</html>

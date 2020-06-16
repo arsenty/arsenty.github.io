@@ -1,0 +1,70 @@
+.select
+	position relative
+	&:after
+		content ''
+		display block
+		position absolute
+		z-index 1
+
+	&__control
+		//
+
+	&__placeholder
+		display none
+		visibility hidden
+		opacity 0
+		font-size 0
+		height 0
+		border none
+		outline none
+
+	&_multiple &__control
+		height auto !important
+
+	&_multiple:after
+		content none !important
+
+	&_inline &__control
+		width auto
+
+	&_style_default
+	&_style_default &__placeholder
+		color $form-color-placeholder
+
+		&:after
+			size 6px
+			border-width 0 1px 1px 0
+			border-style solid
+			transform-origin 75% 75%
+			transform rotate(45deg)
+			right 18px
+			top 50%
+			margin-top -4px
+
+	&_style_default &__control
+		height $form-size-input-height
+		min-height $form-size-input-height
+		padding 0 ($form-padding_horizontal * 2) 0 $form-padding_horizontal
+		font-size $form-font-size
+		color $form-color-font
+		background-color $form-color-background
+		border $form-border_default
+		border-radius $form-border-radius
+		+placeholder()
+			color $form-color-placeholder
+
+		&:focus
+			outline none
+			focus($form-color-border_focus)
+
+		&:invalid
+			border-color $form-color-border_invalid
+			&:focus
+				focus($form-color-border_invalid)
+
+		&:disabled
+			background-color $form-color-background_disabled
+
+	&_style_default&_multiple &__control
+		padding 0 $form-padding_horizontal
+

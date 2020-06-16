@@ -1,0 +1,3 @@
+#!/bin/sh$
+GIT_WORK_TREE=/home/admin/web/work/ git checkout -f
+/home/admin/web/work/.git/hooks/sigal-git-hook

@@ -1,0 +1,140 @@
+nav {
+	position: absolute;
+	z-index: 1000;
+}
+
+.ico-close {
+	background-image: url('../images/close.png');
+	background-size: 12px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	margin: -4px 20px;
+}
+
+.menu {
+	float: right;
+	padding: 35px;
+	/*right: 40px;*/
+	/*top: 40px;*/
+	/*z-index: 10000;*/
+	/*list-style: none;*/
+	margin: 0;
+}
+
+.menu li {
+	display: inline-block;
+	/*padding: 30px;*/
+	/*z-index: 1000;*/
+}
+
+
+.nav-up, .nav-down, .nav-left, .nav-right {
+	opacity: 0.5;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all 0.5s ease;
+}
+
+.nav-up, .nav-down {
+	position: fixed;
+	/*margin: 0vh 33%;*/
+	/*max-height: 80vh;*/
+	z-index: 1000;
+	padding: 4vh 0;
+	width: 100%;
+	text-align: center;
+	background-size: 22px;
+}
+.nav-left, .nav-right {
+	position: fixed;
+	/*margin: 0vh 33%;*/
+	/*max-height: 80vh;*/
+	top:0;
+	z-index: 1000;
+	padding:0;
+	width: 70px;
+	height: 100vh;
+	background-size: 11px;
+}
+
+.news--nav .nav-up {
+	top: 25vh;
+}
+
+.news--nav .nav-down {
+	bottom: 25vh;
+}
+
+.nav-up {
+	top: 0;
+	background-image: url('../images/arrow-up.png');
+}
+.nav-down {
+	bottom: 0;
+	background-image: url('../images/arrow-down.png');
+}
+.nav-left {
+	left: 0;
+	background-image: url('../images/arrow-left.png');
+}
+.nav-right {
+	right: 0;
+	background-image: url('../images/arrow-right.png');
+}
+
+.nav-up:hover, .nav-down:hover, .nav-left:hover, .nav-right:hover {
+	opacity: 1;
+}
+
+.artists-list {
+	position: fixed;
+	text-align: center;
+	margin: 10vh 25%;
+	width: 50%;
+	max-height: 80vh;
+	/*padding-top: 30vh;*/
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+.artist-list--i {
+	list-style: none;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	/*line-height: 66px;*/
+	text-transform: uppercase;
+}
+
+.artist-list--i {
+	transition: all 0.5s ease;
+	display: block;
+	/*height: 40px;*/
+	margin: 25px 200px;
+	/*background: gray;*/
+	display: inline-block;
+}
+
+.artist-list--i.active {
+	/*animation: zoomText linear 0.25s;*/
+	/*animation-fill-mode: forwards;*/
+	/*line-height: 40px;*/
+	/*height: 100px;*/
+	/*margin: 60px 0;*/
+	/*background: gray;*/
+	transform: scale(1.75);
+}
+
+.artist-list--i.active a {
+	/*display: block;*/
+	/*transform: scale(1.5);*/
+
+}
+
+.artists-list ul {
+	position: relative;
+	padding: 0;
+}

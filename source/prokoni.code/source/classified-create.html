@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ПРОКОНИ.РУ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.js"></script> <!-- 16 KB -->
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-default navbar-inverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><span class="sr-only">Меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/prokoni-logo.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div id="menu" class="collapse navbar-collapse">
+              <div class="col-md-9">
+                <ul class="linklist nav navbar-nav">
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Статьи</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="article-list.html">Новичкам</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Совет профи</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Лошадь</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Информация</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Репортаж</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Обзор СМИ</a></li>
+                      <li class="divider"></li>
+                      <li><a tabindex="-1" href="article-list.html">Спец. страницы</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Истории</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Разное</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Каталоги</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="club-list.html">Клубы</a></li>
+                      <li><a tabindex="-1" href="shop-list.html">Магазины</a></li>
+                      <li><a tabindex="-1" href="site-list.html">Сайты</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Объявления</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="classified-list.html">Работа и услуги</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа покупка</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа лошадей</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Форумы</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Я и лошадка</a></li>
+                      <li><a tabindex="-1" href="#">Трибуна</a></li>
+                      <li><a tabindex="-1" href="#">События</a></li>
+                      <li><a tabindex="-1" href="#">Ветеринария</a></li>
+                      <li><a tabindex="-1" href="#">Творчество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="linklist nav navbar-nav pull-right">
+                  <li><a href="user-login.html" class="text-uppercase"><span class="icon -left fa fa-sign-in"></span><b>Вход</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<section class="header-section -classified-create">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="page breadcrumb pull-left">
+          <li><a href="index.html"><span class="fa fa-home"></span></a></li>
+          <li><a href="">Продажа лощадей</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline pull-right">
+          <li><a href="">Мои объявления</a></li>
+          <li><a href="classified_list.html" class="btn btn-default"><span class="hidden-xs">Сохранить в черновиках</span><span class="hidden-sm hidden-md hidden-lg icon fa fa-plus"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1><span class="header-icon icons8-year-of-horse"></span>Подать объявление
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content-section -classified-create">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form class="form-horizontal"> 
+          <div class="form-group">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="h2 h4">Обязательная информация</div>
+            </div>
+          </div>
+          <div class="form-group form-group-lg">
+            <label for="Announcements_name" class="col-md-3 required control-label">Имя лошади</label>
+            <div class="col-md-6">
+              <input maxlength="255" name="Announcements[name]" type="text" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_vh" class="col-md-3 required control-label">Высота в холке, см</label>
+            <div class="col-md-2">
+              <input name="Announcements[vh]" type="text" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_sex" class="col-md-3 required control-label">Пол</label>
+            <div class="col-sm-8">
+              <label class="radio-inline">
+                <input type="radio" name="optionsRadios" value="жеребец" checked="checked">Жеребец
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optionsRadios" value="мерин">Мерин
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optionsRadios" value="кобыла">Кобыла
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_colour" class="col-md-3 control-label">Масть</label>
+            <div class="col-sm-6">
+              <input name="Announcements[colour]" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_breed" class="col-md-3 control-label">Порода</label>
+            <div class="col-sm-4">
+              <select name="Announcements[breed]" class="form-control">
+                <option value="Б/П">Без породы</option>
+                <option value="Адаевская лошадь">Адаевская лошадь</option>
+                <option value="Алтайская порода">Алтайская порода</option>
+                <option value="Американская верховая порода">Американская верховая порода</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_age" class="col-md-3 required control-label">Возраст</label>
+            <div class="col-md-2">
+              <select name="Announcements[age]" class="form-control">
+                <option value=""></option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_spec" class="col-md-3 control-label">Специализация</label>
+            <div class="col-md-3">
+              <select name="Announcements[spec]" class="form-control">
+                <option value="-"></option>
+                <option value="выездка">выездка</option>
+                <option value="конкур">конкур</option>
+                <option value="троеборье">троеборье</option>
+                <option value="бега">бега</option>
+                <option value="скачки">скачки</option>
+                <option value="вестерн">вестерн</option>
+                <option value="другое">другое</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_region" class="col-md-3 control-label">Местоположение</label>
+            <div class="col-md-3">
+              <select name="Announcements[region]" class="form-control">
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_price" class="col-md-3 required control-label">Цена</label>
+            <div class="col-md-2">
+              <input name="Announcements[price]" type="text" value="" class="col-md-3 form-control">
+            </div>
+            <div class="col-md-2">
+              <select name="Announcements[currency]" class="form-control">
+                <option value="rub">Руб.</option>
+                <option value="eur">EUR</option>
+                <option value="usd">USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="h2 h4">Дополнительная информация</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_parents" class="col-md-3 control-label">Родители</label>
+            <div class="col-sm-6">
+              <input name="Announcements[parents]" type="text" class="col-md-6 form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_docs" class="col-md-3 control-label">Документы</label>
+            <div class="col-sm-6">
+              <textarea rows="6" cols="50" name="Announcements[docs]" class="col-md-6 form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_details" class="col-md-3 control-label">Детали</label>
+            <div class="col-sm-6">
+              <textarea rows="6" cols="50" name="Announcements[details]" class="col-md-6 form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_video" class="col-md-3 control-label">Видео</label>
+            <div class="col-sm-6">
+              <input name="Announcements[video]" placeholder="" class="col-md-6 form-control">
+              <div class="help-block">Например, ссылка на Youtube</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_photo" class="col-md-3 required control-label">Фотографии</label>
+            <div class="col-sm-6">
+              <div class="jumbotron text-center"><a role="button">Выберите файлы</a>&nbsp; или перетяните их сюда</div>
+              <div class="form-group"></div>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="h2 h4">Контактная информация</div>
+            </div>
+          </div>
+          <div class="form-group form-group-lg">
+            <label for="Announcements_contact" class="col-md-3 required control-label">Телефон или эл. почта</label>
+            <div class="col-md-3">
+              <input name="Announcements[contact]" type="text" class="col-md-6 form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Announcements_contact" class="col-md-3 required control-label">Контактное лицо</label>
+            <div class="col-sm-6">
+              <textarea rows="2" cols="50" name="Announcements[contact]" class="col-md-6 form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6 col-md-offset-3">
+              <button type="submit" class="btn btn-primary btn-lg">Подать объявление</button>
+              <div class="help-block">Ваше объявление будет опубликовано сразу после проверки</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Sitemap Links -->
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Статьи</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Каталоги</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Объявления</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Форумы</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <!-- User Links -->
+        <ul class="list-unstyled">
+          <li><b href="#">Username</b></li>
+          <li><a href="#">Мой дневник</a></li>
+          <li><a href="#">Мои объявления</a></li>
+          <li><a href="#">Настройки</a></li>
+          <li><a href="#">Выйти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+        <div class="row">
+          <div class="col-md-9">
+            <!-- Languages Links -->
+            <ul class="list-unstyled list-inline">
+              <li><img src="images/prokoni-logo--footer.png" alt=""></li>
+              <li>
+                <p><b>Россия</b></p>
+              </li>
+              <li>
+                <p><a href="#">France</a></p>
+              </li>
+              <li>
+                <p><a href="#">España</a></p>
+              </li>
+              <li>
+                <p><a href="#">Italia</a></p>
+              </li>
+            </ul>
+            <!-- About Links -->
+            <ul class="list-unstyled list-inline">
+              <li>&copy; 2005—2014</li>
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Реклама на сайте</a></li>
+              <li><a href="#">Контактная информация</a></li>
+            </ul>
+            <!-- Developers Links -->
+            <ul class="list-unstyled">
+              <li>
+                <p>Разработка сайта — <a href="#">Arsenty </a>и <a href="#">Sdemch</a>, icons by <a href="#">Icons8</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <!-- Social Links-->
+            <ul class="list-unstyled">
+              <li><b>Мы в социальных сетях</b></li>
+              <li><a href="#">Твиттер</a></li>
+              <li><a href="#">Фейсбук</a></li>
+              <li><a href="#">Вконтакте</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

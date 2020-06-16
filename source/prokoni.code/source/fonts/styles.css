@@ -1,0 +1,661 @@
+/*
+  Icon Font: font_icons8
+*/
+
+@font-face {
+  font-family: "font_icons8";
+  src: url("./font_icons8_9f08ae7b3cc6a54c427c69fd3a0fc24d.eot");
+  src: url("./font_icons8_9f08ae7b3cc6a54c427c69fd3a0fc24d.eot?#iefix") format("embedded-opentype"),
+       url("./font_icons8_9f08ae7b3cc6a54c427c69fd3a0fc24d.woff") format("woff"),
+       url("./font_icons8_9f08ae7b3cc6a54c427c69fd3a0fc24d.ttf") format("truetype"),
+       url("./font_icons8_9f08ae7b3cc6a54c427c69fd3a0fc24d.svg#font_icons8") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "font_icons8";
+    src: url("./font_icons8_9f08ae7b3cc6a54c427c69fd3a0fc24d.svg#font_icons8") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icons8-advance:before,
+.icons8-android-os:before,
+.icons8-armchair:before,
+.icons8-autumn:before,
+.icons8-background-color:before,
+.icons8-ball-point-pen:before,
+.icons8-banknotes:before,
+.icons8-basketball:before,
+.icons8-bat:before,
+.icons8-bell-service:before,
+.icons8-bell-service-2:before,
+.icons8-big-ben:before,
+.icons8-billing:before,
+.icons8-birthday:before,
+.icons8-birthday-2:before,
+.icons8-birthday-cake:before,
+.icons8-birthday-cake-2:before,
+.icons8-bookmark:before,
+.icons8-brick:before,
+.icons8-briefcase:before,
+.icons8-broom:before,
+.icons8-broom-2:before,
+.icons8-brush:before,
+.icons8-bug:before,
+.icons8-bug-2:before,
+.icons8-businessman:before,
+.icons8-bust:before,
+.icons8-bust-2:before,
+.icons8-butterfly:before,
+.icons8-butterfly-2:before,
+.icons8-button:before,
+.icons8-cafe:before,
+.icons8-calendar:before,
+.icons8-calendar-2:before,
+.icons8-cancel:before,
+.icons8-carousel:before,
+.icons8-cash-receiving:before,
+.icons8-cash-receiving-2:before,
+.icons8-cash-receiving-3:before,
+.icons8-championship-belt:before,
+.icons8-championship-belt-2:before,
+.icons8-checkmark:before,
+.icons8-checkmark-2:before,
+.icons8-checkmark-3:before,
+.icons8-checkmark-4:before,
+.icons8-child-new-post:before,
+.icons8-christmas-star:before,
+.icons8-christmas-tree:before,
+.icons8-chromatography:before,
+.icons8-chrome:before,
+.icons8-class:before,
+.icons8-classroom:before,
+.icons8-clock:before,
+.icons8-clock-2:before,
+.icons8-close:before,
+.icons8-close-up-mode:before,
+.icons8-coat:before,
+.icons8-coat-2:before,
+.icons8-coat-3:before,
+.icons8-coffee:before,
+.icons8-collaboration:before,
+.icons8-collapse-arrow:before,
+.icons8-conference:before,
+.icons8-conference-call:before,
+.icons8-cornet:before,
+.icons8-courses:before,
+.icons8-cupcake:before,
+.icons8-date:before,
+.icons8-design:before,
+.icons8-directions:before,
+.icons8-discount:before,
+.icons8-doctor-suitecase:before,
+.icons8-documentary:before,
+.icons8-domain:before,
+.icons8-doughnut-chart:before,
+.icons8-down:before,
+.icons8-down-2:before,
+.icons8-down-3:before,
+.icons8-down4:before,
+.icons8-download:before,
+.icons8-duck:before,
+.icons8-edit-image:before,
+.icons8-edit-image-2:before,
+.icons8-edit-property:before,
+.icons8-eggs:before,
+.icons8-elective:before,
+.icons8-electricity:before,
+.icons8-electricity-2:before,
+.icons8-email:before,
+.icons8-enter:before,
+.icons8-equestrian-statue:before,
+.icons8-equestrian-statue-2:before,
+.icons8-equestrian-statue-3:before,
+.icons8-error:before,
+.icons8-error-2:before,
+.icons8-exit:before,
+.icons8-expand:before,
+.icons8-expand-arrow:before,
+.icons8-expand2:before,
+.icons8-external-link:before,
+.icons8-external-link-2:before,
+.icons8-facebook:before,
+.icons8-facebook-2:before,
+.icons8-facebook-3:before,
+.icons8-faq:before,
+.icons8-feedback:before,
+.icons8-firefox:before,
+.icons8-flower:before,
+.icons8-forward:before,
+.icons8-full-moon:before,
+.icons8-gallery:before,
+.icons8-gardener:before,
+.icons8-generic-text:before,
+.icons8-geo-fence:before,
+.icons8-geography:before,
+.icons8-globe:before,
+.icons8-globe-2:before,
+.icons8-globe-3:before,
+.icons8-google-web-search:before,
+.icons8-group:before,
+.icons8-group-2:before,
+.icons8-hacking:before,
+.icons8-hacking-2:before,
+.icons8-hair-band:before,
+.icons8-hammer:before,
+.icons8-hammer-2:before,
+.icons8-headset:before,
+.icons8-hearts:before,
+.icons8-help:before,
+.icons8-home:before,
+.icons8-home-2:before,
+.icons8-horror:before,
+.icons8-horse:before,
+.icons8-horse-2:before,
+.icons8-horseshoe:before,
+.icons8-horseshoe-2:before,
+.icons8-horseshoe-3:before,
+.icons8-hospital-3:before,
+.icons8-ipad:before,
+.icons8-iphone:before,
+.icons8-jacket:before,
+.icons8-knight:before,
+.icons8-knight-2:before,
+.icons8-knight-3:before,
+.icons8-leaf:before,
+.icons8-left:before,
+.icons8-left-2:before,
+.icons8-like:before,
+.icons8-link:before,
+.icons8-link-2:before,
+.icons8-lion-statue:before,
+.icons8-literature:before,
+.icons8-lock:before,
+.icons8-lock-2:before,
+.icons8-login:before,
+.icons8-manager:before,
+.icons8-marker:before,
+.icons8-marker-2:before,
+.icons8-medal:before,
+.icons8-medal2:before,
+.icons8-medal2-2:before,
+.icons8-megaphone:before,
+.icons8-megaphone2:before,
+.icons8-message:before,
+.icons8-message-2:before,
+.icons8-message-3:before,
+.icons8-modern-art:before,
+.icons8-modern-statue:before,
+.icons8-money-bag:before,
+.icons8-money-box:before,
+.icons8-moneybox:before,
+.icons8-month-view:before,
+.icons8-multiple-devices:before,
+.icons8-multiple-devices-2:before,
+.icons8-museum:before,
+.icons8-museum-2:before,
+.icons8-museum-3:before,
+.icons8-network-cable:before,
+.icons8-new:before,
+.icons8-new-post:before,
+.icons8-news:before,
+.icons8-news-2:before,
+.icons8-next:before,
+.icons8-old-time-camera:before,
+.icons8-one-finger:before,
+.icons8-online-support:before,
+.icons8-opera:before,
+.icons8-outline-star:before,
+.icons8-paint-brush:before,
+.icons8-paint-palette:before,
+.icons8-pavilion:before,
+.icons8-pavilion-2:before,
+.icons8-pdf:before,
+.icons8-pen:before,
+.icons8-phone:before,
+.icons8-phone2:before,
+.icons8-pin:before,
+.icons8-pin-2:before,
+.icons8-planner:before,
+.icons8-pliers:before,
+.icons8-portrait:before,
+.icons8-portrait-mode:before,
+.icons8-previous:before,
+.icons8-previous-2:before,
+.icons8-price-tag:before,
+.icons8-pumpkin:before,
+.icons8-purchase-order:before,
+.icons8-purse:before,
+.icons8-purse-2:before,
+.icons8-purse-3:before,
+.icons8-quote:before,
+.icons8-rating:before,
+.icons8-rattle:before,
+.icons8-read-message:before,
+.icons8-realtime-protection:before,
+.icons8-realtime-protection-2:before,
+.icons8-resize-four-directions:before,
+.icons8-resize-vertical:before,
+.icons8-resize-vertical-2:before,
+.icons8-right:before,
+.icons8-right-2:before,
+.icons8-romance:before,
+.icons8-roofing:before,
+.icons8-rules:before,
+.icons8-rules-2:before,
+.icons8-safari:before,
+.icons8-sale:before,
+.icons8-sale-2:before,
+.icons8-sale-3:before,
+.icons8-sale-4:before,
+.icons8-security-checked:before,
+.icons8-security-checked-2:before,
+.icons8-services:before,
+.icons8-settings:before,
+.icons8-settings-2:before,
+.icons8-shop:before,
+.icons8-shop-2:before,
+.icons8-shopping-bag:before,
+.icons8-shopping-bag-2:before,
+.icons8-signpost:before,
+.icons8-skype:before,
+.icons8-skype-2:before,
+.icons8-sofa:before,
+.icons8-speech-bubble:before,
+.icons8-spring:before,
+.icons8-star:before,
+.icons8-star-2:before,
+.icons8-star-3:before,
+.icons8-statue:before,
+.icons8-student:before,
+.icons8-students:before,
+.icons8-suitcase:before,
+.icons8-summer:before,
+.icons8-support:before,
+.icons8-swiss-army-knife:before,
+.icons8-swiss-army-knife-2:before,
+.icons8-system-information:before,
+.icons8-system-information-2:before,
+.icons8-tag:before,
+.icons8-teapot:before,
+.icons8-teddybear:before,
+.icons8-three-fingers:before,
+.icons8-thumb-up:before,
+.icons8-thumbs-up:before,
+.icons8-today:before,
+.icons8-today-2:before,
+.icons8-tomato:before,
+.icons8-topic:before,
+.icons8-topic-2:before,
+.icons8-torrent:before,
+.icons8-tree:before,
+.icons8-triller:before,
+.icons8-trophy:before,
+.icons8-trophy-2:before,
+.icons8-trophy-3:before,
+.icons8-trophy-4:before,
+.icons8-trousers:before,
+.icons8-trousers-2:before,
+.icons8-tv-show:before,
+.icons8-twitter:before,
+.icons8-two-fingers:before,
+.icons8-umbrella:before,
+.icons8-umbrella-2:before,
+.icons8-up:before,
+.icons8-up-2:before,
+.icons8-up4:before,
+.icons8-upload:before,
+.icons8-usb-connected:before,
+.icons8-usb-off:before,
+.icons8-user:before,
+.icons8-user-female3:before,
+.icons8-user-male:before,
+.icons8-user-male3:before,
+.icons8-video-call:before,
+.icons8-virus:before,
+.icons8-virus-2:before,
+.icons8-vk-com:before,
+.icons8-vkontakte:before,
+.icons8-vkontakte-2:before,
+.icons8-wallet:before,
+.icons8-wallet-2:before,
+.icons8-wheel:before,
+.icons8-wheel-2:before,
+.icons8-whole-hand:before,
+.icons8-windows-client:before,
+.icons8-windows-logo:before,
+.icons8-winter:before,
+.icons8-year-of-horse:before,
+.icons8-year-of-horse-2:before,
+.icons8-year-of-horse-3:before,
+.icons8-year-of-horse-4:before {
+  display: inline-block;
+  font-family: "font_icons8";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icons8-advance:before { content: "\f100"; }
+.icons8-android-os:before { content: "\f101"; }
+.icons8-armchair:before { content: "\f102"; }
+.icons8-autumn:before { content: "\f103"; }
+.icons8-background-color:before { content: "\f104"; }
+.icons8-ball-point-pen:before { content: "\f105"; }
+.icons8-banknotes:before { content: "\f106"; }
+.icons8-basketball:before { content: "\f107"; }
+.icons8-bat:before { content: "\f108"; }
+.icons8-bell-service:before { content: "\f109"; }
+.icons8-bell-service-2:before { content: "\f10a"; }
+.icons8-big-ben:before { content: "\f10b"; }
+.icons8-billing:before { content: "\f10c"; }
+.icons8-birthday:before { content: "\f10d"; }
+.icons8-birthday-2:before { content: "\f10e"; }
+.icons8-birthday-cake:before { content: "\f10f"; }
+.icons8-birthday-cake-2:before { content: "\f110"; }
+.icons8-bookmark:before { content: "\f111"; }
+.icons8-brick:before { content: "\f112"; }
+.icons8-briefcase:before { content: "\f113"; }
+.icons8-broom:before { content: "\f114"; }
+.icons8-broom-2:before { content: "\f115"; }
+.icons8-brush:before { content: "\f116"; }
+.icons8-bug:before { content: "\f117"; }
+.icons8-bug-2:before { content: "\f118"; }
+.icons8-businessman:before { content: "\f119"; }
+.icons8-bust:before { content: "\f11a"; }
+.icons8-bust-2:before { content: "\f11b"; }
+.icons8-butterfly:before { content: "\f11c"; }
+.icons8-butterfly-2:before { content: "\f11d"; }
+.icons8-button:before { content: "\f11e"; }
+.icons8-cafe:before { content: "\f11f"; }
+.icons8-calendar:before { content: "\f120"; }
+.icons8-calendar-2:before { content: "\f121"; }
+.icons8-cancel:before { content: "\f122"; }
+.icons8-carousel:before { content: "\f123"; }
+.icons8-cash-receiving:before { content: "\f124"; }
+.icons8-cash-receiving-2:before { content: "\f125"; }
+.icons8-cash-receiving-3:before { content: "\f126"; }
+.icons8-championship-belt:before { content: "\f127"; }
+.icons8-championship-belt-2:before { content: "\f128"; }
+.icons8-checkmark:before { content: "\f129"; }
+.icons8-checkmark-2:before { content: "\f12a"; }
+.icons8-checkmark-3:before { content: "\f12b"; }
+.icons8-checkmark-4:before { content: "\f12c"; }
+.icons8-child-new-post:before { content: "\f12d"; }
+.icons8-christmas-star:before { content: "\f12e"; }
+.icons8-christmas-tree:before { content: "\f12f"; }
+.icons8-chromatography:before { content: "\f130"; }
+.icons8-chrome:before { content: "\f131"; }
+.icons8-class:before { content: "\f132"; }
+.icons8-classroom:before { content: "\f133"; }
+.icons8-clock:before { content: "\f134"; }
+.icons8-clock-2:before { content: "\f135"; }
+.icons8-close:before { content: "\f136"; }
+.icons8-close-up-mode:before { content: "\f137"; }
+.icons8-coat:before { content: "\f138"; }
+.icons8-coat-2:before { content: "\f139"; }
+.icons8-coat-3:before { content: "\f13a"; }
+.icons8-coffee:before { content: "\f13b"; }
+.icons8-collaboration:before { content: "\f13c"; }
+.icons8-collapse-arrow:before { content: "\f13d"; }
+.icons8-conference:before { content: "\f13e"; }
+.icons8-conference-call:before { content: "\f13f"; }
+.icons8-cornet:before { content: "\f140"; }
+.icons8-courses:before { content: "\f141"; }
+.icons8-cupcake:before { content: "\f142"; }
+.icons8-date:before { content: "\f143"; }
+.icons8-design:before { content: "\f144"; }
+.icons8-directions:before { content: "\f145"; }
+.icons8-discount:before { content: "\f146"; }
+.icons8-doctor-suitecase:before { content: "\f147"; }
+.icons8-documentary:before { content: "\f148"; }
+.icons8-domain:before { content: "\f149"; }
+.icons8-doughnut-chart:before { content: "\f14a"; }
+.icons8-down:before { content: "\f14b"; }
+.icons8-down-2:before { content: "\f14c"; }
+.icons8-down-3:before { content: "\f14d"; }
+.icons8-down4:before { content: "\f14e"; }
+.icons8-download:before { content: "\f14f"; }
+.icons8-duck:before { content: "\f150"; }
+.icons8-edit-image:before { content: "\f151"; }
+.icons8-edit-image-2:before { content: "\f152"; }
+.icons8-edit-property:before { content: "\f153"; }
+.icons8-eggs:before { content: "\f154"; }
+.icons8-elective:before { content: "\f155"; }
+.icons8-electricity:before { content: "\f156"; }
+.icons8-electricity-2:before { content: "\f157"; }
+.icons8-email:before { content: "\f158"; }
+.icons8-enter:before { content: "\f159"; }
+.icons8-equestrian-statue:before { content: "\f15a"; }
+.icons8-equestrian-statue-2:before { content: "\f15b"; }
+.icons8-equestrian-statue-3:before { content: "\f15c"; }
+.icons8-error:before { content: "\f15d"; }
+.icons8-error-2:before { content: "\f15e"; }
+.icons8-exit:before { content: "\f15f"; }
+.icons8-expand:before { content: "\f160"; }
+.icons8-expand-arrow:before { content: "\f161"; }
+.icons8-expand2:before { content: "\f162"; }
+.icons8-external-link:before { content: "\f163"; }
+.icons8-external-link-2:before { content: "\f164"; }
+.icons8-facebook:before { content: "\f165"; }
+.icons8-facebook-2:before { content: "\f166"; }
+.icons8-facebook-3:before { content: "\f167"; }
+.icons8-faq:before { content: "\f168"; }
+.icons8-feedback:before { content: "\f169"; }
+.icons8-firefox:before { content: "\f16a"; }
+.icons8-flower:before { content: "\f16b"; }
+.icons8-forward:before { content: "\f16c"; }
+.icons8-full-moon:before { content: "\f16d"; }
+.icons8-gallery:before { content: "\f16e"; }
+.icons8-gardener:before { content: "\f16f"; }
+.icons8-generic-text:before { content: "\f170"; }
+.icons8-geo-fence:before { content: "\f171"; }
+.icons8-geography:before { content: "\f172"; }
+.icons8-globe:before { content: "\f173"; }
+.icons8-globe-2:before { content: "\f174"; }
+.icons8-globe-3:before { content: "\f175"; }
+.icons8-google-web-search:before { content: "\f176"; }
+.icons8-group:before { content: "\f177"; }
+.icons8-group-2:before { content: "\f178"; }
+.icons8-hacking:before { content: "\f179"; }
+.icons8-hacking-2:before { content: "\f17a"; }
+.icons8-hair-band:before { content: "\f17b"; }
+.icons8-hammer:before { content: "\f17c"; }
+.icons8-hammer-2:before { content: "\f17d"; }
+.icons8-headset:before { content: "\f17e"; }
+.icons8-hearts:before { content: "\f17f"; }
+.icons8-help:before { content: "\f180"; }
+.icons8-home:before { content: "\f181"; }
+.icons8-home-2:before { content: "\f182"; }
+.icons8-horror:before { content: "\f183"; }
+.icons8-horse:before { content: "\f184"; }
+.icons8-horse-2:before { content: "\f185"; }
+.icons8-horseshoe:before { content: "\f186"; }
+.icons8-horseshoe-2:before { content: "\f187"; }
+.icons8-horseshoe-3:before { content: "\f188"; }
+.icons8-hospital-3:before { content: "\f189"; }
+.icons8-ipad:before { content: "\f18a"; }
+.icons8-iphone:before { content: "\f18b"; }
+.icons8-jacket:before { content: "\f18c"; }
+.icons8-knight:before { content: "\f18d"; }
+.icons8-knight-2:before { content: "\f18e"; }
+.icons8-knight-3:before { content: "\f18f"; }
+.icons8-leaf:before { content: "\f190"; }
+.icons8-left:before { content: "\f191"; }
+.icons8-left-2:before { content: "\f192"; }
+.icons8-like:before { content: "\f193"; }
+.icons8-link:before { content: "\f194"; }
+.icons8-link-2:before { content: "\f195"; }
+.icons8-lion-statue:before { content: "\f196"; }
+.icons8-literature:before { content: "\f197"; }
+.icons8-lock:before { content: "\f198"; }
+.icons8-lock-2:before { content: "\f199"; }
+.icons8-login:before { content: "\f19a"; }
+.icons8-manager:before { content: "\f19b"; }
+.icons8-marker:before { content: "\f19c"; }
+.icons8-marker-2:before { content: "\f19d"; }
+.icons8-medal:before { content: "\f19e"; }
+.icons8-medal2:before { content: "\f19f"; }
+.icons8-medal2-2:before { content: "\f1a0"; }
+.icons8-megaphone:before { content: "\f1a1"; }
+.icons8-megaphone2:before { content: "\f1a2"; }
+.icons8-message:before { content: "\f1a3"; }
+.icons8-message-2:before { content: "\f1a4"; }
+.icons8-message-3:before { content: "\f1a5"; }
+.icons8-modern-art:before { content: "\f1a6"; }
+.icons8-modern-statue:before { content: "\f1a7"; }
+.icons8-money-bag:before { content: "\f1a8"; }
+.icons8-money-box:before { content: "\f1a9"; }
+.icons8-moneybox:before { content: "\f1aa"; }
+.icons8-month-view:before { content: "\f1ab"; }
+.icons8-multiple-devices:before { content: "\f1ac"; }
+.icons8-multiple-devices-2:before { content: "\f1ad"; }
+.icons8-museum:before { content: "\f1ae"; }
+.icons8-museum-2:before { content: "\f1af"; }
+.icons8-museum-3:before { content: "\f1b0"; }
+.icons8-network-cable:before { content: "\f1b1"; }
+.icons8-new:before { content: "\f1b2"; }
+.icons8-new-post:before { content: "\f1b3"; }
+.icons8-news:before { content: "\f1b4"; }
+.icons8-news-2:before { content: "\f1b5"; }
+.icons8-next:before { content: "\f1b6"; }
+.icons8-old-time-camera:before { content: "\f1b7"; }
+.icons8-one-finger:before { content: "\f1b8"; }
+.icons8-online-support:before { content: "\f1b9"; }
+.icons8-opera:before { content: "\f1ba"; }
+.icons8-outline-star:before { content: "\f1bb"; }
+.icons8-paint-brush:before { content: "\f1bc"; }
+.icons8-paint-palette:before { content: "\f1bd"; }
+.icons8-pavilion:before { content: "\f1be"; }
+.icons8-pavilion-2:before { content: "\f1bf"; }
+.icons8-pdf:before { content: "\f1c0"; }
+.icons8-pen:before { content: "\f1c1"; }
+.icons8-phone:before { content: "\f1c2"; }
+.icons8-phone2:before { content: "\f1c3"; }
+.icons8-pin:before { content: "\f1c4"; }
+.icons8-pin-2:before { content: "\f1c5"; }
+.icons8-planner:before { content: "\f1c6"; }
+.icons8-pliers:before { content: "\f1c7"; }
+.icons8-portrait:before { content: "\f1c8"; }
+.icons8-portrait-mode:before { content: "\f1c9"; }
+.icons8-previous:before { content: "\f1ca"; }
+.icons8-previous-2:before { content: "\f1cb"; }
+.icons8-price-tag:before { content: "\f1cc"; }
+.icons8-pumpkin:before { content: "\f1cd"; }
+.icons8-purchase-order:before { content: "\f1ce"; }
+.icons8-purse:before { content: "\f1cf"; }
+.icons8-purse-2:before { content: "\f1d0"; }
+.icons8-purse-3:before { content: "\f1d1"; }
+.icons8-quote:before { content: "\f1d2"; }
+.icons8-rating:before { content: "\f1d3"; }
+.icons8-rattle:before { content: "\f1d4"; }
+.icons8-read-message:before { content: "\f1d5"; }
+.icons8-realtime-protection:before { content: "\f1d6"; }
+.icons8-realtime-protection-2:before { content: "\f1d7"; }
+.icons8-resize-four-directions:before { content: "\f1d8"; }
+.icons8-resize-vertical:before { content: "\f1d9"; }
+.icons8-resize-vertical-2:before { content: "\f1da"; }
+.icons8-right:before { content: "\f1db"; }
+.icons8-right-2:before { content: "\f1dc"; }
+.icons8-romance:before { content: "\f1dd"; }
+.icons8-roofing:before { content: "\f1de"; }
+.icons8-rules:before { content: "\f1df"; }
+.icons8-rules-2:before { content: "\f1e0"; }
+.icons8-safari:before { content: "\f1e1"; }
+.icons8-sale:before { content: "\f1e2"; }
+.icons8-sale-2:before { content: "\f1e3"; }
+.icons8-sale-3:before { content: "\f1e4"; }
+.icons8-sale-4:before { content: "\f1e5"; }
+.icons8-security-checked:before { content: "\f1e6"; }
+.icons8-security-checked-2:before { content: "\f1e7"; }
+.icons8-services:before { content: "\f1e8"; }
+.icons8-settings:before { content: "\f1e9"; }
+.icons8-settings-2:before { content: "\f1ea"; }
+.icons8-shop:before { content: "\f1eb"; }
+.icons8-shop-2:before { content: "\f1ec"; }
+.icons8-shopping-bag:before { content: "\f1ed"; }
+.icons8-shopping-bag-2:before { content: "\f1ee"; }
+.icons8-signpost:before { content: "\f1ef"; }
+.icons8-skype:before { content: "\f1f0"; }
+.icons8-skype-2:before { content: "\f1f1"; }
+.icons8-sofa:before { content: "\f1f2"; }
+.icons8-speech-bubble:before { content: "\f1f3"; }
+.icons8-spring:before { content: "\f1f4"; }
+.icons8-star:before { content: "\f1f5"; }
+.icons8-star-2:before { content: "\f1f6"; }
+.icons8-star-3:before { content: "\f1f7"; }
+.icons8-statue:before { content: "\f1f8"; }
+.icons8-student:before { content: "\f1f9"; }
+.icons8-students:before { content: "\f1fa"; }
+.icons8-suitcase:before { content: "\f1fb"; }
+.icons8-summer:before { content: "\f1fc"; }
+.icons8-support:before { content: "\f1fd"; }
+.icons8-swiss-army-knife:before { content: "\f1fe"; }
+.icons8-swiss-army-knife-2:before { content: "\f1ff"; }
+.icons8-system-information:before { content: "\f200"; }
+.icons8-system-information-2:before { content: "\f201"; }
+.icons8-tag:before { content: "\f202"; }
+.icons8-teapot:before { content: "\f203"; }
+.icons8-teddybear:before { content: "\f204"; }
+.icons8-three-fingers:before { content: "\f205"; }
+.icons8-thumb-up:before { content: "\f206"; }
+.icons8-thumbs-up:before { content: "\f207"; }
+.icons8-today:before { content: "\f208"; }
+.icons8-today-2:before { content: "\f209"; }
+.icons8-tomato:before { content: "\f20a"; }
+.icons8-topic:before { content: "\f20b"; }
+.icons8-topic-2:before { content: "\f20c"; }
+.icons8-torrent:before { content: "\f20d"; }
+.icons8-tree:before { content: "\f20e"; }
+.icons8-triller:before { content: "\f20f"; }
+.icons8-trophy:before { content: "\f210"; }
+.icons8-trophy-2:before { content: "\f211"; }
+.icons8-trophy-3:before { content: "\f212"; }
+.icons8-trophy-4:before { content: "\f213"; }
+.icons8-trousers:before { content: "\f214"; }
+.icons8-trousers-2:before { content: "\f215"; }
+.icons8-tv-show:before { content: "\f216"; }
+.icons8-twitter:before { content: "\f217"; }
+.icons8-two-fingers:before { content: "\f218"; }
+.icons8-umbrella:before { content: "\f219"; }
+.icons8-umbrella-2:before { content: "\f21a"; }
+.icons8-up:before { content: "\f21b"; }
+.icons8-up-2:before { content: "\f21c"; }
+.icons8-up4:before { content: "\f21d"; }
+.icons8-upload:before { content: "\f21e"; }
+.icons8-usb-connected:before { content: "\f21f"; }
+.icons8-usb-off:before { content: "\f220"; }
+.icons8-user:before { content: "\f221"; }
+.icons8-user-female3:before { content: "\f222"; }
+.icons8-user-male:before { content: "\f223"; }
+.icons8-user-male3:before { content: "\f224"; }
+.icons8-video-call:before { content: "\f225"; }
+.icons8-virus:before { content: "\f226"; }
+.icons8-virus-2:before { content: "\f227"; }
+.icons8-vk-com:before { content: "\f228"; }
+.icons8-vkontakte:before { content: "\f229"; }
+.icons8-vkontakte-2:before { content: "\f22a"; }
+.icons8-wallet:before { content: "\f22b"; }
+.icons8-wallet-2:before { content: "\f22c"; }
+.icons8-wheel:before { content: "\f22d"; }
+.icons8-wheel-2:before { content: "\f22e"; }
+.icons8-whole-hand:before { content: "\f22f"; }
+.icons8-windows-client:before { content: "\f230"; }
+.icons8-windows-logo:before { content: "\f231"; }
+.icons8-winter:before { content: "\f232"; }
+.icons8-year-of-horse:before { content: "\f233"; }
+.icons8-year-of-horse-2:before { content: "\f234"; }
+.icons8-year-of-horse-3:before { content: "\f235"; }
+.icons8-year-of-horse-4:before { content: "\f236"; }

@@ -1,0 +1,72 @@
+/* Page */
+
+h1, h2, h3, h4, h5, h6, b {
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	font-weight: 700;
+}
+
+p {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+a {
+	cursor: pointer;
+}
+
+.page {
+	margin: auto;
+	background: black;
+	color: #fff;
+	font: 14px "Montserrat", sans-serif;
+	line-height: 18px;
+	}
+
+	.welcome {
+		padding: 30vh 0 2vh 0;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+		}
+
+.link {
+	text-decoration: underline;
+}
+
+.contact {
+}
+.contact--links {
+	float: left;
+	width: 20%;
+	margin-left: 20%;
+	/*margin-top: 4em;*/
+	/*padding-right: 60px;*/
+	text-align: right;
+	line-height: 24px;
+}
+
+.contact--links big {
+	text-transform: uppercase;
+	display: block;
+	padding: 50px 0 5px 0;
+}
+
+.contact--about {
+	/*padding-left: 60px;*/
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 42px;
+	width: 25%;
+	margin-right: 30%;
+	float: right;
+}
+
+.news--i {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 	50%;
+}
+

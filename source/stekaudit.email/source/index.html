@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width"/><script src="https://tdcdn.blob.core.windows.net/toolbar/assets/prod/td.js" async="async" data-trackduck-id="54bf64da259998893012fff2"></script><style>/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Client-specific Styles & Reset */
+
+#outlook a { 
+  padding:0; 
+} 
+
+body{ 
+  width:100% !important; 
+  min-width: 100%;
+  -webkit-text-size-adjust:100%; 
+  -ms-text-size-adjust:100%; 
+  margin:0; 
+  padding:0;
+}
+
+.ExternalClass { 
+  width:100%;
+} 
+
+.ExternalClass, 
+.ExternalClass p, 
+.ExternalClass span, 
+.ExternalClass font, 
+.ExternalClass td, 
+.ExternalClass div { 
+  line-height: 100%; 
+} 
+
+#backgroundTable { 
+  margin:0; 
+  padding:0; 
+  width:100% !important; 
+  line-height: 100% !important; 
+}
+
+img { 
+  outline:none; 
+  text-decoration:none; 
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%; 
+  float: left; 
+  clear: both; 
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: 580px;
+}
+
+a img { 
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td { 
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important; 
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #d9d9d9; 
+  background-color: #d9d9d9; 
+  height: 1px; 
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+}
+
+table.container {
+  width: 580px;
+  margin: 0 auto;
+  text-align: inherit;
+}
+
+table.row { 
+  padding: 0px; 
+  width: 100%;
+  position: relative;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 10px 20px 0px 0px;
+  position: relative;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.columns td,
+table.column td {
+  padding: 0px 0px 10px; 
+}
+
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 10px;
+}
+
+td.sub-column, td.sub-columns {
+  min-width: 0px;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0px;
+}
+
+table.one { width: 30px; }
+table.two { width: 80px; }
+table.three { width: 130px; }
+table.four { width: 180px; }
+table.five { width: 230px; }
+table.six { width: 280px; }
+table.seven { width: 330px; }
+table.eight { width: 380px; }
+table.nine { width: 430px; }
+table.ten { width: 480px; }
+table.eleven { width: 530px; }
+table.twelve { width: 580px; }
+
+table.one center { min-width: 30px; }
+table.two center { min-width: 80px; }
+table.three center { min-width: 130px; }
+table.four center { min-width: 180px; }
+table.five center { min-width: 230px; }
+table.six center { min-width: 280px; }
+table.seven center { min-width: 330px; }
+table.eight center { min-width: 380px; }
+table.nine center { min-width: 430px; }
+table.ten center { min-width: 480px; }
+table.eleven center { min-width: 530px; }
+table.twelve center { min-width: 580px; }
+
+table.one .panel center { min-width: 10px; }
+table.two .panel center { min-width: 60px; }
+table.three .panel center { min-width: 110px; }
+table.four .panel center { min-width: 160px; }
+table.five .panel center { min-width: 210px; }
+table.six .panel center { min-width: 260px; }
+table.seven .panel center { min-width: 310px; }
+table.eight .panel center { min-width: 360px; }
+table.nine .panel center { min-width: 410px; }
+table.ten .panel center { min-width: 460px; }
+table.eleven .panel center { min-width: 510px; }
+table.twelve .panel center { min-width: 560px; }
+
+.body .columns td.one,
+.body .column td.one { width: 8.333333%; }
+.body .columns td.two,
+.body .column td.two { width: 16.666666%; }
+.body .columns td.three,
+.body .column td.three { width: 25%; }
+.body .columns td.four,
+.body .column td.four { width: 33.333333%; }
+.body .columns td.five,
+.body .column td.five { width: 41.666666%; }
+.body .columns td.six,
+.body .column td.six { width: 50%; }
+.body .columns td.seven,
+.body .column td.seven { width: 58.333333%; }
+.body .columns td.eight,
+.body .column td.eight { width: 66.666666%; }
+.body .columns td.nine,
+.body .column td.nine { width: 75%; }
+.body .columns td.ten,
+.body .column td.ten { width: 83.333333%; }
+.body .columns td.eleven,
+.body .column td.eleven { width: 91.666666%; }
+.body .columns td.twelve,
+.body .column td.twelve { width: 100%; }
+
+td.offset-by-one { padding-left: 50px; }
+td.offset-by-two { padding-left: 100px; }
+td.offset-by-three { padding-left: 150px; }
+td.offset-by-four { padding-left: 200px; }
+td.offset-by-five { padding-left: 250px; }
+td.offset-by-six { padding-left: 300px; }
+td.offset-by-seven { padding-left: 350px; }
+td.offset-by-eight { padding-left: 400px; }
+td.offset-by-nine { padding-left: 450px; }
+td.offset-by-ten { padding-left: 500px; }
+td.offset-by-eleven { padding-left: 550px; }
+
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important;
+}
+
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 10px;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 10px;
+}
+
+/* Block Grid */
+
+.block-grid {
+  width: 100%;
+  max-width: 580px;
+}
+
+.block-grid td {
+  display: inline-block;
+  padding:10px;
+}
+
+.two-up td {
+  width:270px;
+}
+
+.three-up td {
+  width:173px;
+}
+
+.four-up td {
+  width:125px;
+}
+
+.five-up td {
+  width:96px;
+}
+
+.six-up td {
+  width:76px;
+}
+
+.seven-up td {
+  width:62px;
+}
+
+.eight-up td {
+  width:52px;
+}
+
+/* Alignment & Visibility Classes */
+
+table.center, td.center {
+  text-align: center;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center {
+  text-align: center;
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
+  display: none;
+}
+
+/* Typography */
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
+  color: #222222;
+  font-family: "Helvetica", "Arial", sans-serif; 
+  font-weight: normal; 
+  padding:0; 
+  margin: 0;
+  text-align: left; 
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  word-break: normal;
+}
+
+h1 {font-size: 40px;}
+h2 {font-size: 36px;}
+h3 {font-size: 32px;}
+h4 {font-size: 28px;}
+h5 {font-size: 24px;}
+h6 {font-size: 20px;}
+body, table.body, p, td {font-size: 14px;line-height:19px;}
+
+p.lead, p.lede, p.leed {
+  font-size: 18px;
+  line-height:21px;
+}
+
+p { 
+  margin-bottom: 10px;
+}
+
+small {
+  font-size: 10px;
+}
+
+a {
+  color: #2ba6cb; 
+  text-decoration: none;
+}
+
+a:hover { 
+  color: #2795b6 !important;
+}
+
+a:active { 
+  color: #2795b6 !important;
+}
+
+a:visited { 
+  color: #2ba6cb !important;
+}
+
+h1 a, 
+h2 a, 
+h3 a, 
+h4 a, 
+h5 a, 
+h6 a {
+  color: #2ba6cb;
+}
+
+h1 a:active, 
+h2 a:active,  
+h3 a:active, 
+h4 a:active, 
+h5 a:active, 
+h6 a:active { 
+  color: #2ba6cb !important; 
+} 
+
+h1 a:visited, 
+h2 a:visited,  
+h3 a:visited, 
+h4 a:visited, 
+h5 a:visited, 
+h6 a:visited { 
+  color: #2ba6cb !important; 
+} 
+
+/* Panels */
+
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 10px !important;
+}
+
+.sub-grid table {
+  width: 100%;
+}
+
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: #2ba6cb;
+  border: 1px solid #2284a1;
+  color: #ffffff;
+  padding: 8px 0;
+}
+
+table.tiny-button td {
+  padding: 5px 0 4px;
+}
+
+table.small-button td {
+  padding: 8px 0 7px;
+}
+
+table.medium-button td {
+  padding: 12px 0 10px;
+}
+
+table.large-button td {
+  padding: 21px 0 18px;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  /*background: #2795b6 !important;*/
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #fff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  /*background: #2795b6 !important;*/
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #ffffff !important; 
+}
+
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555;
+}
+
+table.secondary td a {
+  color: #555;
+}
+
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+table.success:hover td {
+  background: #457a1a !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+table.alert:hover td {
+  background: #970b0e !important;
+}
+
+table.radius td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}
+
+/*  Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] img {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+
+  table[class="body"] .row {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper {
+    display: block !important;
+    padding-right: 0 !important;
+  }
+
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+
+  table[class="body"] .columns td.one,
+  table[class="body"] .column td.one { width: 8.333333% !important; }
+  table[class="body"] .columns td.two,
+  table[class="body"] .column td.two { width: 16.666666% !important; }
+  table[class="body"] .columns td.three,
+  table[class="body"] .column td.three { width: 25% !important; }
+  table[class="body"] .columns td.four,
+  table[class="body"] .column td.four { width: 33.333333% !important; }
+  table[class="body"] .columns td.five,
+  table[class="body"] .column td.five { width: 41.666666% !important; }
+  table[class="body"] .columns td.six,
+  table[class="body"] .column td.six { width: 50% !important; }
+  table[class="body"] .columns td.seven,
+  table[class="body"] .column td.seven { width: 58.333333% !important; }
+  table[class="body"] .columns td.eight,
+  table[class="body"] .column td.eight { width: 66.666666% !important; }
+  table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine { width: 75% !important; }
+  table[class="body"] .columns td.ten,
+  table[class="body"] .column td.ten { width: 83.333333% !important; }
+  table[class="body"] .columns td.eleven,
+  table[class="body"] .column td.eleven { width: 91.666666% !important; }
+  table[class="body"] .columns td.twelve,
+  table[class="body"] .column td.twelve { width: 100% !important; }
+
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+}
+
+  </style>
+  <style>
+
+    table.facebook td {
+      background: #3b5998;
+      border-color: #2d4473;
+    }
+
+    table.facebook:hover td {
+      background: #2d4473 !important;
+    }
+
+    table.twitter td {
+      background: #00acee;
+      border-color: #0087bb;
+    }
+
+    table.twitter:hover td {
+      background: #0087bb !important;
+    }
+
+    table.google-plus td {
+      background-color: #DB4A39;
+      border-color: #CC0000;
+    }
+
+    table.google-plus:hover td {
+      background: #CC0000 !important;
+    }
+
+    .template-label {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 11px;
+    }
+
+    .callout .panel {
+      background: #ECF8FF;
+      border-color: #b9e5ff;
+    }
+
+    .header {
+      background: #999999;
+    }
+
+    .footer .wrapper {
+      background: #ebebeb;
+    }
+
+    .footer h5 {
+      padding-bottom: 10px;
+    }
+
+    table.columns .text-pad {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    table.columns .left-text-pad {
+      padding-left: 10px;
+    }
+
+    table.columns .right-text-pad {
+      padding-right: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      table[class="body"] .right-text-pad {
+        padding-left: 10px !important;
+      }
+
+      table[class="body"] .left-text-pad {
+        padding-right: 10px !important;
+      }
+    }
+a[href="#"] {
+  color: #000 !important;
+}
+.link {
+  text-decoration: underline;
+  color: #004a8f;
+}
+small {
+  font-size: 85%;
+}
+.link.small {
+  color: #9c6406 !important;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  border-top: 1px dotted #808080;
+  background-color: #fff;
+}
+.panel {
+  background-color: #004a8f;
+  border: none;
+}
+.panel * {
+  color: #fff;
+}
+table.columns td.panel {
+  padding: 0 !important;
+  margin: 0;
+  line-height: 50px;
+}
+table.small-button td,
+table.button td {
+  background-color: #004a8f;
+  border: none;
+  color: #fff !important;
+}
+table.small-button td {
+  border-size: 2px;
+  border-style: solid;
+  background: none;
+}
+img.ico {
+  padding-right: 4px;
+}
+small.badge {
+  float: none;
+  display: inline-block;
+  color: #808080;
+  text-transform: uppercase;
+  font-size: 60% !important;
+  font-weight: bold;
+  font-size: 65%;
+}
+.header {
+  background-color: #004a8f;
+}
+.header * {
+  color: #fff;
+}
+.footer * {
+  color: #fff;
+}
+.footer .wrapper {
+  background: none;
+}
+</style></head><body><table class="body"><tr><td align="center" valign="top" class="center"><center><!-- Header--><table style="border-top: 0px solid #053B72; border-bottom: 4px solid lightsteelblue" class="row header"><tr><td align="center" class="center"><center><table class="container"><tr><td class="wrapper"><table class="twelve columns"><tr><td style="padding: 0 !important" class="four sub-columns"><a href="#"><small style="font-weight: bold; color: white !important; display: inline-block; letter-spacing: 0.01em; font-size: 75%; padding-bottom: 5px">УЧЕБНЫЙ ЦЕНТР СТЕК</small><img width="190" height="60" src="img/logotype.png" style="padding: 0px"/></a></td><td style="padding: 0 !important" class="four sub-columns"><a href="#"><small><b>Подготовка и повышение квалификации </b></small><small style="color: LightSteelBlue">аудиторов и профессиональных бухгалтеров</small></a></td><td class="four sub-columns last"><img width="12" height="12" src="img/ico-phone-header.png" style="padding: 3px 5px 0 0"/><b style="color: white">+7 495 921-23-23 </b><br/><a href="#" style="padding-left: 17px;"><small style="color: LightSteelBlue">Большая Татарская 35, 3 эт.</small></a><br/><a href="#" style="padding-left: 17px;"><small style="color: LightSteelBlue" class="link">stekaudit.ru</small></a></td></tr></table></td></tr></table></center></td></tr></table><table class="container"><tr><td><!-- content start--><table class="row"><tr><td class="wrapper"><table class="four columns"><tr><td><p><a href="#" style=""><img src="img/ico-link-training.png" alt="" width="18" height="18" style="padding-right: 5px;"/><small style="color: darkslateGray;" class="link">Повышение квалификации</small></a></p><p><a href="#" style=""><img src="img/ico-link-english.png" alt="" width="18" height="18" style="padding-right: 5px;"/><small style="color: darkslateGray;" class="link">Financial &amp; Business English</small></a></p></td></tr></table></td><td class="wrapper"><table class="four columns"><tr><td><p><a href="#" style=""><img src="img/ico-link-validation.png" alt="" width="18" height="18" style="padding-right: 5px;"/><small style="color: darkslateGray;" class="link">Аттестация</small></a></p><p><a href="#" style=""><img src="img/ico-link-programm.png" alt="" width="18" height="18" style="padding-right: 5px;"/><small style="color: darkslateGray;" class="link">ACCA, ДипИФР, ДипНРФ</small></a></p></td></tr></table></td><td class="wrapper"><table class="four columns"><tr><td><p><a href="#" style=""><img src="img/ico-link-for-accounter.png" alt="" width="18" height="18" style="padding-right: 5px;"/><small style="color: darkslateGray;" class="link">Базовая подготовка</small></a></p><p><a href="#" style=""><img src="img/ico-link-programm.png" alt="" width="18" height="18" style="padding-right: 5px;"/><small style="color: darkslateGray;" class="link">CIMA</small></a></p></td></tr></table></td></tr></table><table class="row"><tr><td><table class="twelve columns"><tr><td><a href="#"><img width="580" height="250" src="img/img-promo.jpg"/></a></td></tr></table></td></tr></table><!-- Новости Учебный центр--><table class="row"><tr><td class="wrapper"><table class="twelve columns"><tr><td style="background: steelblue" class="panel"><a href="" style="text-transform: uppercase; font-weight: bold; font-size: 18px; text-decoration: none; display: inline-block;"><img src="img/ico-news1.png" alt="" style=""/><span style="">Новости учебного центра</span></a><img src="img/img-corner.png" alt="" style="float: right"/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="four columns"><tr><td><a href="#"><img width="180" height="135" src="img/img-news-1.jpg"/></a></td></tr></table><td class="wrapper"><table class="eight columns"><a href="#"><p><big class="link">Расписание на 2015 год: планируйте свое обучение заранее!</big> <small>На сайте доступно расписание по всем направлениям обучения в Учебном центре «СТЕК» на 1-е полугодие 2015 года.</small></p></a><p><small><a href="#" class="link small">27.11.14 ACCA Qualification P2</a></small><br/><small><a href="#" class="link small">27.11.14 Новые и актуальные вопросы бухгалтерского и налогового учета</a></small><br/></p></table></td></td></tr></table><table class="row"><tr><td class="wrapper"><table class="four columns"><tr><td><a href="#"><img width="180" height="135" src="img/img-news-2.jpg"/></a></td></tr></table><td class="wrapper"><table class="eight columns"><a href="#"><p><big class="link">Расписание на 2015 год: планируйте свое обучение заранее!</big> <small>На сайте доступно расписание по всем направлениям обучения в Учебном центре «СТЕК» на 1-е полугодие 2015 года.</small></p></a><p><small><a href="#" class="link small">27.11.14 ACCA Qualification P2</a></small><br/><small><a href="#" class="link small">27.11.14 Новые и актуальные вопросы бухгалтерского и налогового учета</a></small><br/></p></table></td></td></tr></table><table class="row"><tr><td class="wrapper"><table class="four columns"><tr><td><a href="#"><img width="180" height="135" src="img/img-news-3.jpg"/></a></td></tr></table><td class="wrapper"><table class="eight columns"><a href="#"><p><big class="link">Расписание на 2015 год: планируйте свое обучение заранее!</big> <small>На сайте доступно расписание по всем направлениям обучения в Учебном центре «СТЕК» на 1-е полугодие 2015 года.</small></p></a><p><small><a href="#" class="link small">27.11.14 ACCA Qualification P2</a></small><br/><small><a href="#" class="link small">27.11.14 Новые и актуальные вопросы бухгалтерского и налогового учета</a></small><br/></p></table></td></td></tr></table><table class="row"><tr><td class="wrapper"><table class="four columns"><tr><td></td></tr></table></td><td class="wrapper"><table class="three columns"><tr><td><table class="small-button"><tr><td style="color: steelblue !important"><a href="#" style="color: steelblue !important">Все новости</a></td></tr></table></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="twelve columns"><tr><td style="background: yellowgreen" class="panel"><a href="" style="text-transform: uppercase; font-weight: bold; font-size: 18px; text-decoration: none; display: inline-block;"><img src="img/ico-news2.png" alt="" style=""/><span style="">Новости для бухгалтера</span></a><img src="img/img-corner.png" alt="" style="float: right"/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="four columns"><p><a href="#"><img width="180" height="135" src="img/img-news-4.jpg"/></a></p><p><small>Новости подготовлены <a href="#" class="link small">аудиторской службой «Стек»</a></small></p></table></td><td class="wrapper"><table class="eight columns"><tr><td><p><a href="#"><span class="link">Заполняя уведомление о контролируемых сделках за 2014 г,</span> <small>можно применять ОКП и ОКВЭД.</small></a></p><hr/><p><a href="#"><span class="link">Отменено право сторон договора лизинга</span> <small>по применению механизма ускоренной амортизации.</small></a></p><hr/><p><a href="#"><span class="link">Организации, подлежащие обязательному аудиту, не вправе</span> <small>применять упрощенный способ ведения бухучета.</small></a></p><hr/><p><a href="#"><span class="link">Изменения в НК РФ:</span> <small>с 01 января 2015 года ужесточено требование к представлению декларации по НДС в электронном виде.</small></a></p></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="four columns"><tr><td></td></tr></table></td><td class="wrapper"><table class="three columns"><tr><td><table class="small-button"><tr><td style="color: yellowgreen !important"><a href="#" style="color: yellowgreen !important">Все новости</a></td></tr></table></td></tr></table></td></tr></table><!-- QA--><table class="row"><tr><td class="wrapper"><table class="twelve columns"><tr><td style="background: chocolate" class="panel"><a href="" style="text-transform: uppercase; font-weight: bold; font-size: 18px; text-decoration: none; display: inline-block;"><img src="img/ico-qa.png" alt="" style=""/><span style="">Вопрос-ответ</span></a><img src="img/img-corner.png" alt="" style="float: right"/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="four columns"><tr><td><a href="#"><big class="link">Можно ли применять ОКП и ОКВЭД</big> <small>при заполнении уведомлений о контролируемых сделках?</small></a></td></tr></table></td><td class="wrapper"><table class="four columns"><tr><td><a href="#"><big class="link">Как выглядит комплексный подход</big> <small>к повышению квалификации аудиторов и профбухгалтеров?</small></a></td></tr></table></td><td class="wrapper"><table class="four columns"><tr><td><a href="#"><big class="link">Как выглядит комплексный подход</big> <small>к повышению квалификации аудиторов и профбухгалтеров?</small></a></td></tr></table></td></tr></table><br/><table class="row"><tr><td><table class="twelve columns"><tr><td><a href=""><img width="580" height="100" src="http://placehold.it/580x100/"/></a></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="twelve columns"><tr><td style="background: brown" class="panel"><a href="" style="text-transform: uppercase; font-weight: bold; font-size: 18px; text-decoration: none; display: inline-block;"><img src="img/ico-courses.png" alt="" style=""/><span style="">Ближайшие курсы</span></a><img src="img/img-corner.png" alt="" style="float: right"/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="two columns"><tr><td><h2><b style="color: brown">27</b></h2><span style="color: brown">января</span></td></tr></table></td><td class="wrapper last"><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">Новые и актуальные вопросы бухгалтерского и налогового учета</span> <small class="badge"><span style="color:forestgreen">новинка!</span><img src="img/ico-new.png" alt="" width="14" height="14" style="padding-top: 2px" class="ico"/></small> <small style="font-size: 65%; color: gray; font-style: normal">от 12 000 Р.</small></a></p></li></ul></td></tr></table><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">Учет труда и заработной платы</span> <small class="badge"><span style="color:darkorange">лучший выбор!</span><img src="img/ico-hit.png" alt="" width="14" height="14" style="padding-top: 2px" class="ico"/></small> <small style="font-size: 65%; color: gray; font-style: normal">10 000 Р.</small></a></p></li></ul></td></tr></table></td></tr></table><table class="row"><tr><td style="padding: 0" class="wrapper last"><table class="twelve columns"><tr><td style="padding: 0"><hr/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="two columns"><tr><td><h2><b style="color: brown">28</b></h2><span style="color: brown">января</span></td></tr></table></td><td class="wrapper last"><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">Основы бухучета и налогообложения в бюджетных организациях</span> <small class="badge"><span style="color:crimson">последние места!</span><img src="img/ico-last.png" alt="" width="14" height="14" style="padding-top: 2px" class="ico"/></small> <small style="font-size: 65%; color: gray; font-style: normal">15 000 Р.</small></a></p></li></ul></td></tr></table><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">1С 8. Зарплата и управление персоналом</span> <small class="badge"><span style="color:steelblue">семинар</span><img src="img/ico-workshop.png" alt="" width="14" height="14" style="padding-top: 2px" class="ico"/></small> <small style="font-size: 65%; color: gray; font-style: normal">от 10 000 Р.</small></a></p></li></ul></td></tr></table><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">4 1С 8. Упрощенная система налогообложения</span>  <small style="font-size: 65%; color: gray; font-style: normal">18 000 Р.</small></a></p></li></ul></td></tr></table></td></tr></table><table class="row"><tr><td style="padding: 0" class="wrapper last"><table class="twelve columns"><tr><td style="padding: 0"><hr/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="two columns"><tr><td><h2><b style="color: brown">29</b></h2><span style="color: brown">января</span></td></tr></table></td><td class="wrapper last"><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">Банки: организация деятельности, особенности бухгалтерского учета, налогообложения и аудита</span>  <small style="font-size: 65%; color: gray; font-style: normal">от 10 000 Р.</small></a></p></li></ul></td></tr></table><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">Бухгалтерский учет внешнеэкономической деятельности и валютных операций</span>  <small style="font-size: 65%; color: gray; font-style: normal">от 10 000 Р.</small></a></p></li></ul></td></tr></table></td></tr></table><table class="row"><tr><td style="padding: 0" class="wrapper last"><table class="twelve columns"><tr><td style="padding: 0"><hr/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="two columns"><tr><td><h2><b style="color: brown">30</b></h2><span style="color: brown">января</span></td></tr></table></td><td class="wrapper last"><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">Новое в правоведении, бухгалтерском учете, налогообложении, финансах предприятий и аудите</span>  <small style="font-size: 65%; color: gray; font-style: normal">от 10 000 Р.</small></a></p></li></ul></td></tr></table></td></tr></table><table class="row"><tr><td style="padding: 0" class="wrapper last"><table class="twelve columns"><tr><td style="padding: 0"><hr/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="two columns"><tr><td><h2><b style="color: brown">1</b></h2><span style="color: brown">февраля</span></td></tr></table></td><td class="wrapper last"><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">Торговые организации. Актуальные вопросы бухгалтерского учета и налогообложения</span>  <small style="font-size: 65%; color: gray; font-style: normal">от 6000 Р.</small></a></p></li></ul></td></tr></table><table class="ten columns"><tr><td><ul><li><p class="lead"><a href="#"><span class="link">УСН</span>  <small style="font-size: 65%; color: gray; font-style: normal">6000 Р.</small></a></p></li></ul></td></tr></table></td></tr></table><table class="row"><tr><td style="padding: 0" class="wrapper last"><table class="twelve columns"><tr><td style="padding: 0"><hr/></td></tr></table></td></tr></table><table class="row"><tr><td class="wrapper"><table class="twelve columns"><tr><td><table class="button"><tr><td><a href="#" style="padding: 5px; display: block;"><span style="color: white">Ещё </span><big style="color: gold"><big>12</big></big> <span style="color: white">курсов</span></a></td></tr></table></td></tr></table></td></tr></table><br/><table class="row"><tr><td class="wrapper"><table class="two columns"><tr><td><a href="#"><img width="64" height="64" src="img/ico-phone.png" style="padding-top: 0px"/></a></td></tr></table></td><td class="wrapper"><table class="six columns"><tr><td><b>Появились вопросы?</b><h3 style="margin-bottom: 10px; border-bottom: 4px solid gold; display: inline-block; font-weight: bold">+7 495 921-23-23</h3><p><a href="#"><img width="16" height="16" src="img/ico-facebook.png" class="ico"/><span class="link">facebook.com/stekaudit</span></a></p><p><a href="#"><img width="16" height="16" src="img/ico-vk.png" class="ico"/><span class="link">vk.com/stekaudit</span></a></p><p><a href="#" style="padding-left: 20px"><span style="color: gray" class="link">promo@stekaudit.ru</span></a></p><p><a href="#" style="padding-left: 20px"><span style="color: gray" class="link">stekaudit.ru</span></a></p></td></tr></table></td><td class="wrapper"><table class="four columns"><tr><td><span><b>Учебный центр «СТЕК»</b></span><table><tr><td></td></tr></table><p><span>ул. Большая Татарская, 35</span><br/><span>3-й этаж</span><br/><span>9:00—19:00</span></p><p><img src="img/ico-location.png" alt="" class="ico"/><a href="#"><span class="link">На&nbsp;карте</span></a></p></td></tr></table></td></tr></table></td></tr></table><br/><table style="background-color: slateGray" class="row footer"><tr><td align="center" class="center"><center><table class="container"><tr><td class="wrapper"><table class="two columns"><tr><td><a href="#"><img width="100" height="32" src="img/logotype-footer.png" style="padding: 5px 0"/></a></td></tr></table></td><td class="wrapper"><table class="ten columns"><tr><td><p style="color: Gray !important"><small>Вы получили это сообщение, поскольку являетесь пользователем сайта <a href="#"><span class="link">stekaudit.ru</span></a><br/><span>Не отвечайте на это письмо – оно рассылается автоматически. </span><a href="#"><span class="link">Отписаться от рассылки</span></a></small></p></td></tr></table></td></tr></table></center></td></tr></table></center></td></tr></table></body></html>

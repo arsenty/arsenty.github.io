@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ПРОКОНИ.РУ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.js"></script> <!-- 16 KB -->
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-default navbar-inverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><span class="sr-only">Меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/prokoni-logo.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div id="menu" class="collapse navbar-collapse">
+              <div class="col-md-9">
+                <ul class="linklist nav navbar-nav">
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Статьи</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="article-list.html">Новичкам</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Совет профи</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Лошадь</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Информация</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Репортаж</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Обзор СМИ</a></li>
+                      <li class="divider"></li>
+                      <li><a tabindex="-1" href="article-list.html">Спец. страницы</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Истории</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Разное</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Каталоги</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="club-list.html">Клубы</a></li>
+                      <li><a tabindex="-1" href="shop-list.html">Магазины</a></li>
+                      <li><a tabindex="-1" href="site-list.html">Сайты</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Объявления</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="classified-list.html">Работа и услуги</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа покупка</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа лошадей</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Форумы</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Я и лошадка</a></li>
+                      <li><a tabindex="-1" href="#">Трибуна</a></li>
+                      <li><a tabindex="-1" href="#">События</a></li>
+                      <li><a tabindex="-1" href="#">Ветеринария</a></li>
+                      <li><a tabindex="-1" href="#">Творчество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="linklist nav navbar-nav pull-right">
+                  <li><a href="user-login.html" class="text-uppercase"><span class="icon -left fa fa-sign-in"></span><b>Вход</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<section class="header-section -shop-item">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="page breadcrumb pull-left">
+          <li><a href="index.html"><span class="fa fa-home"></span></a></li>
+          <li><a href="">Каталоги</a></li>
+          <li><a href="">Магазины</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline pull-right">
+          <li><a href="">Мои магазины</a></li>
+          <li><a href="shop-create.html" class="btn btn-default"><span class="hidden-xs">Добавить магазин</span><span class="hidden-sm hidden-md hidden-lg icon fa fa-plus"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1><span class="header-icon icons8-shop"></span>Магазины
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">О магазине</div>
+          </div>
+          <div class="panel-body">
+            <p>
+              Мы предлагаем широкий выбор товаров европейских и течественных производителей.
+              Для наших магазинов мы старались выбирать только те товары, в качетве которых
+              мы тведо уверены. Возможно они не самые дешевые на рынке,но зато по соотношению
+              цена-качество они идеальны и будут служить дольше. Мы предлагаем вам отличную
+              стильную одежду и обувь от ведущих немецких брэндов CAVALLO, ISABELL WERTH,
+              HAPPY WALLEY, KENTUCKY. Добротную и качественную амуницию от STUBBEN, KAVALKADE
+              и WALDHAUSEN. Прочные и стильные уздечки от OTTO SCHUMACHER. А так же продукцию
+              других фирм - наш ассортимент постоянно поплняется новыми маркамии товарами,
+              появляющимися на рынках Европы. Для тех, кто не может посетить наши магазины,
+              мы предлагаем посетить наш интернет-магазин http://www.prokoni.ru/shopНаш
+              курьер доставит вам выбранные вещи, включая одежду и обувь, к вам домой
+              или в офис. Вы сможете примерить несколько размеров, чтобы выбрать подходящий.
+            </p>
+          </div>
+          <div class="panel-footer">
+            <hr>
+            <ul class="list-inline">
+              <li><a href="#comment" class="btn btn-link"><span class="icon -left fa fa-comment"></span><span class="link">Оставить комментарий</span></a></li>
+              <li><a href="" class="btn btn-link"><span class="icon -left fa fa-arrow-right"></span><span class="link">Обсудить на форуме</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div data-nav="thumbs" data-width="100%" class="fotorama"><img src="http://s.fotorama.io/okonechnikov/1-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/2-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/3-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/4-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/5-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/6-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/7-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/8-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/9-lo.jpg"><img src="http://s.fotorama.io/okonechnikov/10-lo.jpg">
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NgH6O-fTpEsSz4DzbSB3YeRHlsUxm5Sn&amp;width=100%&amp;height=400"></script>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="h5">Как доехать</div>62-й автобус<br>Конечная остановка ДО&nbsp;«Шахтер»
+              </div>
+              <div class="col-xs-6">
+                <div class="h5">Удаленность от города</div>
+                <table class="table">
+                  <tr>
+                    <th>Москва</th>
+                    <td>60км</td>
+                  </tr>
+                  <tr>
+                    <th>Чехов</th>
+                    <td>15км</td>
+                  </tr>
+                  <tr>
+                    <th>Серпухов</th>
+                    <td>10км</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="comment" class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">10 комментариев</div>
+          </div>
+          <div class="panel-body">
+            <ul class="media-list">
+              <li class="media"><a class="pull-left"><img width="40" height="40" src="http://www.prokoni.ru/images/avatar-default.gif" alt="Anonymous" class="media-object"></a>
+                <div class="media-body">
+                  <div class="media-heading"><a href="" class="link"><b>Anonymous</b></a><small>18 апреля</small>
+                    <p>Я могу откомментировать! <a href="" class="link">Ответить</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="media"><a class="pull-left"><img width="40" height="40" src="https://graph.facebook.com/1191730365/picture?width=150&amp;height=150" alt="nevi" class="media-object"></a>
+                <div class="media-body">
+                  <div class="media-heading"><a href="" class="link"><b>nevi </b></a><small>22 апреля</small>
+                    <p>А я могу? <a href="" class="link">Ответить</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="media"><a class="pull-left"><img width="40" height="40" src="https://graph.facebook.com/1191730365/picture?width=150&amp;height=150" alt="nevi" class="media-object"></a>
+                <div class="media-body"><a href="" class="link"><b>nevi </b></a><small>22 апреля</small></div>
+                <p>Могу! <a href="" class="link">Ответить</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Добавить комментарий</div>
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control"></textarea>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" checked>Уведомлять о новых комментариях
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Контакты</div>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li>
+                <div class="h4"><a href=""><span class="link">+7 495 669-00-83</span><br><small class="link -no">Единый телефон</small></a></div>
+              </li>
+              <li>
+                <div class="h4"><a href=""><span class="link">Электронная почта</span><br><small class="link -no">shop@prokoni.ru</small></a></div>
+              </li>
+              <li>
+                <div class="h4"><a href=""><span class="link">Веб-сайт</span><br><small class="link -no">www.prokoni.ru/shop</small></a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading"> 
+            <div class="panel-title">Ассортимент</div>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li><span class="text-primary icon -left fa fa-check"></span>Амуниция и экипировка
+              </li>
+              <li><span class="text-primary icon -left fa fa-check"></span>Корма и добавки
+              </li>
+              <li><span class="text-primary icon -left fa fa-check"></span>Ветеринарые препараты
+              </li>
+              <li><span class="text-primary icon -left fa fa-check"></span>Коневозы
+              </li>
+              <li><span class="text-primary icon -left fa fa-check"></span>Услуги транспортировки
+              </li>
+              <li><span class="text-muted icon -left fa fa-close"></span><span>Нет услуги</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default"><a href=""><img src="http://masterh2.adriver.ru/images/0003561/0003561726/0/bn1-ulmart-1.jpg" alt="" width="100%"></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Sitemap Links -->
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Статьи</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Каталоги</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Объявления</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Форумы</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <!-- User Links -->
+        <ul class="list-unstyled">
+          <li><b href="#">Username</b></li>
+          <li><a href="#">Мой дневник</a></li>
+          <li><a href="#">Мои объявления</a></li>
+          <li><a href="#">Настройки</a></li>
+          <li><a href="#">Выйти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+        <div class="row">
+          <div class="col-md-9">
+            <!-- Languages Links -->
+            <ul class="list-unstyled list-inline">
+              <li><img src="images/prokoni-logo--footer.png" alt=""></li>
+              <li>
+                <p><b>Россия</b></p>
+              </li>
+              <li>
+                <p><a href="#">France</a></p>
+              </li>
+              <li>
+                <p><a href="#">España</a></p>
+              </li>
+              <li>
+                <p><a href="#">Italia</a></p>
+              </li>
+            </ul>
+            <!-- About Links -->
+            <ul class="list-unstyled list-inline">
+              <li>&copy; 2005—2014</li>
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Реклама на сайте</a></li>
+              <li><a href="#">Контактная информация</a></li>
+            </ul>
+            <!-- Developers Links -->
+            <ul class="list-unstyled">
+              <li>
+                <p>Разработка сайта — <a href="#">Arsenty </a>и <a href="#">Sdemch</a>, icons by <a href="#">Icons8</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <!-- Social Links-->
+            <ul class="list-unstyled">
+              <li><b>Мы в социальных сетях</b></li>
+              <li><a href="#">Твиттер</a></li>
+              <li><a href="#">Фейсбук</a></li>
+              <li><a href="#">Вконтакте</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

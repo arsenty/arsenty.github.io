@@ -1,0 +1,106 @@
+extends ../layouts/default
+
+include ../modules/footer/footer
+include ../modules/header/header
+
+block head
+	- title = "Index"
+
+	//- <script src="/bower_components/faker/build/build/faker.min.js"></script>
+	//- <script src="/bower_components/faker/build/build/locales/en/faker.en.min.js"></script>
+	
+	style.
+		.container-fluid {max-width: 1200px !important;}
+		.badge {font-weight: normal !important; border-radius:2px !important;}
+		.navbar.bg-dark {background: black !important;}
+		.nav-item.active span {
+			padding-bottom: 3px;
+			border-bottom: 1px solid white;
+		}
+	//- :stylus
+		@import "../static/styles/core/variables.styl"
+		@import "../static/styles/_variables.styl"
+		@import "../static/styles/core/mixins.styl"
+		@import "../static/styles/_mixins.styl"
+		@import "../modules/_page-list/_page-list.styl"
+
+//- block page
+	+page-list(pageList.data)
+
+block header
+	+header()
+
+block main
+	section.alert-secondary.mb-4: .container-fluid: .d-flex.flex-row.justify-content-center
+		ul.list-inline.pt-3.pb-3.m-0
+			each key, val in {'BTC':'bitcoin', 'XRP':'coin', 'ETH':'ETH'}
+				li.list-inline-item.pr-3
+					//- img(src="https://png.icons8.com/"+key+"/64/color/" width="22" alt="")
+					//- |&nbsp;
+					small=val
+					|&nbsp;
+					small.text-success +433.21
+					|&nbsp;&nbsp;
+					small.text-muted
+						//- img.mb-1(src="https://png.icons8.com/us-dollar/64/windows10/" width="20" alt="" style="opacity:0.5")
+						|$9,922.66
+		//- .pt-3
+		//- 	<div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" value="">Show in order</label></div>
+
+	.container-fluid: .row
+		.col-md-8.col-lg-8
+			ul.list-unstyled
+				each val in [1,2,3,4,5]
+					//- hr
+					- var klass = (val === 1 ? 'alert-warning' : '')
+					mixin newsItem
+						li.media(class=klass)
+							.text-muted.m-3
+								.h6 2h
+							.media-body.mt-3.mb-3
+								div.mb-2
+									a(href style="display:block;").h6.mb-2 EU Officials Reveal €5 Million 'Blockchains for Social Good' Contest
+									//- a(href).text-danger XRP
+									a(href).badge.mr-1.badge-danger XRP
+									if val == 1
+										a(href).badge.mr-1.badge-success @blocktimes
+									else
+										a(href).badge.mr-1.badge-light.text-muted @username
+									a(href).badge.mr-1.badge-light.text-muted 1405 comments
+								//- small
+								//- 	|  · 
+								//- 	a(href).text-muted
+								//- 		//- img.align-self-center.mr-1(src="https://png.icons8.com/comment/64/windows8/" width="12" alt="" style="opacity:0.5")
+								//- 		|1405 comments
+								if val == 1
+									hr
+									img(src='https://png.icons8.com/flash/color/64', width="24" alt='')
+									small @username: Last comment...
+							if val == 1
+								img.align-self-center.m-3.d-none.d-sm-block(src='http://place-hold.it/100x75', alt='img' style="width: 100%; max-width: 150px;")
+						if val == 1
+							//- br
+						else
+							hr.m-0
+					+newsItem
+				//- End loop
+				.li.media.alert-warning
+					.text-muted.m-3
+						h6 2h
+					.media-body: .card-group
+						each val in [1,2]
+							.card.mt-3.mr-3(style="border: 0; background: none;")
+								img(src="http://place-hold.it/200x100" width="100%" alt="")
+								.card-body.pl-0(href="#")
+									h5.card-title Bitcoin Price Falls After Reaching Record High Over The Weekend
+									small.card-subtitle 14:21 · 2.5K views · 144 comments
+				each val in [1,2,3,4,5,6,7,8,9,10]
+					+newsItem
+
+
+			button.btn-lg.btn-danger.btn-block(type="button" class="btn btn-primary") More News
+		.col-md-4.col-lg-4
+			<img src="http://place-hold.it/240x400" width="100%" alt=""/>
+
+block footer
+	+footer()

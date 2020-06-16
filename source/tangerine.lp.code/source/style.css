@@ -1,0 +1,84 @@
+@import 'bootstrap.min.css';
+section {
+  padding: 50px 0;
+}
+section.promo {
+  background-color: #fff;
+}
+@media screen and (min-width: 990px) {
+  section.promo {
+    background-image: url("images/img-promo-left.jpg"), url("images/img-promo-right.jpg");
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+  }
+}
+section.buy {
+  background: #ffa500;
+  padding: 0;
+  padding-bottom: 25px;
+}
+section.offer {
+  padding-top: 100px;
+}
+@media screen and (min-width: 990px) {
+  section.offer {
+    background: url("images/img-offer.png") no-repeat right top;
+  }
+}
+@media screen and (min-width: 990px) {
+  section.benefit {
+    background: #fff2d9 url("images/img-benefit.png") no-repeat left top;
+  }
+}
+a {
+  color: #ff8c00;
+}
+.h1 {
+  font-size: 300%;
+  text-transform: uppercase;
+}
+.h2 {
+  font-size: 250%;
+  text-transform: uppercase;
+}
+.text-primary {
+  color: #ffa500;
+}
+.media {
+  margin-bottom: 50px;
+}
+input.form-control[type="email"] {
+  font-size: 200%;
+  border-radius: 0;
+  border: none;
+  background: #fff2d9;
+  padding: 10px;
+}
+input.form-control[type="email"]:focus {
+  box-shadow: none;
+  background: #fff;
+}
+button[type="submit"] {
+  border: none;
+}
+.img-buy-1 {
+  position: absolute;
+  width: 216px;
+  height: 214px;
+}
+@media screen and (min-width: 990px) {
+  .img-buy-1 {
+    background: url("images/img-buy-1.png");
+  }
+}
+.img-buy-2 {
+  position: absolute;
+  width: 257px;
+  height: 385px;
+  bottom: -200px;
+}
+@media screen and (min-width: 990px) {
+  .img-buy-2 {
+    background: url("images/img-buy-2.png");
+  }
+}

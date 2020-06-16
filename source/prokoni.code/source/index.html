@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ПРОКОНИ.РУ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://fotorama.s3.amazonaws.com/4.6.2/fotorama.js"></script> <!-- 16 KB -->
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-default navbar-inverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><span class="sr-only">Меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/prokoni-logo.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div id="menu" class="collapse navbar-collapse">
+              <div class="col-md-9">
+                <ul class="linklist nav navbar-nav">
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Статьи</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="article-list.html">Новичкам</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Совет профи</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Лошадь</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Информация</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Репортаж</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Обзор СМИ</a></li>
+                      <li class="divider"></li>
+                      <li><a tabindex="-1" href="article-list.html">Спец. страницы</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Истории</a></li>
+                      <li><a tabindex="-1" href="article-list.html">Разное</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Каталоги</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="club-list.html">Клубы</a></li>
+                      <li><a tabindex="-1" href="shop-list.html">Магазины</a></li>
+                      <li><a tabindex="-1" href="site-list.html">Сайты</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Объявления</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="classified-list.html">Работа и услуги</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа покупка</a></li>
+                      <li><a tabindex="-1" href="classified-list.html">Продажа лошадей</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle text-uppercase"><b>Форумы</b><span class="icon -right fa fa-angle-down"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Я и лошадка</a></li>
+                      <li><a tabindex="-1" href="#">Трибуна</a></li>
+                      <li><a tabindex="-1" href="#">События</a></li>
+                      <li><a tabindex="-1" href="#">Ветеринария</a></li>
+                      <li><a tabindex="-1" href="#">Творчество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="linklist nav navbar-nav pull-right">
+                  <li><a href="user-login.html" class="text-uppercase"><span class="icon -left fa fa-sign-in"></span><b>Вход</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<section class="advertising-section -yandex">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-sm-3"><a href=""><span class="icon -left fa fa-arrow-circle-o-right"> </span><span class="link">Сделаем из мухи слона!</span></a>
+            <p>Стремительный рост вашему бизнесу обеспечит контекстная реклама в Директе</p>
+          </div>
+          <div class="col-sm-3"><a href=""><span class="icon -left fa fa-arrow-circle-o-right"> </span><span class="link">Слон получивший степень MBA!</span></a>
+            <p>Играет в шахматы и занимается йогой! В московском цирке на Цветном бульваре</p>
+          </div>
+          <div class="col-sm-3"><a href=""><span class="icon -left fa fa-arrow-circle-o-right"> </span><span class="link">Слонопассит — микстура от стресса.</span></a>
+            <p>Эффективный препарат без привыкания. Будьте спокойны как слон.</p>
+          </div>
+          <div class="col-sm-3"><a href=""><span class="icon -left fa fa-arrow-circle-o-right"> </span><span class="link">А слона-то я не приметил!</span></a>
+            <p>Со счётчиком Яндекс.Метрики вы будете знать всё о посетителях вашего сайта</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Classified 1-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <ul class="nav nav-pills -underline">
+                <li class="nav-pills-item -underline active"><a href="#classified-horse" data-toggle="tab">Лошади</a></li>
+                <li class="nav-pills-item -underline"><a href="#classified-ammunition" data-toggle="tab">Амуниция</a></li>
+                <li class="nav-pills-item -underline"><a href="#classified-outfit" data-toggle="tab">Экипировка</a></li>
+                <li class="nav-pills-item -underline"><a href="#classified-equipment" data-toggle="tab">Оборудование</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="classified-horse" class="tab-pane active">
+              <div class="panel-body">
+                <form class="form">
+                  <div class="form-group">
+                    <div class="btn-group">
+                      <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Специализация <span class="icon -left fa fa-angle-down"></span></button>
+                        <ul role="menu" class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Рост <span class="icon -left fa fa-angle-down"></span></button>
+                        <ul role="menu" class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Цена <span class="icon -left fa fa-angle-down"></span></button>
+                        <ul role="menu" class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                                            <div class="btn-group">
+                                              <button type="button" class="btn btn-primary"><span class="icon -left fa fa-search"> </span><span class="hidden-xs hidden-sm">Найти</span></button>
+                                            </div>
+                    </div>
+                  </div>
+                                      <ul class="list-inline">
+                                        <li><a href="#" class="text-primary"><span class="icon -left fa fa-thumb-tack"></span><span class="link">Прикрепить своё объявление</span></a></li>
+                                        <li><a href="#"><span class="icon -left fa fa-cog"></span><span class="link">Расширенный поиск</span></a></li>
+                                      </ul>
+                </form>
+                                <div class="row">
+                                  <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370/370" width="100%" height="205" alt="">
+                                      <div class="caption">Эвдиалит, 7 лет, 130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                  <div class="col-xs-6">
+                                    <div class="row">
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    </div>
+                                  </div>
+                                </div>
+              </div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-year-of-horse-2"></span><span class="link">Все лошади</span></a></div>
+            </div>
+            <div id="classified-ammunition" class="tab-pane">
+              <div class="panel-body"></div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-horseshoe"></span><span class="link">Вся амуниция</span></a></div>
+            </div>
+            <div id="classified-outfit" class="tab-pane">
+              <div class="panel-body"></div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-coat"></span><span class="link">Вся экипировка</span></a></div>
+            </div>
+            <div id="classified-equipment" class="tab-pane">
+              <div class="panel-body"></div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-services"></span><span class="link">Всё оборудование</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- News-->
+            <div class="panel panel-default">
+              <div class="row">
+                <div class="col-xs-6 col-xs-12-min">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <ul class="nav nav-pills -underline">
+                        <li class="nav-pills-item -underline"><a href="news-item.html">Новости</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <p><a href="#" class="link">Электронная версия «Конного парка» стала бесплатной!</a></p>
+                  </div>
+                  <div class="panel-footer"><a href="news-list.html"><span class="icon -left fa icons8-news"></span><span class="link">Все новости</span></a></div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="panel-body"><a href="news-item.html"><img src="http://p-hold.com/journal/300/" width="100%" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Events-->
+            <div class="panel panel-default">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <ul class="nav nav-pills -underline">
+                        <li class="nav-pills-item -underline"> <a href="">1 октября</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="panel-body"><a href="news-item.html">
+                      <p><span class="link">Международный турнир по выездке В НКП «Русь».</span> <small class="text-muted">Нижний Новгород</small></p></a></div>
+                  <div class="panel-footer"><a href="news-list.html"><span class="icon -left icons8-megaphone2"></span><span class="link">И ещё 5 событий</span></a></div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="panel-heading">
+                    <div class="panel-title"> 
+                      <ul class="nav nav-pills -underline">
+                        <li class="nav-pills-item -underline"> <a href="">18—28 октября</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="panel-body"><a href="news-item.html">
+                      <p><span class="link">Международный турнир по выездке В НКП «Русь».</span> <small class="text-muted">Москва</small></p></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Ad-->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default"><a href="#"><img src="http://p-hold.com/960/150/" width="100%" alt="" class="thumbnail"></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Classified 2-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <ul class="nav nav-pills -underline">
+                <li class="nav-pills-item -underline active"><a href="#classified-service" data-toggle="tab">Услуги</a></li>
+                <li class="nav-pills-item -underline"><a href="#classified-work" data-toggle="tab">Работа</a></li>
+                <li class="nav-pills-item -underline"><a href="#classified-transport" data-toggle="tab">Транспорт</a></li>
+                <li class="nav-pills-item -underline"><a href="#classified-property" data-toggle="tab">Недвижимость</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="classified-service" class="tab-pane active">
+              <div class="panel-body">
+                <form class="form">
+                  <div class="form-group">
+                    <div class="btn-group">
+                      <div data-toggle="buttons" class="btn-group">
+                        <label class="btn btn-primary">
+                          <input id="option2" type="radio" name="options">Спрос
+                        </label>
+                        <label class="btn btn-primary active">
+                          <input id="option1" type="radio" name="options" checked="">Предложение
+                        </label>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Категория <span class="icon -left fa fa-angle-down"></span></button>
+                        <ul role="menu" class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                                            <div class="btn-group">
+                                              <button type="button" class="btn btn-primary"><span class="icon -left fa fa-search"> </span><span class="hidden-xs hidden-sm">Найти</span></button>
+                                            </div>
+                    </div>
+                  </div>
+                                      <ul class="list-inline">
+                                        <li><a href="#" class="text-primary"><span class="icon -left fa fa-thumb-tack"></span><span class="link">Прикрепить своё объявление</span></a></li>
+                                        <li><a href="#"><span class="icon -left fa fa-cog"></span><span class="link">Расширенный поиск</span></a></li>
+                                      </ul>
+                </form>
+                                <div class="row">
+                                  <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370/370" width="100%" height="205" alt="">
+                                      <div class="caption">Эвдиалит, 7 лет, 130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                  <div class="col-xs-6">
+                                    <div class="row">
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                      <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                          <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    </div>
+                                  </div>
+                                </div>
+              </div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-bell-service"></span><span class="link">Все услуги</span></a></div>
+            </div>
+            <div id="classified-work" class="tab-pane">
+              <div class="panel-body"></div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-support"></span><span class="link">Вся работа</span></a></div>
+            </div>
+            <div id="classified-transport" class="tab-pane">
+              <div class="panel-body"></div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-wheel-2"></span><span class="link">Весь транспорт</span></a></div>
+            </div>
+            <div id="classified-property" class="tab-pane">
+              <div class="panel-body"></div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-pavilion-2"></span><span class="link">Вся недвижимость</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Blog-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <ul class="nav nav-pills -underline">
+                <li class="nav-pills-item -underline"><a href="#" class="navbar-link">Дневники</a></li>
+                <li class="nav-pills-item -underline active"><a href="#blog-top" data-toggle="tab">Популярное</a></li>
+                <li class="nav-pills-item -underline"><a href="#blog-new" data-toggle="tab">Новое</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="blog-top" class="tab-pane active">
+                            <div class="panel-body">
+                              <ul class="list-group">
+                                <li class="list-group-item active">
+                                  <p><a href="" class="link">Война и мир или записки японского туриста!</a><br><br>
+                                    <Lorem>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</Lorem>
+                                  </p>
+                                </li>
+                                <li class="list-group-item"> <a href="#" class="link">Война и мир или записки японского туриста!</a></li>
+                                <li class="list-group-item"> <a href="#" class="link">Антикризисная программа</a></li>
+                                <li class="list-group-item"> <a href="#" class="link">Ворожея! Продаём Коней! стр.61!</a></li>
+                                <li class="list-group-item"> <a href="#" class="link">Конный Дом Конго - мой Китеж. Аня Беран!</a></li>
+                              </ul>
+                            </div>
+                            <div class="panel-footer"><a href="#"><span class="icon -left icons8-rules"></span><span class="link">Все темы</span></a></div>
+            </div>
+            <div id="blog-new" class="tab-pane">
+              <div class="panel-body"></div>
+              <div class="panel-footer"><a href="#"><span class="icon -left icons8-rules"></span><span class="link">Все темы</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Ad-->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default"><a href="#"><img src="http://p-hold.com/960/150/" width="100%" alt="" class="thumbnail"></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Raitings-->
+        <div class="panel">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-8">
+                <div class="panel-title">
+                  <ul class="nav nav-pills -underline">
+                    <li class="nav-pills-item -underline active"><a href="#raiting-club" data-toggle="tab">Клубы</a></li>
+                    <li class="nav-pills-item -underline"><a href="#raiting-shop" data-toggle="tab">Магазины</a></li>
+                    <li class="nav-pills-item -underline"><a href="#raiting-web" data-toggle="tab">Сайты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="pull-right"><a type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">в Москве <span class="icon -left fa fa-angle-down"></span></a>
+                  <ul role="menu" class="dropdown-menu">
+                    <li class="dropdown-header"><strong>Россия</strong></li>
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Санкт-Петербург</a></li>
+                    <li><a href="#">Нижний Новгород</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header"><strong>Украина</strong></li>
+                    <li><a href="#">Киев</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Добавить клуб в своём городе</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="raiting-club" class="tab-pane active">
+              <div class="panel-body">
+                <div class="list-group">
+                  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=NgH6O-fTpEsSz4DzbSB3YeRHlsUxm5Sn&amp;width=100%&amp;height=400"></script>
+                </div>
+                <div class="row"><br>
+                  <div class="col-xs-6">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href=""><span class="link">Конно-спортивная база «ЦСКА»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Москва</small></a></li>
+                      <li class="list-group-item"><a href=""><span class="link">КСК «Гармония»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Москва</small></a></li>
+                      <li class="list-group-item"><a href=""><span class="link">Частная конюшня «Максимково»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Московская область</small></a></li>
+                      <li class="list-group-item"><a href=""><span class="link">КСК «Зеленоградский»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Москва</small></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-6">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href=""><span class="link">Конно-спортивная база «ЦСКА»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Москва</small></a></li>
+                      <li class="list-group-item"><a href=""><span class="link">КСК «Гармония»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Москва</small></a></li>
+                      <li class="list-group-item"><a href=""><span class="link">Частная конюшня «Максимково»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Московская область</small></a></li>
+                      <li class="list-group-item"><a href=""><span class="link">КСК «Зеленоградский»</span><br><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><span class="icon fa fa-star">&nbsp;</span><br><small class="text-muted">Москва</small></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer"><a href=""><span class="icon -left icons8-museum-3"></span><span class="link">Все клубы</span></a></div>
+            </div>
+            <div id="raiting-shop" class="tab-pane">
+              <div class="panel-body">
+                <p>Магазины</p>
+              </div>
+              <div class="panel-footer"><a href=""><span class="icon -left icons8-shop-2"></span><span class="link">Все магазины</span></a></div>
+            </div>
+            <div id="raiting-web" class="tab-pane">
+              <div class="panel-body">
+                <p>Сайты</p>
+              </div>
+              <div class="panel-footer"><a href=""><span class="icon -left icons8-globe"></span><span class="link">Все сайты</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Blogs-->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="blog-panel-title panel-title">
+                      <ul class="nav nav-pills -underline">
+                        <li class="nav-pills-item -underline"><a href="#">Я и моя лошадь</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                                <div class="panel-body">
+                                  <ul class="list-group">
+                                    <li class="list-group-item active">
+                                      <p><a href="" class="link">Война и мир или записки японского туриста!</a><br><br>
+                                        <Lorem>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</Lorem>
+                                      </p>
+                                    </li>
+                                    <li class="list-group-item"> <a href="#" class="link">Война и мир или записки японского туриста!</a></li>
+                                    <li class="list-group-item"> <a href="#" class="link">Антикризисная программа</a></li>
+                                    <li class="list-group-item"> <a href="#" class="link">Ворожея! Продаём Коней! стр.61!</a></li>
+                                    <li class="list-group-item"> <a href="#" class="link">Конный Дом Конго - мой Китеж. Аня Беран!</a></li>
+                                  </ul>
+                                </div>
+                                <div class="panel-footer"><a href="#"><span class="icon -left icons8-rules"></span><span class="link">Все темы</span></a></div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="blog-panel-title panel-title">
+                      <ul class="nav nav-pills -underline">
+                        <li class="nav-pills-item -underline"><a href="#">Я и моя лошадь</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                                <div class="panel-body">
+                                  <ul class="list-group">
+                                    <li class="list-group-item active">
+                                      <p><a href="" class="link">Война и мир или записки японского туриста!</a><br><br>
+                                        <Lorem>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</Lorem>
+                                      </p>
+                                    </li>
+                                    <li class="list-group-item"> <a href="#" class="link">Война и мир или записки японского туриста!</a></li>
+                                    <li class="list-group-item"> <a href="#" class="link">Антикризисная программа</a></li>
+                                    <li class="list-group-item"> <a href="#" class="link">Ворожея! Продаём Коней! стр.61!</a></li>
+                                    <li class="list-group-item"> <a href="#" class="link">Конный Дом Конго - мой Китеж. Аня Беран!</a></li>
+                                  </ul>
+                                </div>
+                                <div class="panel-footer"><a href="#"><span class="icon -left icons8-rules"></span><span class="link">Все темы</span></a></div>
+                </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="promo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default"><a href="#"><img src="http://p-hold.com/960/150/" width="100%" alt="" class="thumbnail"></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <ul class="nav nav-pills -underline">
+              <li class="nav-pills-item -underline active"><a href="#good-hit" data-toggle="tab">Хиты продаж</a></li>
+              <li class="nav-pills-item -underline"><a href="#good-new" data-toggle="tab">Новинки</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div id="good-hit" class="tab-pane active">
+            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370/370" width="100%" height="205" alt="">
+                                    <div class="caption">Эвдиалит, 7 лет, 130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                <div class="col-xs-6">
+                                  <div class="row">
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                  </div>
+                                </div>
+                              </div>
+            </div>
+            <div class="panel-footer"><a href="#"><span class="icon -left icons8-star"></span><span class="link">Все хиты продаж</span></a></div>
+          </div>
+          <div id="good-new" class="tab-pane">
+            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370/370" width="100%" height="205" alt="">
+                                    <div class="caption">Эвдиалит, 7 лет, 130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                <div class="col-xs-6">
+                                  <div class="row">
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                    <div class="col-xs-6"><a href="#" class="classified-thumbnail thumbnail"><img src="http://p-hold.com/kitten/370" width="100%" height="100%" alt="">
+                                        <div class="caption">130 000 <span class="icon -left fa fa-rub"></span></div></a></div>
+                                  </div>
+                                </div>
+                              </div>
+            </div>
+            <div class="panel-footer"><a href="#"><span class="icon -left icons8-electricity"></span><span class="link">Все новинки</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <ul class="nav nav-pills -underline">
+              <li class="nav-pills-item -underline"><a href="#">Каталог</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel-body">
+          <ul class="list-unstyled">
+            <li>
+              <p><a href="#" class="link">Аксессуары для собак</a></p>
+            </li>
+            <li>
+              <p><a href="#" class="link">Амуниция для лошади</a></p>
+            </li>
+            <li>
+              <p><a href="#" class="link">Инвентарь для конюшни</a></p>
+            </li>
+            <li>
+              <p><a href="#" class="link">Инвентарь для работы и соревнований</a></p>
+            </li>
+            <li>
+              <p><a href="#" class="link">Экипировка для всадника</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="panel-footer"><a href="#"><span class="icon -left fa fa-shopping-cart"></span><span class="link">Весь каталог</span></a></div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <ul class="nav nav-pills underline">
+              <li class="nav-pills-item -underline"><a href="#">Новости и акции</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel-body">
+          <ul class="list-unstyled">
+            <li><a href="#"> 
+                <p><span class="link">Выставка «ЭКВИРОС» с 16 по 19 октября!</span> <small class="text-muted">13 октября</small></p></a></li>
+            <li><a href="#"> 
+                <p><span class="link">Скидки 20% в «Счастливые часы!»</span> <small class="text-muted">8 октября</small></p></a></li>
+            <li><a href="#"> 
+                <p><span class="link">Spooks — зимняя коллекция 2014</span> <small class="text-muted">1 сентября</small></p></a></li>
+          </ul>
+        </div>
+        <div class="panel-footer"><a href="#"><span class="icon -left icons8-news"></span><span class="link">Все новости</span></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Sitemap Links -->
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Статьи</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Каталоги</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Объявления</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <ul class="list-unstyled">
+              <li><b href="">Форумы</b></li>
+              <li><a href="">Новичкам</a></li>
+              <li><a href="">Советы профи</a></li>
+              <li><a href="">Лошадь</a></li>
+              <li><a href="">Рассказы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <!-- User Links -->
+        <ul class="list-unstyled">
+          <li><b href="#">Username</b></li>
+          <li><a href="#">Мой дневник</a></li>
+          <li><a href="#">Мои объявления</a></li>
+          <li><a href="#">Настройки</a></li>
+          <li><a href="#">Выйти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+        <div class="row">
+          <div class="col-md-9">
+            <!-- Languages Links -->
+            <ul class="list-unstyled list-inline">
+              <li><img src="images/prokoni-logo--footer.png" alt=""></li>
+              <li>
+                <p><b>Россия</b></p>
+              </li>
+              <li>
+                <p><a href="#">France</a></p>
+              </li>
+              <li>
+                <p><a href="#">España</a></p>
+              </li>
+              <li>
+                <p><a href="#">Italia</a></p>
+              </li>
+            </ul>
+            <!-- About Links -->
+            <ul class="list-unstyled list-inline">
+              <li>&copy; 2005—2014</li>
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Реклама на сайте</a></li>
+              <li><a href="#">Контактная информация</a></li>
+            </ul>
+            <!-- Developers Links -->
+            <ul class="list-unstyled">
+              <li>
+                <p>Разработка сайта — <a href="#">Arsenty </a>и <a href="#">Sdemch</a>, icons by <a href="#">Icons8</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <!-- Social Links-->
+            <ul class="list-unstyled">
+              <li><b>Мы в социальных сетях</b></li>
+              <li><a href="#">Твиттер</a></li>
+              <li><a href="#">Фейсбук</a></li>
+              <li><a href="#">Вконтакте</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,137 @@
+---
+  mainMenu:
+    default:
+      -
+        title: Typography
+        url: typography
+        icon: text
+        submenu:
+          -
+            title: Titles & Paragraphs
+            url: titles-and-paragraphs
+          -
+            title: Lists
+            url: lists
+          -
+            title: Quotes
+            url: quotes
+          -
+            title: Description lists
+            url: description-lists
+          -
+            title: Code
+            url: code
+          -
+            title: Text level elements
+            url: text-elements
+      -
+        title: Forms
+        url: forms
+        icon: input
+        submenu:
+          -
+            title: Messaging
+            url: messaging
+          -
+            title: Text Inputs
+            url: text-inputs
+          -
+            title: Radios and Checkboxes
+            url: radios-and-checkboxes
+          -
+            title: Input range
+            url: input-range
+          -
+            title: Selects
+            url: selects
+          -
+            title: Textareas and Files
+            url: textareas-and-files
+          -
+            title: Captcha
+            url: captcha
+      -
+        title: Buttons
+        url: buttons
+        icon: button
+        submenu:
+          -
+            title: Styles
+            url: buttons-styles
+          -
+            title: Sizes
+            url: buttons-sizes
+          -
+            title: Icon buttons
+            url: buttons-icon
+          -
+            title: Tags types
+            url: buttons-tags
+          -
+            title: Disabled buttons
+            url: buttons-disabled
+          -
+            title: Block buttons
+            url: buttons-block
+          -
+            title: Buttons group
+            url: buttons-group
+      -
+        title: Components
+        url: components
+        icon: add
+        submenu:
+          -
+            title: Tables
+            url: tables
+          -
+            title: Breadcrumbs
+            url: breadcrumbs
+          -
+            title: Pagination
+            url: pagination
+          -
+            title: Badges
+            url: badges
+          -
+            title: Progress Bar
+            url: progress-bar
+          -
+            title: Responsive video
+            url: embed
+          -
+            title: Social icons
+            url: social-icons
+          -
+            title: Tabs
+            url: tabs
+          -
+            title: Modal windows
+            url: modals
+          -
+            title: Accordion
+            url: accordion
+          -
+            title: Dropdown
+            url: dropdown
+          -
+            title: Spoiler
+            url: spoiler
+          -
+            title: Tooltips
+            url: tooltips
+          -
+            title: Notifications
+            url: notifications
+          -
+            title: Svg Icons
+            url: svg-icons
+          -
+            title: Avatars
+            url: avatars
+          -
+            title: Media object
+            url: media-object
+          -
+            title: Spinner
+            url: spinner

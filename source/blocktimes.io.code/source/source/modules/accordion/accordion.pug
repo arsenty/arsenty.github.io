@@ -1,0 +1,13 @@
+mixin accordion(data)
+	.accordion&attributes(attributes)
+		block
+
+mixin accordion-item(data)
+	- var classes = ['accordion__item']
+	if data.open
+		- classes.push(classes[0] + '_open')
+
+	div(class=classes data-accordion-role="item")&attributes(attributes)
+		button(type="button" data-accordion-role="trigger").accordion__trigger= data.title
+		.accordion__pannel(data-accordion-role="pannel").content-wrapper
+			block
