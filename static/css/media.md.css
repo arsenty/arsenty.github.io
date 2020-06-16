@@ -1,0 +1,33 @@
+@media (min-width: 992px) {
+    :root {
+        --gap: 4em;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    #main {
+        flex-basis: 66.666%;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    figure {
+        flex-basis: 33%;
+    }
+    #main h2 + section {
+        column-count: 2;
+        column-gap: var(--gap);
+    }
+    .sidebar {
+        flex-basis: calc(33.333% - var(--gap));
+        flex-grow: 1;
+        position: sticky;
+        top: var(--gap);
+        align-self: flex-start;
+        padding-right: var(--gap);
+    }
+}
+

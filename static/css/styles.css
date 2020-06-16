@@ -1,0 +1,99 @@
+:root {
+    --gap: 1em;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    padding: var(--gap);
+}
+.sidebar
+{
+    margin-bottom: calc(var(--gap) * 2);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 0 1em;
+    margin: 0;
+}
+p {
+    padding-top: 0;
+    margin-top: 0;
+    opacity: 0.75;
+}
+.sidebar h2, .sidebar h3 {
+    opacity: 0.25;
+    margin-bottom: 0;
+}
+h2 {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration-color: hsl(9, 100%, 94%);
+    text-decoration: none;
+}
+
+
+.sidebar ul {
+    padding-left: 1em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar ul > li {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin-right: 0.25em;
+    font-weight: bold;
+}
+.sidebar ul ul {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+    margin-bottom: 0.25em;
+}
+.sidebar ul > li {
+    display: inline;
+}
+
+#main h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+figure {
+    margin: 0;
+    align-self: start;
+    padding-bottom: var(--gap);
+}
+    figure img {
+        width: 100%;
+        height: 100%;
+        background: whitesmoke;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    figure > a {
+        line-height: 0;
+        display: block;
+    }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #272727;
+        color: white;
+    }
+    a {
+        color: white;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-color: rgba(255, 255, 255, 0.15);
+        text-decoration-thickness: 0.15em;
+        text-decoration-skip: none;
+    }
+}
