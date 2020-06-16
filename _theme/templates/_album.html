@@ -22,13 +22,13 @@
           title="{{ media.title }}"
           data-href="{{ media.url }}" {{ img_description(media) }}>
         {% else %}
-        <a href="/{{album.url}}/{{ media.url }}" class="gallery" title="{{ media.title }}"
+        <a href="{{album.url}}{{ media.url }}" class="gallery" title="{{ media.title }}"
           {{ img_description(media) }}>
         {% endif %}
         <img 
             alt="{{ media.url }}"
             src="{{theme.url}}/js/echo/blank.gif"
-            data-echo="{{album.url}}/{{ media.thumbnail }}"
+            data-echo="{{album.url}}{{ media.thumbnail }}"
             title="{{ media.title }}" /></a>
       </figure>
       {% endif %}
@@ -43,7 +43,7 @@
             {% if media.big %} data-big="{{ media.big_url }}"{% endif %}>
             <img alt="{{ media.url }}"
                 src="{{theme.url}}/js/echo/blank.gif"
-                data-echo="{{album.url}}/{{ media.thumbnail }}"
+                data-echo="{{album.url}}{{ media.thumbnail }}"
                 title="{{ media.title }}" /></a>
         </div>
         <!-- This contains the hidden content for the video -->
