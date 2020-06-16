@@ -27,8 +27,8 @@
         {% endif %}
         <img 
             alt="{{ media.url }}"
-            src="/{{theme.url}}/js/echo/blank.gif"
-            data-echo="/{{album.url}}/{{ media.thumbnail }}"
+            src="{{theme.url}}/js/echo/blank.gif"
+            data-echo="{{album.url}}/{{ media.thumbnail }}"
             title="{{ media.title }}" /></a>
       </figure>
       {% endif %}
@@ -42,8 +42,8 @@
           {% endif %}
             {% if media.big %} data-big="{{ media.big_url }}"{% endif %}>
             <img alt="{{ media.url }}"
-                src="/{{theme.url}}/js/echo/blank.gif"
-                data-echo="/{{album.url}}/{{ media.thumbnail }}"
+                src="{{theme.url}}/js/echo/blank.gif"
+                data-echo="{{album.url}}/{{ media.thumbnail }}"
                 title="{{ media.title }}" /></a>
         </div>
         <!-- This contains the hidden content for the video -->
