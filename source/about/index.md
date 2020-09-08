@@ -1,24 +1,13 @@
-Title: about
+---
+title: about
+fontfamily: Arial
+mainfont: Arial
+fontsize: 20pt
+css: ../styles.css
+---
+# [Khanov Arsenty](/)
+I am Full Stack Designer with 10+ years expierence in UX, frontend and marketing.
 
-Hello! My name is Arsenty, i am Full Stack Designer with 10 years expierence.
-
-## Stack
-### Design
-- [E-commerce](#ecommerce)
-- [Apps](#app)
-- [Landing&nbsp;Pages](#lp)
-- [Prototyping](#ui)
-### Frontend
-- [Animations](#banners)
-### More
-- [E-mails](#email)
-- [Banners](#banners)
-- [Logotypes](#logotype)
-- [Illustrations](#illustration) 
-- [Icons](#icons)
-- [Lettering](#lettering)
-
-## Links
-- [LinkedIn](https://www.linkedin.com/in/arsenty/)
-- [Behance](https://www.behance.net/arsenty)
-- [GitHub](https://github.com/arsenty)
+- [linkedin.com/in/arsenty](https://www.linkedin.com/in/arsenty/)
+- [behance.net/arsenty](https://behance.net/arsenty)
+- [work.arsenty.ru](https://work.arsenty.ru)

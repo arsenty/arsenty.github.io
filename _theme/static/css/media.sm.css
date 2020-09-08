@@ -1,0 +1,7 @@
+@media (max-width: 992px) {
+    nav {
+        overflow-x: auto;
+        margin: 0 -1em;
+        padding: 1em;
+    }
+}

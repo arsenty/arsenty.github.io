@@ -183,11 +183,12 @@ ignore_files = []
 # index_in_url = False
 
 # A list of links (tuples (title, URL))
-# links = [('Example link', 'http://example.org'),
-#          ('Another link', 'http://example.org')]
+links = [('Example link', 'http://example.org'),
+        ('Another link', 'http://example.org')]
 
 # Google Analytics tracking code (UA-xxxx-x)
 # google_analytics = ''
+
 
 # Google Tag Manager tracking code (GTM-xxxxxx)
 # google_tag_manager = ''

@@ -2,7 +2,9 @@ $(".gallery").colorbox({
     rel: "gallery",
     transition: "none",
     maxWidth: "90%",
-    maxHeight: "90%",
+    //maxHeight: "90%",
+    //fixed: true,
+    scrolling: false,
     scalePhotos: true,
     current: "{current} / {total}",
     title: function() {
@@ -53,29 +55,33 @@ var list = document.querySelector('#main');
 var apps = document.querySelectorAll('figure');
 
 function filter(hash) {
-    var figure = document.querySelectorAll("figure");
+    var figure = document.querySelectorAll("[data-tags]");
     figure.forEach(function(e) {
         if (e instanceof Element) {
             var string = e.getAttribute('data-tags');
             var regex = RegExp(hash);
             if (regex.test(string)) {
-                e.setAttribute('style', 'display: block !important;');
+                e.setAttribute('style', 'display: grid !important;');
                 echo.render();
             } else {
                 e.setAttribute('style', 'display: none !important;');
             }
         }
     });
-    var heading  = document.querySelectorAll("h2[data-tags]");
-    heading.forEach(function(e) {
+    var cv = document.querySelectorAll('section');
+    cv.forEach(function(e) {
+        e.setAttribute('style', 'display: none;');
+    });
+}
+
+function updateMenu(hash) {
+    var links = document.getElementById("skills").querySelectorAll('a');
+    links.forEach(function(e) {
         if (e instanceof Element) {
-            var string = e.getAttribute('data-tags');
-            var regex = RegExp(hash);
-            if (regex.test(string)) {
-                e.setAttribute('style', 'display: block !important;');
-                echo.render();
+            if (e.getAttribute('href') == location.hash) {
+                e.setAttribute('class', 'active');
             } else {
-                e.setAttribute('style', 'display: none !important;');
+                e.removeAttribute('class');
             }
         }
     });
@@ -84,11 +90,16 @@ function filter(hash) {
 var hash = location.hash.replace('#', '');
 if (hash) {
     document.getElementById("main").setAttribute('data-filter', hash);
+    document.getElementById("skills").setAttribute('data-filter', hash);
     filter(hash);
+    updateMenu(hash);
 }
 $(window).on('hashchange', function() {
     var hash = location.hash.replace('#', '');
     filter(hash);
+    updateMenu(hash);
+    window.scrollTo(0, 0);
+    //window.scrollTo(0, document.getElementsByTagName('header')[0].clientHeight + 30);
     echo.render();
 });
 

@@ -14,24 +14,34 @@
   {%- endmacro %}
 
     {% for media in album.medias %}
-        {% set tags = media|string|replace(".", " ") %}
+      {% set tags = media|string|replace(".", " ") %}
+          {% if media.size.width < media.size.height %}
+              {% set orientation = "portrait" %}
+          {% endif %}
+          {% if media.size.width > media.size.height %}
+              {% set orientation = "landscape" %}
+          {% endif %}
       {% if media.type == "image" %}
-      <figure data-tags="{{ tags }}" class="{{ column_size_t }} columns thumbnail">
         {% if 'sigal.plugins.media_page' in settings.plugins %}
         <a href="{{ media.url}}.html" class="gallery"
           title="{{ media.title }}"
           data-href="{{ media.url }}" {{ img_description(media) }}>
         {% else %}
-        <a href="{{album.url}}{{ media.url }}" class="gallery" title="{{ media.title }}"
-          {{ img_description(media) }}>
+        <a 
+          href="{{album.url}}{{ media.url }}"
+          class="gallery" 
+          title="{{ media.title }}"
+          {{ img_description(media) }}
+        >
         {% endif %}
-        <img 
+        <img
             alt="{{ media.url }}"
             src="{{theme.url}}/js/echo/blank.gif"
-            data-echo="{{album.url}}{{ media.thumbnail }}"
+            data-echo="/{{album.url}}{{ media.thumbnail }}"
+          data-orientation="{{orientation}}"
             title="{{ media.title }}" /></a>
-      </figure>
       {% endif %}
+
       {% if media.type == "video" %}
         {% set mhash = media.url|replace('.', '')|replace(' ', '') %}
         <div class="{{ column_size_t }} columns thumbnail">

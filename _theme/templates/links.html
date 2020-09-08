@@ -1,6 +1,31 @@
 {% if settings.links %}
 <nav id="menu">
   <ul>
+      <div id="description" class="row">
+                            <h3>Design</h3>
+                            <ul>
+                                <li><a href="#ecommerce">E-commerce</a></li>
+                                <li><a href="#app">Apps</a></li>
+                                <li><a href="#lp">Landing&nbsp;Pages</a></li>
+                                <li><a href="#ui">Prototyping</a></li>
+                            </ul>
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li><a href="#banners">Animations</a></li>
+                            </ul>
+                            <h3>More</h3>
+                            <ul>
+                                <li><a href="#email">E-mails</a></li>
+                                <li><a href="#banners">Banners</a></li>
+                                <li><a href="#logotype">Logotypes</a></li>
+                                <li><a href="#illustration">Illustrations</a> </li>
+                                <li><a href="#icons">Icons</a></li>
+                                <li><a href="#lettering">Lettering</a></li>
+                            </ul>
+                            <h2>Links</h2>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/arsenty/" targ
+
     {% for title, link in settings.links %}
     <li><a href="{{ link }}">{{ title }}</a></li>
     {% endfor %}

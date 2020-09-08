@@ -21,46 +21,48 @@
   </head>
   <body>
     {% include 'gtm.html' %}
-    <div class="container">
-        <div class="sidebar">
-              <h1><a href="{{ album.index_url }}">
-              {% if settings.site_logo %}
-              <img src="{{ theme.url }}/{{ settings.site_logo }}" alt="{{ index_title }}">
-              {% else %}
-              {{ index_title }}
-              {% endif %}
-              </a></h1>
+      <div id="main" role="main" class="">
           {% if album.breadcrumb == [] %}
               {% for album in album.albums %}
+                {% if album.title == 'skills' %}
+                    <nav class="cv" id="{{ album.title }}">
+                        {{ album.description }}
+                    </nav>
+                {% endif %}
                 {% if album.title == 'about' %}
-                    {{ album.description }}
+                    <header class="cv" id="{{ album.title }}">
+                        {{ album.description }}
+                    </header>
+                {% endif %}
+              {% endfor %}
+              {% for album in album.albums %}
+                {% if album.title == 'skills' %}
+                    <section class="cv" id="">
+                        {{ album.description }}
+                    </section>
+                {% endif %}
+                {% if album.title == 'experience' %}
+                    <section class="cv" id="{{ album.title }}">
+                        {{ album.description }}
+                    </section>
                 {% endif %}
               {% endfor %}
           {% else %}
 
             <header>
-              <!--{% include 'breadcrumb.html' %}
-              {% if album.breadcrumb %}
-                <hr>
-                {% endif %}-->
-
-                {% if album.description %}
-                  <div id="description" class="row">
-                    {{ album.description }}
-                  </div>
-                {% endif %}
+                {% include 'breadcrumb.html' %}
+              {% if album.description %}
+                {{ album.description }}
+              {% endif %}
             </header>
 
           {% endif %}
 
-          {% include 'links.html' %}
-          <!--{% include 'footer.html' %}-->
+          <!--{% include 'links.html' %}-->
+          {% include 'footer.html' %}
 
-        </div>
-      <div id="main" role="main" class="nine columns offset-by-three">
         {% block content %}{% endblock %}
       </div>
-    </div>
     {% block footer %}{% endblock %}
       <script src="{{ theme.url }}/js/jquery-2.2.1.min.js"></script>
       <script src="{{ theme.url }}/js/jquery.colorbox-min.js"></script>

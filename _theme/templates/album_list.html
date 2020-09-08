@@ -15,26 +15,42 @@
   {%- endmacro %}
 
 {% for album in album.albums %}
-    {% if album.title != 'about' %}
-        {% set tags = album.medias[0]|string|replace(".", " ") %}
-        <h2 data-tags="{{ tags }}" >
+    {% set tags = album.medias[0]|string|replace(".", " ") %}
+      <figure data-tags="{{ tags }}" class="{{ column_size_t }}">
+        <figcaption data-tags="{{ tags }}" >
             <a href="{{ album.url }}">
                 {{ album.title }}
             </a>
-        </h2>
-        <section>
-            {% include "_album.html" %}
-        </section>
-  {% endif %}
+        </figcaption>
+        {% include "_album.html" %}
+      </figure>
 {% endfor %}
 
-{% if album.title != 'about' %}
-    <h2 data-tags="{{ tags }}" >
-        {{ album.title }}
-    </h2>
-    <section>
-        {% include "_album.html" %}
-    </section>
-{% endif %}
+<figure>
+    <figcaption data-tags>More</figcaption>
+{% for album in album %}
+    {% set tags = album.title|string|replace(".", " ") %}
+          {% set media = album %}
+          {% if media.size.width < media.size.height %}
+              {% set orientation = "portrait" %}
+          {% endif %}
+          {% if media.size.width > media.size.height %}
+              {% set orientation = "landscape" %}
+          {% endif %}
+        <a data-tags="{{ tags }}" 
+           href="{{album.url}}" 
+           class="gallery"
+           title="{{ album.title }}"
+          {{ img_description(album) }}
+          >
+        <img
+            alt="{{ album.url }}"
+            src="{{theme.url}}/js/echo/blank.gif"
+            data-echo="/{{ album.thumbnail }}"
+           data-orientation="{{orientation}}"
+            title="{{ album.title }}" /></a>
+      </a>
+{% endfor %}
+</figure>
 
 {% endblock %}
