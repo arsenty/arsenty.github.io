@@ -1,0 +1,48 @@
+doctype html
+include _mixins
+- var basedir = '/source'
+- var projName = 'Adult 3545'
+
+html(lang="en")
+	head
+		//- Meta
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		//- meta(name="viewport", content="width=device-width, initial-scale=1")
+		//- meta(name="viewport", content="width=1024")
+		
+		//- Title
+		block head
+		title #{pageTitle} 
+		//- :: #{projName}
+		
+		//- Favicon
+		//- Use 180x180px image
+		//- link(rel="apple-touch-icon", href="apple-touch-icon.png")
+		link(rel="shortcut icon", type="image/x-icon", href="favicon.ico")
+		//- link(rel="shortcut icon", type="image/png", href="favicon.png")
+
+		//- CSS
+		link(rel="stylesheet", href="styles.css")
+		block style
+
+	body#content
+				
+		//- header
+		//- 	include header
+		
+		section
+			.container
+				block content
+				
+		footer
+			include ../blocks/footer
+
+
+		script(src="../js/plugins.js")
+		//- script
+		//- 	include ../js/plugins.js
+		//- 	include ../js/scripts.js
+		script(src="http://maps.google.com/maps/api/js?sensor=true")
+		script(src="../js/scripts.js")

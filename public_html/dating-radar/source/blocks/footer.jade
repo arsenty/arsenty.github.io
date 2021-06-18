@@ -1,0 +1,22 @@
+.container.text-center
+    .col-sm-8.col-sm-offset-2
+      //-   small @ 2015 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      span(data-anijs='if: load, on: window, do: $toggleClass open, to: .welcome.modal;')
+      
+      span(data-anijs='if: load, on: window, do: fadeIn animated, to: .modal;')
+      span(data-anijs='if: load, on: window, do: bounceInDown animated, to: .modal .panel;')
+      
+      //- span(data-anijs='if: click, on: .modal, do: bounceOutDown animated, to: .modal .panel;')
+      //- span(data-anijs='if: click, on: .modal, do: fadeOut animated, to: .modal;')
+      span(data-anijs='if: click, on: .btn-group, do: $addClass open, to: .offer.modal;')
+      
+      span(data-anijs='if: load, on: window, do: bounceIn animated, to: .item;')
+
+      script.
+         radar = new Audio('radar.mp3'); 
+         radar.addEventListener('ended', function() {
+             this.currentTime = 0;
+             this.play();
+         }, false);
+         radar.play();

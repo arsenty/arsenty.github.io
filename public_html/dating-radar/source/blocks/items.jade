@@ -1,0 +1,66 @@
+// FIRST ITEM
+
+//- .item.start
+//-     .panel.panel-default.text-center
+//-         //- .panel-heading
+//-         .panel-body
+//-             //- .h3.flash.animated.infinite 🏩
+//-             .h3.flash.animated.infinite 29
+//-             big= woman_want_
+//-             .h6 {{city}}
+//-         //- .panel-footer
+
+// ITEM
+
+each val, index in friends
+   - var num = index + 1
+   a.item(
+        class='item#{num}'
+        ).hidden
+        
+        .panel.panel-default(
+style='\
+background-image: url("images/#{num}.jpg"); \
+background-size: 100%; \
+background-repeat: no-repeat;\
+')
+            
+            ul.list-group
+                li.list-group-item
+                    span.badge= val.age
+                    = val.name
+            
+            .panel-heading
+            //- .panel-body
+            .panel-footer
+                p.text-muted.distance.hidden
+                    -var distance = Math.random() * (1 - 10) + 10;
+                    -var distance = Math.round(distance);
+                    span Less than 
+                    span.h6= distance
+                    span  km
+            .panel-footer.btn.btn-sm.btn-success.btn-block
+                    span Chat
+        
+            //- if val.isActive == true
+            //-     span.btn.btn-success.btn-block(
+            //-         style='border-radius: 0 0 3px 3px'
+            //-         )
+            //-         span.flash.animated.infinite online
+            //- else
+            //-     span.btn.btn-default.btn-block(
+            //-         disabled='disabled'
+            //-         style='border-radius: 0 0 3px 3px'
+            //-         ) offline
+            
+    // /ITEM
+
+// LAST ITEM
+
+//- .item.end
+//-     .panel.panel-default.text-center
+//-         .panel-heading
+//-             br
+//-             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="gray"><path fill-opacity=".9" d="M23.99 4c-11.05 0-19.99 8.95-19.99 20s8.94 20 19.99 20c11.05 0 20.01-8.95 20.01-20s-8.96-20-20.01-20zm.01 36c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"/><path d="M0 0h48v48h-48z" fill="none"/><path fill-opacity=".9" d="M25 14h-3v12l10.49 6.3 1.51-2.46-9-5.34z"/></svg>
+//-         .panel-body= woman_wait_
+//-         //- .panel-footer

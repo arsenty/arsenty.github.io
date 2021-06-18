@@ -1,0 +1,46 @@
+extends ../blocks/_layout
+
+block content
+
+	include ../blocks/header
+
+	mixin welcome
+
+	mixin process12
+	
+	mixin offer
+	
+	#text
+	
+	//- INTERATION //////////////////////////////////////////////////////////////
+	
+	span(data-anijs='if: click, on: .process, do: $toggleClass open, to: .offer;')
+	
+	each val, index in friends
+		- var num = index + 1
+		span(data-anijs='if: click, on: .go, do: $toggleClass hidden, to: .item#{num}, before: $timing#{num};')
+		span(data-anijs='if: click, on: .go, do: $toggleClass hidden, to: .log#{num}, before: $timing#{num};')
+		
+	script.
+		function getInnerText(el) {
+			var sel, range, innerText = "";
+			if (typeof document.selection != "undefined" && typeof document.body.createTextRange != "undefined") {
+				range = document.body.createTextRange();
+				range.moveToElementText(el);
+				innerText = range.text;
+			} else if (typeof window.getSelection != "undefined" && typeof document.createRange != "undefined") {
+				sel = window.getSelection();
+				sel.selectAllChildren(el);
+				innerText = "" + sel;
+				sel.removeAllRanges();
+			}
+				return innerText;
+			}
+
+		document.getElementById("text").value = getInnerText(document.getElementById("content"));
+
+
+
+
+
+		

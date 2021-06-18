@@ -1,0 +1,8 @@
+mixin step(id, header, ...items)
+	.body.step(class='step#{id}' data-anijs='if: load, on: window, do: fadeIn animated, after: removeAnim; if: click, on: .button.button#{id}, do: fadeOut animated')&attributes(attributes)
+		h2!= header
+		block
+		each item in items
+			a.button(href='#' class='button#{id}' data-anijs='if: click, do: pulse animated, after: removeAnim;')
+				i
+				span!= item

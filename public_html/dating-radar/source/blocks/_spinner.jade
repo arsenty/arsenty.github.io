@@ -1,0 +1,11 @@
+//- SPINNER
+mixin spinner(header, ...items)
+	.body.spinner&attributes(attributes)(data-anijs='\
+		if: load, on: window, do: fadeIn animated, after: removeAnim;\
+		if: click, on: .step5, do: $toggleClass -hidden, to: .spin0, before: $timing1;\
+		if: click, on: .step5, do: $toggleClass -hidden, to: .spin1, before: $timing2;\
+		if: click, on: .step5, do: $toggleClass -hidden, to: .spin2, before: $timing3;\
+		')
+		h2= header
+		each val, index in items
+			p.spin.-hidden(class='spin#{index}') &#10004; #{val}

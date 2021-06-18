@@ -1,0 +1,116 @@
+// HEADER
+.row
+	.navbar.navbar-default.navbar-fixed-top
+
+		section: .container: row
+			.navbar-header.text-uppercase
+				a(href='index.html').navbar-brand
+					include ../img/noun_157516_cc.svg
+					small(style='vertical-align: middle').text-danger  RADARLOVE   
+					small(style='vertical-align: middle') New York
+		section.panel-footer: .container: row
+			.btn-group.btn-group-justified
+				each val in ['Women', '35-45', 'Nearby']
+					a(href='#').btn.btn-sm.btn-link= val
+						include ../img/arrow_drop_down-black-24.svg
+
+// WELCOME //////////////////////////////////////////////////////////////////
+
+mixin welcome
+	.row
+		.modal.welcome(aria-hidden='true')
+			.container
+				.col-xs-12.col-sm-8.col-sm-offset-2
+					.panel.panel-default.text-center
+						.panel-heading
+							strong.h4 Dating for Everyone
+							a.btn-close(aria-hidden='true' href='#'
+							data-anijs='if: click, do: $removeClass open, to: .modal, before: $timing500') ×
+						.panel-body
+							include ../img/radar.svg
+							//- p Radar Love is a location-based dating app done right for {{city}}! Radar Love will search the local area and return a list of potential local dates, you decide if you want to chat to them via secure, private messaging, they choose if they want to respond.
+							p RADARLOVE is a free dating app in {{city}}: Meet new people and singles in your area, chat and arrange to meet up.
+						.panel-footer
+							a.btn.btn-danger.btn-lg.btn-block.go(
+								href='#'
+								data-anijs='\
+								if: click, do: $removeClass open, to: .modal.welcome, before: $timing500;\
+								if: load, on: window, do: bounce animated, before: $timing2, after: removeAnim;\
+								if: load, on: window, do: bounce animated, before: $timing4, after: removeAnim;\
+								if: load, on: window, do: bounce animated, before: $timing8, after: removeAnim;\
+								')
+								//- include ../img/search-black-24.svg
+								| Get flirting Today!
+
+// OFFER ///////////////////////////////////////////////////////////////////////
+
+mixin offer
+	.row
+		.modal.offer(aria-hidden='true')
+			.container
+				.col-xs-12.col-sm-8.col-sm-offset-2
+					.panel.panel-default.text-center
+						.panel-heading
+							strong.h4 Sign up for continue
+							a.btn-close(href='#' aria-hidden='true' data-anijs='if: click, do: $removeClass open, to: .modal') ×
+						.panel-body
+							include ../img/favorite-black-24.svg
+							//- p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.panel-footer
+							a(href='{{offer}}').btn.btn-success.btn-lg.btn-block
+								span(data-anijs='if: load, on: window, do: flash animated infinite;') Click to continue...
+
+
+				
+// PROCESS /////////////////////////////////////////////////////////////////////
+
+mixin process12
+	.row.process
+		.container
+			.panel.panel-default
+				.panel-heading
+					.log.log0 Starting search...
+					each val, index in friends
+						- var num = index + 1
+						.log(class='log#{num}').hidden= val.name
+					.log.flash.animated.infinite &#9610;
+					
+				.panel-body
+					.pulsar
+						each val in [1,2,3,4]
+							.ring
+						.location
+					.scanner
+					
+					.items#items
+						include ../blocks/items.jade
+				
+// PROCESS /////////////////////////////////////////////////////////////////////
+
+mixin process3
+	.row.process
+		.container
+			.panel.panel-default
+				.panel-heading
+					.log.log0 Starting search...
+					each val, index in friends
+						- var num = index + 1
+						.log(class='log#{num}').hidden= val.name
+					.log.flash.animated.infinite &#9610;
+					
+				.panel-body
+					.pulsar
+						each val in [1,2,3,4]
+							.ring
+					
+					.points
+						each val, index in friends
+							- var num = index + 1
+							.point(class='point#{num}' data-anijs='if: load, on: window, do: bounceIn animated;').hidden
+								include ../img/place-black-24.svg
+
+					.scanner
+					
+				.panel-footer#items
+					include ../blocks/items.jade
+				

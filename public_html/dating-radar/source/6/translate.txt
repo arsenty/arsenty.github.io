@@ -1,0 +1,49 @@
+{{header}}
+en
+Header
+
+{{analyze}}
+en
+Анализируем
+
+{{selection}}
+en
+Подбираем анкеты
+
+{{please_wait}}
+en
+Это займёт сколько-то времени
+
+{{offer_header}}
+en
+Сматри, какой харощий девущки!
+
+{{offer_desc}}
+en
+Выбирай любой
+
+{{footer}}
+en
+© 2015 Adult Dating, All rights reserved. Disclaimer: This website contains adult material. All members and persons appearing on this site have contractually represented to us that they are 18 years of age or older.
+
+///////////////////////////
+
+{{selfie_header}}
+en
+SelfieMaster
+
+{{selfie_header1}}
+en
+Сделай селфи, а мы подберем анкеты тёток из
+
+{{selfie_header2}}
+en
+которым ты понравишься
+
+{{selfie_take}}
+en
+Take Selfie
+
+{{selfie_analyze}}
+en
+Analyze photo

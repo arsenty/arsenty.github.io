@@ -1,0 +1,27 @@
+extends ../blocks/_layout
+
+block content
+
+	include ../blocks/header
+	
+	// WELCOME //////////////////////////////////////////////////////////////////
+
+	mixin welcome
+	
+	mixin process12
+	
+	#map
+	
+	mixin offer
+	
+	//- INTERACTION /////////////////////////////////////////////////////////////
+	
+	span(data-anijs='if: click, on: .process .item, do: $removeClass modal open, to: .panel-footer .item;')
+	span(data-anijs='if: click, on: .process .btn, do: $toggleClass open, to: .offer;')
+	span(data-anijs='if: click, on: .go, do: $toggleClass hidden, to: .welcome, before: $geo;')
+	
+	each val, index in friends
+		- var num = index + 1
+		span(data-anijs='if: click, on: .go, do: $toggleClass hidden, to: .item#{num}, before: $timing#{num};')
+		span(data-anijs='if: click, on: .item#{num}, do: $addClass modal open, to: .item#{num};')
+		span(data-anijs='if: click, on: .go, do: $toggleClass hidden, to: .log#{num}, before: $timing#{num};')
