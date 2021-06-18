@@ -1,0 +1,53 @@
+{{header}}
+en
+Header
+
+{{analyze}}
+en
+Анализируем
+
+{{selection}}
+en
+Подбираем анкеты
+
+{{please_wait}}
+en
+Это займёт сколько-то времени
+
+{{offer_header}}
+en
+Сматри, какой харощий девущки!
+
+{{offer_desc}}
+en
+Выбирай любой
+
+{{footer}}
+en
+© 2015 Adult Dating, All rights reserved. Disclaimer: This website contains adult material. All members and persons appearing on this site have contractually represented to us that they are 18 years of age or older.
+
+///////////////////////////
+
+{{select_header}}
+en
+Ответь на несколько вопросов и мы найдем тебе идеальную пару.
+
+{{select_q1}}
+en
+Do you like breast like this?
+
+{{select_q2}}
+en
+Do you like lips like this?
+
+{{select_q3}}
+en
+Do you like eyes like this?
+
+{{select_q4}}
+en
+Do you like hairstyle like this?
+
+{{selec_q5}}
+en
+Do you like stature like this?

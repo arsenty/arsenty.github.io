@@ -1,0 +1,388 @@
+// v.0.0.1
+// BOOTSTRAP
+@import '/bootstrap/index'
+@import 'theme.css'
+use('/usr/local/lib/node_modules/jeet')
+@import 'jeet'
+
+@import 'nib'
+
+// use('/usr/local/lib/node_modules/nib')
+// vendor-prefixes ?= moz webkit o ms official
+
+// use('/usr/local/lib/node_modules/jeet')
+// @import 'jeet'
+
+// use('/usr/local/lib/node_modules/ride-css')
+// @require 'ride-css'
+
+// @import '../js/plugins/anicollection/libraries/anicollection/source/_base.css'
+@import '../js/plugins/anicollection/dist/anicollection.css'
+// @import '../js/plugins/anicollection/animations/fading_entrances/fadeIn.css'
+// @import '../scripts/plugins/anicollection/animations/fading_exits/fadeOut.css'
+// @import '../scripts/plugins/anicollection/animations/attention_seekers/pulse.css'
+// @import '../js/plugins/anicollection/animations/attention_seekers/flash.css'
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+html
+body
+	// width 100% !important
+	// overflow hidden
+
+body
+	// padding 1em
+	padding-top 8em
+	background-image url('background.jpg')
+	background darkgreen - 75%
+
+a:hover
+	text-decoration none
+
+// TABLE ///////////////////////////////////////////////////////////////////////
+
+table.overflow
+	table-layout fixed
+
+table.overflow td
+	overflow hidden
+	text-overflow ellipsis
+	white-space nowrap
+
+.disabled
+	opacity .5
+	cursor not-allowed
+
+// GRIDS ///////////////////////////////////////////////////////////////////////
+
+.container
+	center(600px, 0px);
+
+// .item
+// 	col(1/4, gutter: 2, uncycle: 3, cycle: 4)
+//
+// @media screen and (max-width 30em)
+// 	.item
+// 		col(1/2, gutter: 2, uncycle: 1, cycle: 2)
+//
+// @media screen and (max-width 18em)
+// 	.item
+// 		col(1/1, gutter: 2, uncycle: 3, cycle: 2)
+
+// PANELS //////////////////////////////////////////////////////////////////////
+
+
+.item .panel
+	position relative
+	height 8em
+	margin 0
+
+	.panel-heading
+		background none
+	.panel-heading
+	.panel-footer
+		border 0
+
+	.list-group-item
+		padding .5em
+		background 0
+		border 0
+		opacity .75
+		table-layout fixed
+		overflow hidden
+		text-overflow ellipsis
+		white-space nowrap
+		background linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+		color white
+		text-align left
+		font-size smaller
+		// text-transform uppercase
+		.badge
+			font-size smaller
+			border-radius .25em
+
+	.panel-body
+		height 100%
+
+	.panel-footer
+		position absolute
+		bottom 0
+		width 100%
+
+
+// MODALS //////////////////////////////////////////////////////////////////////
+
+.modal
+	display none
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background rgba(0, 0, 0, .5)
+	z-index 999
+	padding-top 4em
+
+.modal.open
+	display block
+
+ .btn-close
+	 color rgba(0,0,0, 0.6)
+	 font-size 28px
+	 text-decoration none
+	 position absolute
+	 right 10px
+	//  width 30px
+	//  float right
+	 top -3px
+
+.panel-heading
+	position relative
+
+.modal
+	.panel
+		box-shadow 0 1em 1em rgba(black, .5)
+
+////////////////////////////////////////////////////////////////////////////////
+
+.btn *
+svg
+	vertical-align middle
+
+table
+	background-color initial !important
+	width 100%
+
+////////////////////////////////////////////////////////////////////////////////
+
+@keyframes pulsar {
+	 0% {
+		  transform: scale(0);
+		  opacity: 1;
+	 }
+	 75% {
+		  opacity: 1;
+	 }
+	 100% {
+		  transform: scale(1);
+		  opacity: 0;
+	 }
+}
+
+@-webkit-keyframes pulsar {
+	 0% {
+		  -webkit-transform: scale(0);
+		  opacity: 1;
+	 }
+	 75% {
+		  opacity: 1;
+	 }
+	 100% {
+		  -webkit-transform: scale(1);
+		  opacity: 0;
+	 }
+}
+
+.pulsar
+	 width: 280px;
+	 height: 280px;
+	 margin: 0px auto;
+	 position: relative;
+
+.pulsar .ring
+	 box-sizing: border-box;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 border: 5px solid rgb(255,0,0);
+	//  box-shadow: inset 0 0 10px 2px rgb(255,0,0);
+	 border-radius: 50%;
+	 width: 100%;
+	 height: 100%;
+	 margin-top: -50%;
+	 margin-left: -50%;
+	 transform: scale(0);
+	//  z-index: 888;
+
+.pulsar .ring:nth-child(1)
+	 animation: pulsar 4s 0s linear infinite
+
+.pulsar .ring:nth-child(2)
+	 animation: pulsar 4s 1s linear infinite
+
+.pulsar .ring:nth-child(3)
+	 animation: pulsar 4s 2s linear infinite
+
+.pulsar .ring:nth-child(4)
+	 animation: pulsar 4s 3s linear infinite
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+#scanner {
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes scan {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+@keyframes scan {
+    0% { left: 0; }
+    100% { left: 100%; }
+}
+
+.scanner {
+    height: 100%;
+    width: 0;
+    border-right: 2px solid rgba(0,255,0, .25);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    -webkit-animation: scan 2s infinite alternate;
+    animation: scan 2s infinite alternate;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+.process
+
+	.panel
+	.panel-heading
+		// padding 0
+		border 0
+		background initial
+
+	.panel-footer
+		overflow-x scroll
+		overflow-y hidden
+		white-space nowrap
+
+	 	.item
+			display inline-block
+			margin-right 5px
+			width 100px
+
+	.panel-body
+		.item .panel
+				// size 100px
+				background tomato
+				// border-radius 50%
+				border 2px solid rgba(tomato, 1)
+
+	.modal.item .panel
+				border 0 !important
+
+.point
+	position absolute
+	svg path
+		fill red
+
+
+random(min,max)
+	return floor(math(0, 'random')*(max - min + 1) + min)
+
+for num in (1..30)
+	.point{num}
+		left random(0, 300)px
+
+for num in (1..30)
+	.point{num}
+		top random(0, 300)px
+
+
+/////
+
+
+.process
+	.panel-heading
+		background initial
+		border 0
+		font 9px "Lucida Console", Monaco, monospace
+		color darkgreen
+		position absolute
+
+.navbar
+	box-shadow 0 .5em 0 rgba(black, .25)
+	.navbar-brand
+		svg
+			size 32px
+			path
+				fill tomato
+
+.navbar-header
+.panel-heading
+.btn
+	text-transform uppercase
+	// font-family 'Arial Black'
+	font-weight bold
+
+
+/////
+
+
+.navbar
+	z-index 998
+	margin-bottom 0 !important
+a.navbar-brand
+	height auto
+	margin 0 auto
+
+html
+body
+section
+.container
+.process
+.panel
+	height 100%
+
+html
+body
+	max-height 100%
+	overflow hidden
+
+
+
+.welcome
+	.panel-body
+		svg
+			size 100px
+			fill rgb(0,255,0)
+			border-radius 50%
+			box-shadow 0 0 1em green
+			margin-bottom .5em
+	.panel-footer
+		svg
+			path
+				fill white
+
+////////
+
+
+
+.btn.btn-danger
+	box-shadow 0 .25em 10em rgba(red, .5)
+
+.btn.btn-success
+	box-shadow 0 .25em 10em rgba(green, .5)
+
+.offer
+	.panel-body
+		svg
+			size 100px
+			path
+				fill tomato
+
+.location
+	size 24px 40px
+	margin 0 auto
+	position relative
+	top 100px
+	z-index 888
+	background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAABQCAMAAABVumeJAAAAw1BMVEUAAADbVFS3ODC7PDC7PDTPQDS7ODC7PDS/PDTPSEDLPDC/QDTHTDy/QDi7PDC/QDi/PDDDRDzLTEC7ODDHQDi/QDSzOCy3ODC3OCzbWEzTQDi7PDDDQDTHSDzLTETjRDzjYFTzRDz7cGT3bGDzUEj3YFT3WEyTMCzraFzfXFT7dGhcFBD3ZFjzSECbODRoHBjvZFj3aFz3XFT3YFh4JCD3XFDzUET3WFDzTECzRED3VEj3VEz7bGDzTET7cGj3ZFzbWFBpL9dHAAAAFnRSTlMAEPvL6zD394McSGhcu7OfdIs441TrpTgbkAAAAtRJREFUeAGN1PeWokoQx/GCRkGcGZ1Z91dNFrOTw2zYm9//qe4Bde1CAp8/7S+cok+3VGFdeeqrC7hflXdlUZuraxsAlwDY11fUZOwAHKX/zXfL5W4epBEDzpjqDBR0FOzuDbs0AtSgZgIbUbC4r1gEEeyLWW7ByfK+xi7RuL1og/t6i5RlPQUH/zQKGNNz69scLFoEbPt0ZDk6XbRKtGPRwQTxsj1exphQ6Y55vugwZ76jgkKy6JRAlS8Gv/7V6ZVxV06cLHtIyqld3i+l+a/n51/zpbRnl2iG6E2m24fSVuZvEWbkVabYvzwcvewrc0xJ6eDN8Hpqi/rVXAmgyGERPz8YnkWsHXJZPP9ixi/mypxdAj+ajz8IgTkgoxKnMk6NpY8y/vj3rBobS8WbXZ4/nu1lvDeX2C1249Hwabaf5kqxGwoiTsw4ETEUeUgeTdtzuxULCbzibKw/DOvf9Vb+zpgRuTpYC2k592e6FgLtHs7zuuI9CN7XFYfz7IO/rTv9YPiHO5h2x8c7SDPw5r3Dpvi80/XuissXl3zm1bdWK2afjm4Qt8cxbuhkZOusrc20PTL/nqPNj0abSPxBWw7C5jiEY5FhBl5tGnwvtk24RtwUR7gmaTTUYX0b6uGIKsYNg6wYY7qgEP9ZI4aiSwNbZ5dtqO0B1fDAqz8qVgyPan1BWI1DfKF6PnMm26w8QJJxoFaCcYBqvpEzs82qXydMEH83RJhQs5HN2bkVJ7N+6nMsJq4xYP7599ET84BaKYSnOISidmNEp1icoFrWkLOfpUwPLepwg/AQh42fJ+Z4Kskp6lk2Z0WbaduiTgphEYu9aDRFXMQxptRtAM6fnnLGgHpwdJbnmXaojwnCPI9bD5zYvDxv2TjBYs4yZotaiIsrL2qbW4Qxbon6Dt02sjQCa4yopyEwpL4UoKgvD/CorzEwpr58wKe+LMCi3oZD6s9xqM7/jEIx6RkiIwsAAAAASUVORK5CYII=')
+	background-size 100%
+	background-repeat no-repeat

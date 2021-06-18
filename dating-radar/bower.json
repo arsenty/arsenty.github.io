@@ -1,0 +1,20 @@
+{
+  "name": "shake-points-lp-1",
+  "version": "0.0.0",
+  "authors": [
+    "arsenty <arsenty.khanov@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/js/plugins",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AniJS": "https://github.com/anijs/anijs.git#~0.9.3",
+    "anicollection": "https://github.com/anicollection/anicollection.git"
+  }
+}

@@ -1,0 +1,231 @@
+{
+    "header": "{{header}}",
+    "woman_want_": "{{woman_want_}}",
+    "send_message": "{{send_message}}",
+    "woman_wait_": "{{woman_wait_}}",
+    "friends": [
+      {
+        "name": "Doris Richards",
+        "gender": "female",
+        "age": 44,
+        "eyeColor": "green",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Mcpherson Poole",
+        "gender": "male",
+        "age": 44,
+        "eyeColor": "brown",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Hahn Lara",
+        "gender": "male",
+        "age": 43,
+        "eyeColor": "brown",
+        "isActive": false
+      },
+      {
+        "name": "Marsh Blevins",
+        "gender": "male",
+        "age": 39,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Walton Webb",
+        "gender": "male",
+        "age": 40,
+        "eyeColor": "brown",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Randi Ortega",
+        "gender": "female",
+        "age": 39,
+        "eyeColor": "brown",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Griffith Snyder",
+        "gender": "male",
+        "age": 37,
+        "eyeColor": "brown",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Fitzpatrick Jefferson",
+        "gender": "male",
+        "age": 39,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Annabelle Moses",
+        "gender": "female",
+        "age": 44,
+        "eyeColor": "brown",
+        "isActive": false
+      },
+      {
+        "name": "Myra Underwood",
+        "gender": "female",
+        "age": 39,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Gonzalez Keller",
+        "gender": "male",
+        "age": 45,
+        "eyeColor": "green",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Lottie Sherman",
+        "gender": "female",
+        "age": 44,
+        "eyeColor": "green",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Sims Blanchard",
+        "gender": "male",
+        "age": 44,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Jackson Sloan",
+        "gender": "male",
+        "age": 42,
+        "eyeColor": "blue",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Beverley Sykes",
+        "gender": "female",
+        "age": 35,
+        "eyeColor": "brown",
+        "isActive": false
+      },
+      {
+        "name": "Guthrie Baxter",
+        "gender": "male",
+        "age": 40,
+        "eyeColor": "brown",
+        "isActive": false
+      },
+      {
+        "name": "Marshall Petty",
+        "gender": "male",
+        "age": 40,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Lang Wooten",
+        "gender": "male",
+        "age": 43,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Ortiz Oneal",
+        "gender": "male",
+        "age": 45,
+        "eyeColor": "green",
+        "isActive": false
+      },
+      {
+        "name": "Erma Rose",
+        "gender": "female",
+        "age": 45,
+        "eyeColor": "green",
+        "isActive": false
+      },
+      {
+        "name": "Ilene Vance",
+        "gender": "female",
+        "age": 41,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Becky Shelton",
+        "gender": "female",
+        "age": 45,
+        "eyeColor": "green",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Nita Morrow",
+        "gender": "female",
+        "age": 35,
+        "eyeColor": "brown",
+        "isActive": false
+      },
+      {
+        "name": "Mclaughlin Guthrie",
+        "gender": "male",
+        "age": 44,
+        "eyeColor": "brown",
+        "isActive": false
+      },
+      {
+        "name": "Ophelia Conrad",
+        "gender": "female",
+        "age": 35,
+        "eyeColor": "green",
+        "isActive": false
+      },
+      {
+        "name": "Claudine Parker",
+        "gender": "female",
+        "age": 44,
+        "eyeColor": "blue",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Rivera Morrison",
+        "gender": "male",
+        "age": 37,
+        "eyeColor": "green",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Stephanie Head",
+        "gender": "female",
+        "age": 35,
+        "eyeColor": "blue",
+        "isActive": false
+      },
+      {
+        "name": "Massey Talley",
+        "gender": "male",
+        "age": 36,
+        "eyeColor": "brown",
+        "isActive": true,
+        "offer": "{{offer}}"
+      },
+      {
+        "name": "Trina Payne",
+        "gender": "female",
+        "age": 45,
+        "eyeColor": "green",
+        "isActive": true,
+        "offer": "{{offer}}"
+      }
+    ]
+}

@@ -1,0 +1,41 @@
+{{header}}
+en
+Header
+
+{{analyze}}
+en
+Анализируем
+
+{{selection}}
+en
+Подбираем анкеты
+
+{{please_wait}}
+en
+Это займёт сколько-то времени
+
+{{offer_header}}
+en
+Сматри, какой харощий девущки!
+
+{{offer_desc}}
+en
+Выбирай любой
+
+{{footer}}
+en
+© 2015 Adult Dating, All rights reserved. Disclaimer: This website contains adult material. All members and persons appearing on this site have contractually represented to us that they are 18 years of age or older.
+
+///////////////////////////
+
+{{luck_header}}
+en
+Потряси телефон и попытай удачу в знакомстве с тёткой из твоего города.
+
+{{luck_desc}}
+en
+Наша система по амплитуде и силе тряски определит твой психотип и подберет тебе идеальную пару.
+
+{{luck_again}}
+en
+Не нравится? Тряси снова!

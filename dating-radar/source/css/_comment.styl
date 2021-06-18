@@ -1,0 +1,51 @@
+.comments
+	// font-size .9em
+	line-height 1.25em
+
+	a
+	em
+		font-style normal
+		color #3b5998
+		cursor pointer
+
+	p.bar a
+		color #3b5998
+		margin-right 20px
+		cursor pointer
+
+	small
+		display  block
+		margin-top 5px
+
+	.comment
+		em
+			font-weight bold
+
+.like
+	padding-left 16px
+	// padding-top -1px
+	background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAADAElEQVR42sVXS2hTQRRN/bTqQvyA4mfnB7SCgtDmzbwXq6JQ/FCF1zfzkrTqQgVxowhupMGN6EJqaTNvXtIEXLjoRkGhG10Khe60FvyCBUW0tlJBMC3GcxVCS9PamOb1wWGYgcw9c+65dyahsr9EYhF39X4e9c8zmTpg2z2LQ0F9DQ2JJVyqlBlN5bjUX0w3Nc6FyoZC+apACBi22sSl95ML73x9tGMlc31hun6eO8lwIAS46N4IAt+Zow/TPIF0YP6cSS8TCAF2Qq1DwDFD6qYCKamvIC2fSZGKEzDd5GoQGEXA5sKa4+3G2oQhuljFCdS7d7YhWM5w1NGCMZuyq7A2AiVaA/CAp3D6oclyWzG9gXzBXe9kZfPvqF1w/IQp1JkpleGqOhAbZ3bXnkrGr8Ipe4H+vWf10inEpBczpffNsNNrKmc+J2lTvYebFZ+WFqlucKFe17V0riWTFkNjY0fN/0sfp9LTn5DjzqLkoIwVz+ShzjDwtQhG0DnfGkJfmCJp48WOGjCbEbV2onorRlPq+6ar39FJiqWGCX2ER9OtSMXpYiDPmNK/h7b960/HNITPzKj/FIuDTKoZAeYDOPkAd/UPkDDLa+G3l2OvUeZ4l0IkiRXrzkOWWUGyIu+vwkI1lOuhsNO1AwfJceEfD5GZQGJWEAEw7p8PZ5PiVizzDPv1kRKkwD8JkEJMeA/mo4KsqLfTiqUprU9oXgqBh/PWxKRqJ0+RaYMlgOuaFEAVDTGh2gJXoF62r8d+fai6HHP0lgVJgSWT+8j4BsYFIUBXN13hptO5PXACaNPHUILvmdB3yYCBEwj/JZCjC4vmpRJ4VF74QryP2EuXRABtk8YxdMTHGA/R/4FSA+PdsMKU6nKkJZvnwnMmdaY0bT5H6JcYJ4A3wAsC6nmwADkT9CB++8GMIZbrp2vtnurJ77reSDwDmQndRRGJZ/PYaBhvv82G8A5abuo6gt/CiW7OHfoqc73I9L9Xp7LLwO4cc3UC7mybDpXgsdQ1i14/Ffh+A3gJvQDem1UeAAAAAElFTkSuQmCC')
+	background-position left center
+	background-repeat no-repeat
+	background-size 13px
+
+.comment
+
+	.img
+		// background url('comments.jpg')
+		background-size 100%
+		width 32px
+		height 32px
+
+
+$pointX = ( 0 -32px -64px -96px -128px -160px -192px -224px )
+
+for num in (0..6)
+	.comment{num} .img
+		background-position left $pointX[num]
+
+.like:after
+	content '{{like}}'
+
+.like.active:after
+	content '{{unlike}}'
